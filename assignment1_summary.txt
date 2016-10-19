@@ -1,0 +1,9 @@
+
+1) Description of the scenarios <— NL 
+
+2) Description of use cases -< NL/UML/SD
+
+3) Models describing requirements (ex goals) -< Alloy/UML
+
+4) Specifications of problem (ex requirements) -< Alloy/UML
+
