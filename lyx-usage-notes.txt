@@ -1,4 +1,4 @@
-We are using Lyx2.1
+We are using Lyx2.2
 
 Lyx shortcuts:
     Ctrl-R --> compile and show document preview
