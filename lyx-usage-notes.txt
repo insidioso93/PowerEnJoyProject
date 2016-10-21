@@ -1,0 +1,10 @@
+We are using Lyx2.1
+
+Lyx shortcuts:
+    Ctrl-R --> compile and show document preview
+    Ctrl-Enter forces newline (for example for multiple authors)
+    Alt-P Space --> apre la tendina degli elementi del documento (quella
+        bianca a sinistra)
+    Alt-P T --> create document title
+    Alt-P 2 --> create Section
+    Alt-P 3 --> create Subsection
