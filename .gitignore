@@ -1,0 +1,7 @@
+.*.swo
+.*.swp
+
+#ignore lyx draft files
+\#*.lyx\#
+*.lyx,v
+*.lyx~
