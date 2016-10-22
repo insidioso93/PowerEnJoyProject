@@ -1,0 +1,41 @@
+
+Scenario: Luca registers his new Powernenjoy account.
+
+Luca accesses the system for the first time and it has to choose whether to log in with his credentials or create a new account.
+Luca chooses to register a new account; the system shows a form that must be filled with Luca’s credentials and payment information.
+Luca fills the form and gives confirmation to the system.
+Luca receives an email with the confirmation of the registration and the password that Luca will use to access the system.
+
+
+Scenario: Luca books a car and doesn’t pick up it within one hour from the reservation.
+
+Luca reserves a free car by means of the system.
+As the time goes by, Luca realizes that he doesn’t need the car anymore but doesn’t cancel his reservation.
+After one hour from the reservation Luca’s reservation is cancelled and the car can be reserved by some other user.
+Luca receives a notification on its smartphone that informs him about the cancellation of his reservation and the fee of 1 EUR because of the expiration of the reservation.
+
+
+Scenario: Luca parks the car in a safe area and leaves it.
+
+Luca arrives in a safe area and decides to park the car.
+Luca stops the engine, leaves the key in the appropriate location and exits the car.
+As he closes the door, the system locks the car automatically and stops charging the user.
+Luca receives a notification on his smartphone that informs him about the end of the ride.
+
+Scenario: Luca parks and the car and leaves it with no more than 50% of the battery empty.
+
+Luca parks the car in a safe are and leaves it.
+The system behaves as described in Scenario number …
+At the moment of closing the service, the system checks the status the car’s battery.
+If the battery is left with no more than 50% of the battery empty, the system applies a 20% discount on the ride.
+Luca receives a notification on his smartphone that informs him about the end of the ride and the discount that has been applied thanks to his virtuous behavior.
+
+
+Scenario: Luca reserves a car and enables the “money saving option”.
+
+Luca wants to reserve a car.
+Luca chooses the car as described by Scenario number… and decides to active the money saving option in order to get a discount on the ride.
+The system shows on the map the locations where Luca can leave the car in order to the get the discount.
+Luca proceeds with the confirmation of the registration.
+
+ 
