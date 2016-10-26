@@ -1,20 +1,24 @@
-Scenario: Charlie searches for nearby cars.
+1. Scenario: Charlie searches for nearby cars.
+
 - Charlie is in need for a car. First he logs into his PowerEnJoy mobile
   application, then he uses the app to search for a nearby available car.
   Charlie is shown the location of all available cars within N kilometers.
 
-Scenario: Sally gets close to a reserved car to unlock it.
+2. Scenario: Sally gets close to a reserved car to unlock it.
+
 - Sally has previously reserved a car she intended to use. When she gets
   near it, she uses the PowerEnJoy application to confirm her location. The
   system then unlocks the car. Sally is now able to enter the car and use it.
 
-Scenario: Linus searches for cars near to a specific location.
+3. Scenario: Linus searches for cars near to a specific location.
+
 - Linus is about to visit a friend's house. He needs to know if he's going to
   be able to find any available car in its proximity, for his trip back home.
   Linus uses the PowerEnJoy app to search for available cars near his friend's
   address. He is shown all the available cars within N kilometers.
 
-Scenario: Lucy recharges the car after the ride and gets a 30% discount.
+4.Scenario: Lucy recharges the car after the ride and gets a 30% discount.
+
 - Lucy has been using a PowerEnJoy car. She parks the car at a parking area
   equipped with charging stations. She then plugs the car into one of the
   rechargers. When she checks her PowerEnJoy app for the price of the ride,

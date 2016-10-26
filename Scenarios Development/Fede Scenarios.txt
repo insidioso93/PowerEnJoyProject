@@ -1,10 +1,13 @@
 
+1. 
+
 - Mario is in the centre of Milan, he needs an immediate transport for surfing the city for his commissions. Hence he decides to book a car through the PowerEnJoy service. While he is walking he looks to his mobile for discovering the nearest car offers by the company.
 
 - Mario finds the car, indexes it to the company by the mobile and finally enter in it.
 
 - Mario switches on the engine, a voice welcomes him by a greeting, by giving the coordinates of the current position and by hinting the current fee to pay at the end of the journey. Mario starts driving the car into the city.
 
+2. 
 
 (Second scenario or the Continuation ?)
 
@@ -15,7 +18,9 @@
 - When he finishes the travel he simply parks the car in one position and through a particular function on the screen he indicates the end of the service. Unfortunately he left the car with more than 80% of the battery empty. The system readily detects it but Mario is hurried. As a result he has to pay 30% more on that last ride.
 
 
-(Another scenario)
+3.
+
+(Another scenario?)
 
 - Luigi and two friends long to spend some time together driving on the hills and taking some fotos of the countryside. While they still are in the village they control they're electronical devices to find a PowerEnJoy car, finally they find one of them. 
 
