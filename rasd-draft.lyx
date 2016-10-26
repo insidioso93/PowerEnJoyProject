@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \options titlepage
 \use_default_options true
@@ -10,16 +12,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -94,16 +96,67 @@ Valeria Mazzola
 Federico Nigro
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Section
-Overview
+Introduction
 \end_layout
 
 \begin_layout Subsection
 Problem analysis
+\end_layout
+
+\begin_layout Standard
+We manage to design and develop PowerEnJoy that is a digital management
+ system for car-sharing service that exclusively employs eletric cars.
+ 
+\begin_inset Newline newline
+\end_inset
+
+The service is be provided to the users by means of a mobile application
+ that is available for free both for iOS and Android based devices.
+\begin_inset Newline newline
+\end_inset
+
+The system provides all the major functionalities that are provided by other
+ concurrent car-sharing services like EniEnjoy, Car2Go, Share'nGo ect.
+\begin_inset Newline newline
+\end_inset
+
+The system requires the user to register an account that must be associated
+ to his/her personal information that have legal validity: complete name,
+ date of birth, number of the identity card and number of the driving license.
+\begin_inset Newline newline
+\end_inset
+
+At the moment of the registration of the account the user is asked provide
+ at least one payment method to be associated to the account.
+ The system only supports one payment method that is a PayPal.
+\begin_inset Newline newline
+\end_inset
+
+The system allows non-registered and registered users to discover available
+ cars nearby their current position.
+ Only registered users are allowed to book a car for a limited amount of
+ time (1 hour).
+\begin_inset Newline newline
+\end_inset
+
+Within this amount of time the user can either decide to use the car for
+ a ride or delete hit/her reservation; in the case in which the user doesn't
+ use the car and doesn't delete his/her reservation the reservation expires,
+ the client is asked to pay a fee of 1 EUR and the reserved car becomes
+ available.
+\begin_inset Newline newline
+\end_inset
+
+The position of the user must be determined precisely via a GPS system;
+ the user cannot access the service if he/she doesn't provide a GPS-prodived
+ position.
+\begin_inset Newline newline
+\end_inset
+
+In addition to the main functionalities that are concerned about the booking
+ and the usage of cars, the system incentivizes the virtuos behaviors of
+ the users by means of applying discounts or fees in the appropriate context.
 \end_layout
 
 \begin_layout Subsection
