@@ -72,10 +72,6 @@
 
 \begin_body
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Title
 RASD
 \begin_inset Newline newline
@@ -106,7 +102,7 @@ Problem analysis
 
 \begin_layout Standard
 We manage to design and develop PowerEnJoy that is a digital management
- system for car-sharing service that exclusively employs eletric cars.
+ system for car-sharing service that exclusively employs electric cars.
  
 \begin_inset Newline newline
 \end_inset
@@ -117,7 +113,7 @@ The service is be provided to the users by means of a mobile application
 \end_inset
 
 The system provides all the major functionalities that are provided by other
- concurrent car-sharing services like EniEnjoy, Car2Go, Share'nGo ect.
+ concurrent car-sharing services like EniEnjoy, Car2Go, Share'nGo etc.
 \begin_inset Newline newline
 \end_inset
 
@@ -161,6 +157,78 @@ In addition to the main functionalities that are concerned about the booking
 
 \begin_layout Subsection
 Goals
+\end_layout
+
+\begin_layout Standard
+The following goals are all referred to the relation between system and
+ user:
+\end_layout
+
+\begin_layout Standard
+[G1]: The system allows the user to obtain a registration and hence gain
+ service functionalities.
+\end_layout
+
+\begin_layout Standard
+[G2]: The system allows the user to discover the positions of all available
+ cars within a certain area.
+\end_layout
+
+\begin_layout Standard
+[G3]: The system allows the user to reserve a selected car.
+\end_layout
+
+\begin_layout Standard
+[G4]: The system configured a waiting time in which user has to start the
+ utilization.
+\end_layout
+
+\begin_layout Standard
+[G5]: The system allows the user to cancel its prenotation.
+\end_layout
+
+\begin_layout Standard
+[G6]: The system effectively allows the user to get on and drive the car,
+ unlocking it.
+\end_layout
+
+\begin_layout Standard
+[G7]: The system allows the user to know in real time the amount of money
+ to pay for the service.
+\end_layout
+
+\begin_layout Standard
+[G8]: The system alerts the user of every new important event whilst it
+ is driving (if there are more two passengers and so the discount is applied,
+ 
+\end_layout
+
+\begin_layout Standard
+if the user is leaving the car in an unsafe area after the engine is stopped).
+\end_layout
+
+\begin_layout Standard
+[G9]: The system warns the user of every important information for the safety
+ (the condition of the road, fasten seatbelt etc.).
+\end_layout
+
+\begin_layout Standard
+[G10]: The system alerts the user in case of exceptional events, and what
+ the user is recommended to do (for instance for a car crashing or damage
+ 
+\end_layout
+
+\begin_layout Standard
+the user has to call an operator).
+\end_layout
+
+\begin_layout Standard
+[G11]: The system communicates to the user the total prize of the run after
+ the end of it (with the discount or the fees already included).
+\end_layout
+
+\begin_layout Standard
+[G12]: The system allows the user to pay for the service.
 \end_layout
 
 \begin_layout Subsection
