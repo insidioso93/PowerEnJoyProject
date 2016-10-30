@@ -129,10 +129,10 @@ At the moment of the registration of the account the user is asked provide
 \begin_inset Newline newline
 \end_inset
 
-The system allows non-registered and registered users to discover available
- cars nearby their current position.
- Only registered users are allowed to book a car for a limited amount of
- time (1 hour).
+The system allows registered users to discover available cars nearby their
+ current position.
+ Registered users are allowed to book a car for a limited amount of time
+ (1 hour).
 \begin_inset Newline newline
 \end_inset
 
@@ -141,12 +141,6 @@ Within this amount of time the user can either decide to use the car for
  use the car and doesn't delete his/her reservation the reservation expires,
  the client is asked to pay a fee of 1 EUR and the reserved car becomes
  available.
-\begin_inset Newline newline
-\end_inset
-
-The position of the user must be determined precisely via a GPS system;
- the user cannot access the service if he/she doesn't provide a GPS-prodived
- position.
 \begin_inset Newline newline
 \end_inset
 
@@ -160,79 +154,202 @@ Goals
 \end_layout
 
 \begin_layout Standard
-The following goals are all referred to the relation between system and
- user:
+Goals expressed in terms of 
+\begin_inset Quotes eld
+\end_inset
+
+the world and the machine
+\begin_inset Quotes erd
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-[G1]: The system allows the user to obtain a registration and hence gain
- service functionalities.
+REGISTRATION:
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-[G2]: The system allows the user to discover the positions of all available
- cars within a certain area.
+[G1.1]: The user shall receive a password to access the services if and only
+ if 
 \end_layout
 
 \begin_layout Standard
-[G3]: The system allows the user to reserve a selected car.
+- she/he has provided valid credentials and valid payment information.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-[G4]: The system configured a waiting time in which user has to start the
- utilization.
+DISCOVERING AVAILABLE CARS AND CAR’S INFORMATION
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-[G5]: The system allows the user to cancel its prenotation.
+[G2.1]: After providing a valid position, the registered user shall be able
+ to discover the positions of all available cars within a certain distance
+ from the specified position.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-[G6]: The system effectively allows the user to get on and drive the car,
- unlocking it.
+CAR BOOKING:
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-[G7]: The system allows the user to know in real time the amount of money
- to pay for the service.
+[G3.1]: By providing the identity of a car from the list of available ones,
+ the registered user shall be able to see all the car’s current relevant
+ information and the reservation form for the car.
 \end_layout
 
 \begin_layout Standard
-[G8]: The system alerts the user of every new important event whilst it
- is driving (if there are more two passengers and so the discount is applied,
+Note: definire nel glossario car’s “current relevant information” and “registrat
+ion form”.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G3.2]: By submitting information required by the reservation form for a
+ car, the registered user shall be able to book the car and see the receipt
+ of the reservation with successful status if and only if:
+\end_layout
+
+\begin_layout Standard
+- the car is available and - there’s no active registration for some other
+ car made by the user
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+RESERVATION VALIDITY:
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G4.1]: An active reservation expires if and only if 
+\end_layout
+
+\begin_layout Standard
+- exactly 1 hour has passed from when the reservation was made by the registered
+ user.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G4.2]: The registered user shall be notified about reservation expiration
+ and shall pay the expiration fee if and only if 
+\end_layout
+
+\begin_layout Standard
+- her/his active reservation expires.
  
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-if the user is leaving the car in an unsafe area after the engine is stopped).
+CARS USAGE:
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-[G9]: The system warns the user of every important information for the safety
- (the condition of the road, fasten seatbelt etc.).
+[G5.1]: The user shall be able to notify the condition of nearness to the
+ reserved car if and only if
 \end_layout
 
 \begin_layout Standard
-[G10]: The system alerts the user in case of exceptional events, and what
- the user is recommended to do (for instance for a car crashing or damage
- 
+- the GPS position of the user is within a certain distance from the reserved
+ car
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-the user has to call an operator).
+[G5.2]: A reserved car shall be automatically unlocked if and only if 
 \end_layout
 
 \begin_layout Standard
-[G11]: The system communicates to the user the total prize of the run after
- the end of it (with the discount or the fees already included).
+- the user who owns the active reservation on the car notifies the condition
+ of nearness to the car.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-[G12]: The system allows the user to pay for the service.
+[G5.3]: When the user starts the engine the system shall start charging the
+ user for a given amount of money per minute; 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.4]: The user shall be able to see the the current charges on the car’s
+ screen.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.5]: The system shall stop charging the user if and only if the car is
+ parked in a safe area and the user exits the car;
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.6]: The car locks automatically if and only if the car is parked in a
+ safe area and the user exists the car.
 \end_layout
 
 \begin_layout Subsection
-Proposed solution(s)
+Gloassary
 \end_layout
 
 \begin_layout Section
