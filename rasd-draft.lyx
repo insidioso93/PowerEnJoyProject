@@ -220,11 +220,6 @@ CAR BOOKING:
 [G3.1]: By providing the identity of a car from the list of available ones,
  the registered user shall be able to see all the car’s current relevant
  information and the reservation form for the car.
-\end_layout
-
-\begin_layout Standard
-Note: definire nel glossario car’s “current relevant information” and “registrat
-ion form”.
 \begin_inset Newline newline
 \end_inset
 
@@ -238,8 +233,11 @@ ion form”.
 \end_layout
 
 \begin_layout Standard
-- the car is available and - there’s no active registration for some other
- car made by the user
+- the car is available and 
+\end_layout
+
+\begin_layout Standard
+- there’s no active registration for some other car made by the user
 \begin_inset Newline newline
 \end_inset
 
@@ -335,8 +333,11 @@ CARS USAGE:
 \end_layout
 
 \begin_layout Standard
-[G5.5]: The system shall stop charging the user if and only if the car is
- parked in a safe area and the user exits the car;
+[G5.5]: The system shall stop charging the user if and only if the 
+\end_layout
+
+\begin_layout Standard
+- car is parked in a safe area and the user exits the car;
 \begin_inset Newline newline
 \end_inset
 
