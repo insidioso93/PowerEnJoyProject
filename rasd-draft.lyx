@@ -118,8 +118,8 @@ The system provides all the major functionalities that are provided by other
 \end_inset
 
 The system requires the user to register an account that must be associated
- to his/her personal information that have legal validity: complete name,
- date of birth, number of the identity card and number of the driving license.
+ to his/her personal information that have legal validity: full name, date
+ of birth, number of the identity card and number of the driving license.
 \begin_inset Newline newline
 \end_inset
 
@@ -183,7 +183,12 @@ REGISTRATION:
 \end_layout
 
 \begin_layout Standard
-- she/he has provided valid credentials and valid payment information.
+- she/he has provided valid credentials that are not associated to any other
+ user and 
+\end_layout
+
+\begin_layout Standard
+- valid payment information.
 \begin_inset Newline newline
 \end_inset
 
@@ -202,6 +207,15 @@ DISCOVERING AVAILABLE CARS AND CAR’S INFORMATION
 [G2.1]: After providing a valid position, the registered user shall be able
  to discover the positions of all available cars within a certain distance
  from the specified position.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G2.2]: The user shall be notified about the positions of cars within a certain
+ distance from the position specified by the user when the cars become available.
 \begin_inset Newline newline
 \end_inset
 
@@ -229,7 +243,7 @@ CAR BOOKING:
 \begin_layout Standard
 [G3.2]: By submitting information required by the reservation form for a
  car, the registered user shall be able to book the car and see the receipt
- of the reservation with successful status if and only if:
+ of the reservation successfully if and only if:
 \end_layout
 
 \begin_layout Standard
@@ -253,12 +267,17 @@ RESERVATION VALIDITY:
 \end_layout
 
 \begin_layout Standard
-[G4.1]: An active reservation expires if and only if 
+[G4.1]: After exactly one hour from when an active reservation was made the
+ active reservation expires if and only if
 \end_layout
 
 \begin_layout Standard
-- exactly 1 hour has passed from when the reservation was made by the registered
- user.
+- the active reservation hasn't been deleted by the user and
+\end_layout
+
+\begin_layout Standard
+- the active reservation hasn't been converted in an active ride by the
+ user
 \begin_inset Newline newline
 \end_inset
 
@@ -273,6 +292,25 @@ RESERVATION VALIDITY:
 \begin_layout Standard
 - her/his active reservation expires.
  
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G4.3]: When an active reservation expires the car associated to that reservation
+ shall be tagged as available by the system.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G4.4]: By submitting the intention of deleting an active reservation, the
+ registered user shall be able to delete that reservation for a car and
+ that car shall be tagged as available.
 \begin_inset Newline newline
 \end_inset
 
@@ -315,8 +353,9 @@ CARS USAGE:
 \end_layout
 
 \begin_layout Standard
-[G5.3]: When the user starts the engine the system shall start charging the
- user for a given amount of money per minute; 
+[G5.3]: When the user starts the engine of the car, the system shall notify
+ the user about the beginning of a new active ride and start charging the
+ user for a given amount of money per minute.
 \begin_inset Newline newline
 \end_inset
 
@@ -324,8 +363,8 @@ CARS USAGE:
 \end_layout
 
 \begin_layout Standard
-[G5.4]: The user shall be able to see the the current charges on the car’s
- screen.
+[G5.4]: The user shall be able to see the current active ride relevant informatio
+n on the car’s screen.
 \begin_inset Newline newline
 \end_inset
 
@@ -333,11 +372,12 @@ CARS USAGE:
 \end_layout
 
 \begin_layout Standard
-[G5.5]: The system shall stop charging the user if and only if the 
+[G5.5]: The system shall notify the user about the end of the active ride
+ and stop charging the user if and only if
 \end_layout
 
 \begin_layout Standard
-- car is parked in a safe area and the user exits the car;
+- the car is parked and the user and all the passengers exit the car;
 \begin_inset Newline newline
 \end_inset
 
@@ -345,12 +385,220 @@ CARS USAGE:
 \end_layout
 
 \begin_layout Standard
-[G5.6]: The car locks automatically if and only if the car is parked in a
- safe area and the user exists the car.
+[G5.6]: At the end of an active ride, the system should charge the user for
+ a parking penalty and notify the user about the charge if and only if:
+\end_layout
+
+\begin_layout Standard
+- the car is parked in a non safe area.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.7]: The car locks automatically if and only if 
+\end_layout
+
+\begin_layout Standard
+- the car is parked and the user and all the passengers exit the car.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.8]: If the registered user uses the car with at least two other passengers
+ the system shall apply a discount of 10% on cost of the current active
+ ride at the end of the active ride.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.9]: At the end of an active ride the system shall apply a discount of
+ 20% on the total cost of the active ride if
+\end_layout
+
+\begin_layout Standard
+- the car is left with no more than 50% of the battery empty.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.10]: At the end of an active ride the system shall apply a discount of
+ 30% on the total cost of the active ride if 
+\end_layout
+
+\begin_layout Standard
+- the car is parked at a power grid station and the user plugs the car into
+ the power grid.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.11]: At the end of an active ride the system shall charge 30% more on
+ the total cost of the active ride if 
+\end_layout
+
+\begin_layout Standard
+- the car is parked at more than 3KM from the nearest power grid station.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.12]: When an active ride starts the registered user shall be able to
+ activate the money saving option.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.13]: By activating the money saving option, the registered user shall
+ be able to see a list of suggested parking area.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.13]: At the end of the active ride the system shall apply a discount
+ on the total cost of the active ride if:
+\end_layout
+
+\begin_layout Standard
+- the car is parked at a parking area that was suggested to the user by
+ the system when the user activated the money saving option.
 \end_layout
 
 \begin_layout Subsection
 Gloassary
+\end_layout
+
+\begin_layout Itemize
+Registered user: a physical person that can access to the services provided
+ by the PowerEnJoy digital management system by means of a valid account.
+\end_layout
+
+\begin_layout Itemize
+Car: it's a vehicle that is managed by the PowerEnJoy digital management
+ system.
+\end_layout
+
+\begin_layout Itemize
+Available car: it's a car for which there is no active reservation nor active
+ aide related to it.
+ 
+\end_layout
+
+\begin_layout Itemize
+Active reservation: it's a reservation that hasn't expired and that hasn't
+ yet converted in an active ride.
+ 
+\end_layout
+
+\begin_layout Itemize
+Active ride: it's a relation between an user and a car that represents the
+ concrete usage of the car by the user.
+\end_layout
+
+\begin_layout Itemize
+Reservation: it's a relation between an user and a car that represents the
+ user's will to prevent other users to use the car.
+\end_layout
+
+\begin_layout Itemize
+Reservation form: it's a set of information that are required from the user
+ in order to make a new valid reservation.
+\end_layout
+
+\begin_layout Itemize
+Valid position: it's either a GPS position or a address position.
+\end_layout
+
+\begin_layout Itemize
+GPS position: it's a couple of coordinates (latitude and longitude) provided
+ by a GPS system.
+\end_layout
+
+\begin_layout Itemize
+Address position: it's a string that represents a specific position by means
+ of words.
+\end_layout
+
+\begin_layout Itemize
+Valid credentials: it's a set of personal information that have legal validity;
+ this set includes: full name, date of birth, number of the identity card
+ and number of the driving license.
+ 
+\end_layout
+
+\begin_layout Itemize
+Valid payment information: it's the set of information that allows the system
+ to indentify an active PayPal active account.
+ 
+\end_layout
+
+\begin_layout Itemize
+Expiration fee: amount of money (in EUR) that the user has to pay when she/he
+ lets an active reservation expire.
+\end_layout
+
+\begin_layout Itemize
+Current relevant car's information: it's a set of information that represent
+ the current state of a car and that includes: model of the car, name of
+ the car, registration number of the car ,number of allowed passengers,
+ state of the battery, valid position of the car.
+\end_layout
+
+\begin_layout Itemize
+Current active ride information: it's a set of information that represent
+ the current state of an active ride and that includes: the amount of money
+ that has been charged to the user so far, the duration (in minutes) of
+ the ride so far.
+\end_layout
+
+\begin_layout Itemize
+Condition of nearness: it represents the condition in which a user must
+ be able to access the reserved car because the user is close to the car.
+\end_layout
+
+\begin_layout Itemize
+Safe area: it's set of GPS positions that is pre-defined by the management
+ system.
+ 
+\end_layout
+
+\begin_layout Itemize
+Parking penalty: amount of money (in EUR) that the user has to pay when
+ she/he parks the car in a non safe area.
+\end_layout
+
+\begin_layout Itemize
+Power grid station: it's a safe area that provides a power grid to re-charge
+ the car.
+\end_layout
+
+\begin_layout Itemize
+Money saving option: it's a option that can be enabled by the user for an
+ active ride.
 \end_layout
 
 \begin_layout Section
