@@ -138,15 +138,18 @@ The system allows registered users to discover available cars nearby their
 
 Within this amount of time the user can either decide to use the car for
  a ride or delete hit/her reservation; in the case in which the user doesn't
- use the car and doesn't delete his/her reservation the reservation expires,
- the client is asked to pay a fee of 1 EUR and the reserved car becomes
- available.
+ use the car and doesn't delete his/her reservation, the reservation expires,
+ the user is asked to pay a fee of 1 EUR and the reserved car becomes available.
 \begin_inset Newline newline
 \end_inset
 
 In addition to the main functionalities that are concerned about the booking
  and the usage of cars, the system incentivizes the virtuos behaviors of
  the users by means of applying discounts or fees in the appropriate context.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -179,12 +182,11 @@ REGISTRATION:
 
 \begin_layout Standard
 [G1.1]: The user shall receive a password to access the services if and only
- if 
+ if she/he has provided
 \end_layout
 
 \begin_layout Standard
-- she/he has provided valid credentials that are not associated to any other
- user and 
+- valid credentials that are not associated to any other user and 
 \end_layout
 
 \begin_layout Standard
@@ -214,8 +216,9 @@ DISCOVERING AVAILABLE CARS AND CAR’S INFORMATION
 \end_layout
 
 \begin_layout Standard
-[G2.2]: The user shall be notified about the positions of cars within a certain
- distance from the position specified by the user when the cars become available.
+[G2.2]: The user shall be notified about the positions of other available
+ cars within a certain distance from specified position when those cars
+ become available.
 \begin_inset Newline newline
 \end_inset
 
@@ -233,7 +236,7 @@ CAR BOOKING:
 \begin_layout Standard
 [G3.1]: By providing the identity of a car from the list of available ones,
  the registered user shall be able to see all the car’s current relevant
- information and the reservation form for the car.
+ information and the reservation form for the specific car.
 \begin_inset Newline newline
 \end_inset
 
@@ -242,7 +245,7 @@ CAR BOOKING:
 
 \begin_layout Standard
 [G3.2]: By submitting information required by the reservation form for a
- car, the registered user shall be able to book the car and see the receipt
+ car, the registered user shall be able to book that car and see the receipt
  of the reservation successfully if and only if:
 \end_layout
 
@@ -308,9 +311,17 @@ RESERVATION VALIDITY:
 \end_layout
 
 \begin_layout Standard
-[G4.4]: By submitting the intention of deleting an active reservation, the
- registered user shall be able to delete that reservation for a car and
- that car shall be tagged as available.
+[G4.4]: The registered user shall be able to delete her/his active reservation
+ if and only if
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G4.5]: When an active reservation is deleted, the car associated to that
+ reservation shall be tagged as available by the system.
 \begin_inset Newline newline
 \end_inset
 
@@ -328,6 +339,10 @@ CARS USAGE:
 \begin_layout Standard
 [G5.1]: The user shall be able to notify the condition of nearness to the
  reserved car if and only if
+\end_layout
+
+\begin_layout Standard
+- the user owns an active reservation for the car
 \end_layout
 
 \begin_layout Standard
@@ -353,9 +368,10 @@ CARS USAGE:
 \end_layout
 
 \begin_layout Standard
-[G5.3]: When the user starts the engine of the car, the system shall notify
- the user about the beginning of a new active ride and start charging the
- user for a given amount of money per minute.
+[G5.3]: When the user starts the engine of the car, the system shall convert
+ the active reservation for the car in an active ride.
+ The system shall notify the user about the beginning of a new active ride
+ and start charging the user for a given amount of money per minute.
 \begin_inset Newline newline
 \end_inset
 
@@ -486,6 +502,16 @@ n on the car’s screen.
 \begin_layout Standard
 - the car is parked at a parking area that was suggested to the user by
  the system when the user activated the money saving option.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[G5.15]: At the end of the active ride, the system shall compute the total
+ cost for the active ride considering all the discount and penalties that
+ have been applied to the active ride and shall send a receipt to the user
 \end_layout
 
 \begin_layout Subsection
