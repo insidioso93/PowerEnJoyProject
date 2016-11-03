@@ -1,4 +1,4 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
 \lyxformat 508
 \begin_document
 \begin_header
@@ -628,10 +628,6 @@ Money saving option: it's a option that can be enabled by the user for an
 \end_layout
 
 \begin_layout Section
-Actors
-\end_layout
-
-\begin_layout Section
 Requirements
 \end_layout
 
@@ -649,6 +645,201 @@ Special requirements?
 
 \begin_layout Section
 Scenarios
+\end_layout
+
+\begin_layout Subsection
+Scenario: Luca registers his new PowerEnJoy account.
+\end_layout
+
+\begin_layout Description
+Prerequisite: Luca is not yet registered to the system
+\end_layout
+
+\begin_layout Standard
+Luca accesses the system via the mobile app for the first time and has to
+ choose whether to log in with his credentials or create a new account.
+ Luca chooses to register a new account; the system shows a form that must
+ be filled with Luca’s credentials and payment information.
+ Luca fills the form and gives confirmation to the system.
+ Luca receives an email with the confirmation of the registration and the
+ password that Luca will use to access the system.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Federico searches for nearby cars.
+ 
+\end_layout
+
+\begin_layout Standard
+Federico is in need for a car.
+ First he opens the PowerEnJoy application by providing his credentials,
+ then he uses the app to search for a nearby available car.
+ Federico is shown the location of all available cars within a fixed number
+ of kilometers.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Valeria reserves a car for usage.
+\end_layout
+
+\begin_layout Standard
+Valeria uses the PowerEnJoy application to look for available cars and finds
+ one near to her current location.
+ She decides to reserve the car and pick it up later.
+ When Valeria reaches the car less than an hour later, she can unlock it
+ and start her drive.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Charlie books a car and doesn’t pick up it within one hour from
+ the reservation.
+ 
+\end_layout
+
+\begin_layout Standard
+Charlie reserves a free car by means of the mobile app.
+ As time goes by, Charlie realizes that he doesn’t need the car anymore
+ but doesn’t cancel his reservation.
+ After one hour from when Charlie made it, the reservation is cancelled
+ and the car can be reserved by some other user.
+ Charlie receives a notification on his smartphone that informs him about
+ the cancellation of his reservation and of the fee of 1 EUR he is receiving
+ because the reservation expired.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Sally gets close to a reserved car to unlock it.
+\end_layout
+
+\begin_layout Standard
+Sally has previously reserved a car she intended to use.
+ When she gets near it, she uses the PowerEnJoy application to confirm her
+ location.
+ The system then unlocks the car.
+ Sally is now able to enter the car and use it.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Schroeder keeps track of the cost of his ride through the screen
+ on the car.
+\end_layout
+
+\begin_layout Standard
+After Schroeder unlocks his car and enters it, he sees the car's screen
+ is now displaying information about the duration of the ride and its current
+ cost.
+ As time goes by, he can see the cost rise so he can keep track of it.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Patty parks the car in a safe area and leaves it.
+\end_layout
+
+\begin_layout Standard
+Patty arrives in a safe area and decides to park the car.
+ Patty stops the engine, leaves the key in the appropriate location and
+ exits the car.
+ As she closes the door, the system locks the car automatically and stops
+ charging the user.
+ Patty receives a notification on his smartphone that informs him about
+ the end of the ride.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Marcie parks and the car and leaves it with no more than 50% of
+ the battery empty.
+\end_layout
+
+\begin_layout Standard
+Marcie parks the car in a safe area and leaves it.
+ The system behaves as described in Scenario 3.7.
+ At the end of the ride, the system checks the status the car’s battery.
+ If the battery is left with no more than 50% of the battery empty, the
+ system applies a 20% discount on the ride.
+ Marcie receives a notification on her smartphone that informs her about
+ the end of the ride and the discount that has been applied thanks to her
+ virtuous behavior.
+ 
+\end_layout
+
+\begin_layout Subsection
+Scenario: Linus searches for cars near to a specific location.
+\end_layout
+
+\begin_layout Standard
+Linus is about to visit a friend's house.
+ He needs to know if he's going to be able to find any available car in
+ its proximity, for his trip back home.
+ Linus uses the PowerEnJoy app to search for available cars near his friend's
+ address.
+ He is shown all the available cars within a fixed number of kilometers
+ from his friend's house.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Snoopy brings two passengers on a ride and receives a 10% discount.
+\end_layout
+
+\begin_layout Standard
+Snoopy and two friends long to spend some time together driving on the hills
+ and taking some fotos of the countryside.
+ While they are still in the village they check their mobile devices to
+ search for a PowerEnJoy car and reserve one for their use.
+ As soon as they enter the car, the system is notified that there are at
+ least two passengers in the car beside the driver.
+ The three friends are then shown a message on the car screen, informing
+ them that their behaviour is worth Snoopy a 10% discount on the ride.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Lucy recharges the car after the ride and gets a 30% discount.
+\end_layout
+
+\begin_layout Standard
+Lucy has been using a PowerEnJoy car.
+ She parks the car at a parking area equipped with charging stations.
+ She then plugs the car into one of the rechargers.
+ When she checks her PowerEnJoy app for the price of the ride, she sees
+ that a discount of 30% has been applied to it.
+ 
+\end_layout
+
+\begin_layout Subsection
+Scenario: Mario leaves the car too far from a charging station.
+\end_layout
+
+\begin_layout Standard
+At the end of his ride, Mario leaves the PowerEnJoy car far from the city.
+ The system detects the car is farther than 3 km from the nearest charging
+ facility.
+ As a result, Mario is charged a fee of 30% the cost of the ride.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Luigi leaves the car with a nearly empty battery.
+\end_layout
+
+\begin_layout Standard
+At the end of his ride, Luigi leaves the PowerEnJoy car far from the city.
+ The system detects the car's battery is less than 20% full.
+ As a result, Luigi is charged a fee of 30% the cost of the ride.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Peach reserves a car and enables the “money saving option”.
+\end_layout
+
+\begin_layout Standard
+Peach wants to reserve a car.
+ Luca chooses the car and decides to active the money saving option in order
+ to get a discount on the ride.
+ The system shows on the map the locations where she can leave the car in
+ order to the get the discount.
+ Peach proceeds with the confirmation of the reservation.
+\end_layout
+
+\begin_layout Section
+Actors
 \end_layout
 
 \begin_layout Section
