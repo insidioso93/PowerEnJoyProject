@@ -146,10 +146,6 @@ Within this amount of time the user can either decide to use the car for
 In addition to the main functionalities that are concerned about the booking
  and the usage of cars, the system incentivizes the virtuos behaviors of
  the users by means of applying discounts or fees in the appropriate context.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -249,7 +245,7 @@ By submitting information required by the reservation form for a car, the
 \end_layout
 
 \begin_layout Standard
-- there’s no active registration for some other car made by the user
+- there’s no other active registration made by the user for some other car
 \end_layout
 
 \end_deeper
@@ -372,7 +368,7 @@ A reserved car shall be automatically unlocked if and only if
 \series bold
 [G5.3]: 
 \series default
-When the user starts the engine of the car, the active reservation of the
+When the user starts the engine of the car, the active reservation for that
  car shall be converted in an active ride.
  The User shall be notified about the beginning of a new active ride and
  a charging for a given amount of money per minute shall be started.
@@ -394,8 +390,8 @@ When the user starts the engine of the car, the active reservation of the
 \series bold
 [G5.5]:
 \series default
- The User shall be notified about the end of the active ride and the charge
- towards the user if and only if:
+ The user shall be notified about the end of the active ride and the charge
+ towards the user shall stop if and only if:
 \end_layout
 
 \begin_deeper
@@ -431,7 +427,7 @@ The car locks itself automatically if and only if
 
 \begin_deeper
 \begin_layout Standard
-- it is parked and the User and all the passengers exit it.
+- it is parked and the user and all the passengers exit it.
 \end_layout
 
 \end_deeper
@@ -441,7 +437,7 @@ The car locks itself automatically if and only if
 \series bold
 [G5.8]: 
 \series default
-If the registered User uses the car with at least two other passengers the
+If the registered user uses the car with at least two other passengers the
  system shall apply a discount of 10% on cost of the current active ride
  at the end of the active ride.
 \end_layout
@@ -540,9 +536,8 @@ At the end of the active ride the system shall apply a discount on the total
 [G5.15]: 
 \series default
 At the end of the active ride, the system shall compute the total cost for
- the active ride considering all the discount and penalties that have been
- applied to the active ride and shall send a receipt to the user via Transaction
-al System.
+ the active ride considering all the discounts and penalties that have been
+ applied to the active ride and shall send a receipt to the user.
 \end_layout
 
 \begin_layout Section
