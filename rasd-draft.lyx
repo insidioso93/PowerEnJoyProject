@@ -1021,10 +1021,6 @@ Reference Documents
 \end_layout
 
 \begin_layout Section
-Actors Identifying
-\end_layout
-
-\begin_layout Section
 Requirements
 \end_layout
 
@@ -1723,6 +1719,64 @@ Peach wants to reserve a car.
 
 \begin_layout Section
 Actors
+\end_layout
+
+\begin_layout Subsection
+Actor: the end user.
+\end_layout
+
+\begin_layout Standard
+The human end users who will interact with the PowerEnJoy mobile application.
+\end_layout
+
+\begin_layout Subsection
+Actor: the user's mobile phone.
+\end_layout
+
+\begin_layout Standard
+The hardware-software system that is the user's mobile phone, including
+ both the operating system and the actual hardware, with the necessary support
+ for GPS, communication, and a working system necessary for the app to work
+ properly.
+\end_layout
+
+\begin_layout Subsection
+Actor: the car.
+\end_layout
+
+\begin_layout Standard
+The system will communicate with the cyber-physical system that is the car
+ through an appropriate communication protocol.
+\end_layout
+
+\begin_layout Subsection
+Actor: the network.
+\end_layout
+
+\begin_layout Standard
+The system will use the existing networking infrastructure for all necessary
+ communications.
+\end_layout
+
+\begin_layout Subsection
+Actor: the payment system.
+\end_layout
+
+\begin_layout Standard
+All payment transactions will happen through an external existing payment
+ system.
+ The PowerEnJoy system will communicate with such payment system in order
+ for the necessary information flow to happen between the two.
+\end_layout
+
+\begin_layout Subsection
+Actor: the database system.
+\end_layout
+
+\begin_layout Standard
+All information needed for the system to function will be stored in a database
+ to be designed.
+ The PowerEnJoy system will interface with said database for its operations.
 \end_layout
 
 \begin_layout Section
