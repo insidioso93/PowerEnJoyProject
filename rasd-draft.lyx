@@ -1,4 +1,4 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 508
 \begin_document
 \begin_header
@@ -1008,8 +1008,143 @@ Money saving option: it's a option that can be enabled by the user for an
 Text Assumptions
 \end_layout
 
+\begin_layout Itemize
+The logic of the application is contained in the server tecnologies from
+ which the System works.
+\end_layout
+
+\begin_layout Itemize
+We should develop a multi-platform application.
+\end_layout
+
+\begin_layout Itemize
+A User is required to subscribe to the System policy for earning the offer
+ service.
+\end_layout
+
+\begin_layout Itemize
+Datas regarding User are stored in a main database and are strongly protected.
+\end_layout
+
+\begin_layout Itemize
+Datas regarding Vehicles of the company are also stored in a main database
+ and are strongly protected.
+\end_layout
+
+\begin_layout Itemize
+Necessary transactions take place within the main database and the System
+ application contexts.
+\end_layout
+
+\begin_layout Itemize
+Main database is always updated for every kind of operations.
+ There could be insertions, updatings and deletions of Users and Cars and
+ the database policy has been projected for avoiding conflicts.
+\end_layout
+
+\begin_layout Itemize
+Datas are replied on a secondary device.
+ Backups are done with a certain frequency.
+ In case of interruptions and data losses, Datas could be restored from
+ the secondary device.
+\end_layout
+
+\begin_layout Itemize
+GPS positions of cars are always monitored and taken into account.
+\end_layout
+
+\begin_layout Itemize
+Coordinates of cars can be trasferred from the GPS service to a list ready
+ to be shown to the User.
+\end_layout
+
+\begin_layout Itemize
+GPS positions of a single User is taken into account since an User has gained
+ the operativity of the service.
+\end_layout
+
+\begin_layout Itemize
+Single User position can be also in an address form.
+\end_layout
+
+\begin_layout Itemize
+If the User asks for a list of the nearest Cars from its GPS or address
+ position, the System is required to provide it.
+\end_layout
+
+\begin_layout Itemize
+If the User asks for a list of the nearest Cars from an a given address,
+ the System is required to provide it.
+\end_layout
+
+\begin_layout Itemize
+An extern contract with an Assurance Company has to be made for handling
+ exceptional cases of Car crashes or Car damages.
+ The User is informed about the risks and the conditions of the utilization
+ of the service at the moment of subscription as well as the behavious he/she
+ has to adopt in the different cases.
+\end_layout
+
+\begin_layout Itemize
+At the moment of subscription, User is also advised about fees and discounts.
+ If System's policy changes or there are some new features regarding the
+ service, Users are warned by Mail Service.
+\end_layout
+
+\begin_layout Itemize
+If User loses the password, a correct procedure for obtaining again the
+ service is offered by the System.
+ The System furnishes a new password via Mail or mobile text message, with
+ the new password the User can access again to its profile, than modifies
+ its password again.
+\end_layout
+
+\begin_layout Itemize
+If the User wants to cancel its previous registration, the System kept stored
+ its Datas for a fixed amount of time.
+ If the specified User wants to register again within this fixed amount
+ of time, these datas can be retrieved, else they're canceled after the
+ dead-line.
+\end_layout
+
 \begin_layout Section
 Constraints
+\end_layout
+
+\begin_layout Subsection
+Regulatory policies
+\end_layout
+
+\begin_layout Standard
+The User has to be informed about the policies of the System.
+ In particular, the User who makes a registration, has had to confirm its
+ acknowledgement about rules, its responsabilities and the responsabilities
+ of the System.
+ User confirms also the treatment of its sensible informations according
+ to the needs of the System.
+ Finally the System must not use notifications to sent SPAM respecting the
+ privacy low.
+\end_layout
+
+\begin_layout Subsection
+Hardware limitations
+\end_layout
+
+\begin_layout Subsection
+Interfaces to the other applications
+\end_layout
+
+\begin_layout Subsection
+Parallel operations
+\end_layout
+
+\begin_layout Standard
+Main database is designed to avoid conflicts among the different Users'
+ interactions with the System.
+ Furthermore the application and the server are built with the intent of
+ allowing parallel requests and in a multi-process way.
+ Interactions takes place passing though internet but the System manages
+ all of them preserving privacy and without informations' overlap.
 \end_layout
 
 \begin_layout Section
