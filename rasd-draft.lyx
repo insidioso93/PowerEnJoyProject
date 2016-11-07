@@ -1960,7 +1960,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-NonLoggedUser, Network
+NonLoggedUser, System, Network
 \end_layout
 
 \end_inset
@@ -2178,7 +2178,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-NonLoggedUser, Network
+NonLoggedUser, System, Network
 \end_layout
 
 \end_inset
@@ -2351,7 +2351,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-LoggedUser, Network, MobilePhone, AvailableCar
+LoggedUser, System, Network, MobilePhone, AvailableCar
 \end_layout
 
 \end_inset
@@ -2835,7 +2835,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-LoggedUser, AvailableCar, Network
+LoggedUser, System, AvailableCar, Network
 \end_layout
 
 \end_inset
@@ -3037,7 +3037,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-LoggedUser, Network
+LoggedUser, System, Network
 \end_layout
 
 \end_inset
@@ -3200,7 +3200,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-LoggedUser, Network
+LoggedUser, System, Network
 \end_layout
 
 \end_inset
@@ -3395,7 +3395,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-LoggedUser, Network
+System, LoggedUser, Network
 \end_layout
 
 \end_inset
@@ -3569,7 +3569,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-LoggedUser, MobilePhone, Network, ReservedCar
+LoggedUser, System, MobilePhone, Network, ReservedCar
 \end_layout
 
 \end_inset
@@ -3812,7 +3812,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-LoggedUser, Network, ReservedCar
+LoggedUser, System, Network, ReservedCar
 \end_layout
 
 \end_inset
@@ -3854,188 +3854,6 @@ Flow of events
 \begin_layout Plain Layout
 1.
  The System converts to ride to an active ride
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-2.
- The System starts charging the LoggedUser with the active ride's tariff
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-3.
- The System informs the LoggedUser about the beginning of the active ride
- and the state of the charging via the on board system of the ReservedCar
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit condition
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The System notifies the beginning of the active ride to the LoggedUser
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Special requirements
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="2">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="middle" width="4cm">
-<column alignment="left" valignment="top" width="10cm">
-<row>
-<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Use case name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-EndActiveRide
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-LoggedUser, Network, ReservedCar
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry condition
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The LoggedUser stops the engine of the ReservedCar and exits the ReservedCar
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.
- The System 
 \begin_inset Newline newline
 \end_inset
 
