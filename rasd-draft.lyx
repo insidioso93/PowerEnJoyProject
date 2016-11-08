@@ -5093,8 +5093,690 @@ UML Diagram
 Sequence Diagrams
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
+Registration phase
+\end_layout
 
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+A non registered User asks for obtaining a registration to the System, the
+ System understands who is the User by reading he/she IP address and the
+ Socket Port for the application.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.1: 
+\series default
+The System puts the User's request inside a queue.
+ The User waits for a System aswer during this time.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.2: 
+\series default
+The System informs the User that his/her request is OK.
+ There's a confirmation message inside the aswer.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.3: 
+\series default
+The System aims to open a connection in the Main Database.
+ DataInstance is an object containing User's connection reference and an
+ identification for the biridirectional connection which will be opened.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+System's request for connection is put inside a queue and after a while
+ is processed by the Main Database.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.1: 
+\series default
+Main Database informs the System that its request is OK.
+ The data flows among User, System and Database in which new Datas will
+ be stored are so opened.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.2: 
+\series default
+The System sends to the User the registration form to be compiled.
+ UserParameters refers to the object which will contain Datas of the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.3: 
+\series default
+The User compiles the form sended by the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.4: 
+\series default
+The System receives the compiled form from the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+Some parameters are not well compiled by the User.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.1: 
+\series default
+The System informs the User about the specific lack or bad value inside
+ the form.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4: 
+\series default
+If the form compiled by the User is OK, the System sends an insert command
+ to the Main Database.
+ Hence, DataUserInstance represents the set of User's values converted in
+ a correct form for the Main Database.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.1: 
+\series default
+Main Database works on the request.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.2: 
+\series default
+When datas are correctly stored in the Main Database, the Database ratifies
+ the correct insertion to the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.3: 
+\series default
+The System informs the User of the correctness of all the transaction.
+ Now the User is registered to the System and can gain its services.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.4: 
+\series default
+The System automatically logs the User for the first time.
+\end_layout
+
+\begin_layout Subsection
+Autentication phase
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+The User sends to the System an autentication request.
+ The request contains User's name and User's password.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.2: 
+\series default
+The System puts the request in a queue and after the elaborations of older
+ ones, analizes it.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.3: 
+\series default
+The System sends to the Main Database a connection access request in which
+ current User's name and password are presented.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+The Access is denied if password and/or User's name aren't correct.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.1: 
+\series default
+In this case an error message is showed to the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.2: 
+\series default
+The User is asked to confirm the error message instance.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+Main Database informs the System that password and name are correct.
+ Access is gained for the specified User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.1: 
+\series default
+Once informed, the System sends to the User the confirmation message for
+ the autentication.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.2: 
+\series default
+The System gets the datas of the specified User from the Main Database.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.3: 
+\series default
+The Main Database aswers to the System giving all the needed informations
+ of the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.4: 
+\series default
+The profile page is finally showed to the User.
+\end_layout
+
+\begin_layout Subsection
+Searching and Booking a nearby Car
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+The User sends a request to display all the nearby cars to the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.1: 
+\series default
+A list of all nearby cars is returned from the previous request.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+The User selects a car from the list.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.1: 
+\series default
+The System checks if the car is still available (another User could have
+ asked for that car before).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+The confirmation is setted as false and User is advised of this event.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.1: 
+\series default
+The User confirm the notification, it is afterwards called to select another
+ car of available ones.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4: 
+\series default
+Confirmation is true and the User is advised of this event.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.1 
+\series default
+The User confirm the notification.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+5: 
+\series default
+Informations about the selected Car are retrieved from the Main Database.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+5.1: 
+\series default
+The Main Database sends the informations to the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+6: 
+\series default
+System show to the User prenotation details.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+7: 
+\series default
+System show to the User selected Car's details.
+\end_layout
+
+\begin_layout Subsection
+Time Expiration (Sequence Diagram 13.3 continuation)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4: 
+\series default
+A System's confirmation of occurred Reservation
+\series bold
+ 
+\series default
+is sended to the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.1: 
+\series default
+The System waits for the User's proximity to the Car, meanwhile it updates
+ the countdown starting from the variable Timeout = 60 minutes (the decrementing
+ is supposed to be in seconds).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.2: 
+\series default
+If the countdown reaches 0 s and the User isn't in proximity of the Car
+ yet, the System alerts the User of the expiration of the registration.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.3: 
+\series default
+The User is required to confirm the System notification.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.4: 
+\series default
+The User is warned about the extra fee he/she has to pay for this case.
+\end_layout
+
+\begin_layout Subsection
+The System unlocks a Car
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+The System checks the nearness condition betweed the User and the reserved
+ Car.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+When the nearness condition is satisfied, the User is allerted and a popup
+ to be clicked is sended to him.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.1: 
+\series default
+The popup is clicked by the User, the System receives the corresponding
+ notification.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+The System unlocks the reserved Car.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.1: 
+\series default
+On Board System notify the System that the Car is now unlocked.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.2: 
+\series default
+The System alerts the User that the Car is now unlocked.
+\end_layout
+
+\begin_layout Subsection
+End of a ride and payment
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+The User informs the On Board System of the end of the Ride.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+On Board System asks a confirmation of end of ride to the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.1: 
+\series default
+The User confirms the end of the ride.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+On Board System alerts the System of the end of the ride for the current
+ User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4: 
+\series default
+The System asks for User Datas relatively
+\series bold
+ 
+\series default
+to the ended ride.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.1: 
+\series default
+On Board System sends required Datas to the System (currentRide is the object
+ in which all this datas will be allocated).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+5: 
+\series default
+The System processes the request with Datas obtained from the On Board System
+ and for the Transactional System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+6: 
+\series default
+The System launches a payment instance to the Transactional System in which
+ a specific request for User's payment is formulated.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+6.1: 
+\series default
+The Transactional System processes the request sended by The System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+6.2: 
+\series default
+The Transactional System informs the System that the request was well processed.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+7: 
+\series default
+The Transactional System launches a payment request towards the specified
+ User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+7.1: 
+\series default
+There is a payment transaction which could be or not be well done.
+ In this last case the User is required to try again with the payment.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+8: 
+\series default
+The payment completed with errors for some reasons.
+ The System is informed of this event.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+8.1: 
+\series default
+The User is informed of the fault in the payment by the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+8.2: 
+\series default
+The User confirms the notification of the System.
+ Now the User is required to try again with the payment or to signaling
+ its problem to the System directly.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+9: 
+\series default
+The payment is OK.
+ The Transactional System informs the System of this event.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+9.1: 
+\series default
+The User is also informed by the System of the success of the payment.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+9.2: 
+\series default
+The User confirms the notification of the System.
 \end_layout
 
 \begin_layout Section
