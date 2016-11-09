@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>8</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>184</x>
-      <y>72</y>
-      <w>152</w>
-      <h>40</h>
+      <x>240</x>
+      <y>54</y>
+      <w>114</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>NewUserRegistration</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>0</x>
-      <y>8</y>
-      <w>96</w>
-      <h>88</h>
+      <x>102</x>
+      <y>6</y>
+      <w>72</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>NonLoggedUser</panel_attributes>
     <additional_attributes/>
@@ -26,10 +26,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>64</x>
-      <y>8</y>
-      <w>152</w>
-      <h>48</h>
+      <x>150</x>
+      <y>6</y>
+      <w>114</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>&lt;&lt;initiate&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;40.0;170.0;10.0</additional_attributes>
@@ -37,10 +37,10 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>200</x>
+      <x>252</x>
       <y>0</y>
-      <w>120</w>
-      <h>40</h>
+      <w>90</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>Login</panel_attributes>
     <additional_attributes/>
@@ -48,10 +48,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>64</x>
-      <y>48</y>
-      <w>136</w>
-      <h>56</h>
+      <x>150</x>
+      <y>36</y>
+      <w>102</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>&lt;&lt;initiate&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;150.0;50.0</additional_attributes>
@@ -59,10 +59,10 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>584</x>
-      <y>8</y>
-      <w>96</w>
-      <h>32</h>
+      <x>540</x>
+      <y>6</y>
+      <w>72</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>FirstAccess</panel_attributes>
     <additional_attributes/>
@@ -70,10 +70,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>312</x>
-      <y>8</y>
-      <w>288</w>
-      <h>32</h>
+      <x>336</x>
+      <y>6</y>
+      <w>216</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
@@ -82,10 +82,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>328</x>
-      <y>16</y>
-      <w>272</w>
-      <h>88</h>
+      <x>348</x>
+      <y>12</y>
+      <w>204</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
@@ -94,10 +94,10 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>8</x>
-      <y>384</y>
-      <w>80</w>
-      <h>88</h>
+      <x>108</x>
+      <y>288</y>
+      <w>60</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>LoggedUser</panel_attributes>
     <additional_attributes/>
@@ -105,10 +105,10 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>608</x>
-      <y>224</y>
-      <w>128</w>
-      <h>48</h>
+      <x>372</x>
+      <y>240</y>
+      <w>96</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>ProvidePosition</panel_attributes>
     <additional_attributes/>
@@ -116,10 +116,10 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>112</x>
-      <y>320</y>
-      <w>128</w>
-      <h>48</h>
+      <x>186</x>
+      <y>240</y>
+      <w>96</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>FindAvailableCars</panel_attributes>
     <additional_attributes/>
@@ -127,10 +127,10 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>264</x>
-      <y>432</y>
-      <w>104</w>
-      <h>40</h>
+      <x>306</x>
+      <y>300</y>
+      <w>78</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>ViewMap</panel_attributes>
     <additional_attributes/>
@@ -138,10 +138,10 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>376</x>
-      <y>320</y>
-      <w>120</w>
-      <h>48</h>
+      <x>552</x>
+      <y>240</y>
+      <w>90</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>ProvideGPSPosition</panel_attributes>
     <additional_attributes/>
@@ -149,45 +149,33 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>232</x>
-      <y>328</y>
-      <w>160</w>
-      <h>40</h>
+      <x>276</x>
+      <y>246</y>
+      <w>108</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;180.0;22.0</additional_attributes>
+    <additional_attributes>10.0;20.0;160.0;22.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>352</x>
-      <y>224</y>
-      <w>152</w>
-      <h>48</h>
+      <x>546</x>
+      <y>180</y>
+      <w>114</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>ProvideAddressPosition</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>232</x>
-      <y>240</y>
-      <w>136</w>
-      <h>112</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;120.0;150.0;10.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>744</x>
-      <y>312</y>
-      <w>80</w>
-      <h>88</h>
+      <x>750</x>
+      <y>234</y>
+      <w>60</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>MobilePhone</panel_attributes>
     <additional_attributes/>
@@ -195,55 +183,55 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>488</x>
-      <y>328</y>
-      <w>288</w>
-      <h>32</h>
+      <x>636</x>
+      <y>246</y>
+      <w>138</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>&lt;&lt;participate&gt;&gt;</panel_attributes>
-    <additional_attributes>340.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>232</x>
-      <y>336</y>
-      <w>112</w>
-      <h>112</h>
+      <x>276</x>
+      <y>252</y>
+      <w>78</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;100.0;120.0</additional_attributes>
+    <additional_attributes>10.0;10.0;110.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>496</x>
-      <y>240</y>
-      <w>128</w>
-      <h>24</h>
+      <x>462</x>
+      <y>204</y>
+      <w>108</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+    <additional_attributes>160.0;10.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>488</x>
-      <y>248</y>
-      <w>136</w>
-      <h>112</h>
+      <x>462</x>
+      <y>252</y>
+      <w>102</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;120.0;150.0;10.0</additional_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>8</x>
-      <y>192</y>
-      <w>80</w>
-      <h>88</h>
+      <x>108</x>
+      <y>144</y>
+      <w>60</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>AvailableCar</panel_attributes>
     <additional_attributes/>
@@ -251,10 +239,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>64</x>
-      <y>336</y>
-      <w>88</w>
-      <h>104</h>
+      <x>150</x>
+      <y>252</y>
+      <w>66</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>&lt;&lt;initiate&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;110.0;60.0;10.0</additional_attributes>
@@ -262,10 +250,10 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>128</x>
-      <y>520</y>
-      <w>136</w>
-      <h>48</h>
+      <x>198</x>
+      <y>390</y>
+      <w>102</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>ReserveAvailableCar</panel_attributes>
     <additional_attributes/>
@@ -273,21 +261,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>64</x>
-      <y>416</y>
-      <w>96</w>
-      <h>144</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;initiate&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;160.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>64</x>
-      <y>216</y>
-      <w>112</w>
-      <h>144</h>
+      <x>150</x>
+      <y>162</y>
+      <w>84</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>&lt;&lt;participate&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;60.0;160.0</additional_attributes>
@@ -295,10 +272,10 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>8</x>
-      <y>576</y>
-      <w>80</w>
-      <h>88</h>
+      <x>108</x>
+      <y>432</y>
+      <w>60</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>AvailableCar</panel_attributes>
     <additional_attributes/>
@@ -306,10 +283,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>64</x>
-      <y>536</y>
-      <w>120</w>
-      <h>96</h>
+      <x>150</x>
+      <y>402</y>
+      <w>90</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>&lt;&lt;participate&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;100.0;80.0;10.0</additional_attributes>
@@ -317,10 +294,10 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>352</x>
-      <y>528</y>
-      <w>144</w>
-      <h>48</h>
+      <x>408</x>
+      <y>396</y>
+      <w>108</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>ViewReservationForm</panel_attributes>
     <additional_attributes/>
@@ -328,45 +305,22 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>256</x>
-      <y>528</y>
-      <w>112</w>
-      <h>32</h>
+      <x>294</x>
+      <y>396</y>
+      <w>126</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>584</x>
-      <y>528</y>
-      <w>128</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>ProvideCarIdentity</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>488</x>
-      <y>536</y>
-      <w>112</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>544</x>
-      <y>80</y>
-      <w>152</w>
-      <h>40</h>
+      <x>510</x>
+      <y>60</y>
+      <w>114</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>ViewRegistrationForm</panel_attributes>
     <additional_attributes/>
@@ -374,111 +328,44 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>328</x>
-      <y>80</y>
-      <w>232</w>
-      <h>32</h>
+      <x>348</x>
+      <y>60</y>
+      <w>174</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;20.0;270.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLActor</id>
-    <coordinates>
-      <x>16</x>
-      <y>936</y>
-      <w>80</w>
-      <h>88</h>
-    </coordinates>
-    <panel_attributes>LoggedUser</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>336</x>
-      <y>800</y>
-      <w>144</w>
-      <h>56</h>
+      <x>354</x>
+      <y>600</y>
+      <w>108</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>ViewActiveReservation</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>72</x>
-      <y>840</y>
-      <w>312</w>
-      <h>144</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;initiate&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;160.0;370.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>200</x>
-      <y>560</y>
-      <w>208</w>
-      <h>256</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;240.0;300.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>856</x>
-      <y>808</y>
-      <w>184</w>
-      <h>48</h>
+      <x>744</x>
+      <y>606</y>
+      <w>138</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>DeleteActiveReservation</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>848</x>
-      <y>968</y>
-      <w>256</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>UserActionOnActiveReservation</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>72</x>
-      <y>808</y>
-      <w>88</w>
-      <h>176</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;participate&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>80</x>
-      <y>784</y>
-      <w>152</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>ExpireActiveReservation</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>472</x>
-      <y>808</y>
-      <w>400</w>
-      <h>32</h>
+      <x>456</x>
+      <y>606</y>
+      <w>300</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extends&gt;&gt;</panel_attributes>
@@ -487,32 +374,21 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>944</x>
-      <y>848</y>
-      <w>24</w>
-      <h>136</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>552</x>
-      <y>688</y>
-      <w>24</w>
-      <h>152</h>
+      <x>564</x>
+      <y>546</y>
+      <w>18</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=.()</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>528</x>
-      <y>640</y>
-      <w>104</w>
-      <h>56</h>
+      <x>546</x>
+      <y>510</y>
+      <w>78</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>LoggedUser 
 decides to delete
@@ -523,10 +399,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>328</x>
-      <y>1056</y>
-      <w>168</w>
-      <h>64</h>
+      <x>348</x>
+      <y>792</y>
+      <w>126</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>StartRide</panel_attributes>
     <additional_attributes/>
@@ -534,33 +410,33 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>848</y>
-      <w>80</w>
-      <h>224</h>
+      <x>408</x>
+      <y>726</y>
+      <w>60</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;260.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;110.0;12.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>976</y>
-      <w>144</w>
-      <h>24</h>
+      <x>408</x>
+      <y>750</y>
+      <w>126</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=.()</panel_attributes>
-    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>520</x>
-      <y>968</y>
-      <w>128</w>
-      <h>64</h>
+      <x>522</x>
+      <y>756</y>
+      <w>96</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>The LoggedUser
 notifies her/his 
@@ -572,10 +448,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>16</x>
-      <y>1144</y>
-      <w>80</w>
-      <h>88</h>
+      <x>114</x>
+      <y>810</y>
+      <w>60</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>ReservedCar</panel_attributes>
     <additional_attributes/>
@@ -583,21 +459,21 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>72</x>
-      <y>1088</y>
-      <w>272</w>
-      <h>88</h>
+      <x>156</x>
+      <y>810</y>
+      <w>204</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>&lt;&lt;participate&gt;&gt;</panel_attributes>
-    <additional_attributes>320.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>320.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>16</x>
-      <y>1040</y>
-      <w>80</w>
-      <h>88</h>
+      <x>114</x>
+      <y>690</y>
+      <w>60</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>Mobilephone</panel_attributes>
     <additional_attributes/>
@@ -605,21 +481,21 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>72</x>
-      <y>1056</y>
-      <w>280</w>
-      <h>32</h>
+      <x>156</x>
+      <y>702</y>
+      <w>216</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>&lt;&lt;participate&gt;&gt;</panel_attributes>
-    <additional_attributes>330.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>340.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>568</x>
-      <y>1192</y>
-      <w>128</w>
-      <h>56</h>
+      <x>528</x>
+      <y>894</y>
+      <w>96</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>StartActiveRide</panel_attributes>
     <additional_attributes/>
@@ -627,10 +503,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>464</x>
-      <y>1104</y>
-      <w>176</w>
-      <h>104</h>
+      <x>450</x>
+      <y>828</y>
+      <w>132</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extends&gt;&gt;</panel_attributes>
@@ -639,10 +515,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>568</x>
-      <y>1160</y>
-      <w>168</w>
-      <h>24</h>
+      <x>528</x>
+      <y>870</y>
+      <w>126</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=.()</panel_attributes>
     <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
@@ -650,10 +526,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>720</x>
-      <y>1128</y>
-      <w>104</w>
-      <h>64</h>
+      <x>642</x>
+      <y>846</y>
+      <w>78</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>The LoggedUser
 starts the engine 
@@ -665,10 +541,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>568</x>
-      <y>1328</y>
-      <w>120</w>
-      <h>56</h>
+      <x>528</x>
+      <y>996</y>
+      <w>90</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>EndActiveRide</panel_attributes>
     <additional_attributes/>
@@ -676,33 +552,33 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
-      <y>1240</y>
-      <w>80</w>
-      <h>104</h>
+      <x>600</x>
+      <y>924</y>
+      <w>60</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
-      <y>1304</y>
-      <w>176</w>
-      <h>24</h>
+      <x>600</x>
+      <y>978</y>
+      <w>96</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=.()</panel_attributes>
-    <additional_attributes>200.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>776</x>
-      <y>1280</y>
-      <w>112</w>
-      <h>64</h>
+      <x>684</x>
+      <y>960</y>
+      <w>84</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>The LoggedUser 
 stops
@@ -714,21 +590,21 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>136</x>
-      <y>712</y>
-      <w>72</w>
-      <h>32</h>
+      <x>204</x>
+      <y>540</y>
+      <w>54</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=.()</panel_attributes>
-    <additional_attributes>10.0;20.0;70.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>16</x>
-      <y>704</y>
-      <w>128</w>
-      <h>64</h>
+      <x>114</x>
+      <y>528</y>
+      <w>96</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>The System counts
 one hour from when
@@ -740,32 +616,21 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>912</x>
-      <y>1552</y>
-      <w>136</w>
-      <h>72</h>
+      <x>786</x>
+      <y>1164</y>
+      <w>102</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>EndActiveReservation</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>968</x>
-      <y>1016</y>
-      <w>24</w>
-      <h>552</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;670.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>864</x>
-      <y>1952</y>
-      <w>128</w>
-      <h>56</h>
+      <x>750</x>
+      <y>1392</y>
+      <w>96</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Payment
 group=1</panel_attributes>
@@ -774,22 +639,22 @@ group=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>976</x>
-      <y>1616</y>
-      <w>80</w>
-      <h>368</h>
+      <x>834</x>
+      <y>1212</y>
+      <w>60</w>
+      <h>204</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;440.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;320.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>496</x>
-      <y>1952</y>
-      <w>120</w>
-      <h>56</h>
+      <x>474</x>
+      <y>1392</y>
+      <w>90</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>PaymentByPayPal
 group=1</panel_attributes>
@@ -798,10 +663,10 @@ group=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>608</x>
-      <y>1976</y>
-      <w>272</w>
-      <h>24</h>
+      <x>558</x>
+      <y>1410</y>
+      <w>204</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;
 group=1</panel_attributes>
@@ -810,10 +675,10 @@ group=1</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>32</x>
-      <y>1936</y>
-      <w>48</w>
-      <h>88</h>
+      <x>126</x>
+      <y>1380</y>
+      <w>36</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>PayPal
 group=1</panel_attributes>
@@ -822,10 +687,10 @@ group=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>72</x>
-      <y>1968</y>
-      <w>440</w>
-      <h>32</h>
+      <x>156</x>
+      <y>1404</y>
+      <w>330</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>&lt;&lt;participate&gt;&gt;
 group=1</panel_attributes>
@@ -834,10 +699,10 @@ group=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
-      <y>1416</y>
-      <w>152</w>
-      <h>24</h>
+      <x>564</x>
+      <y>1062</y>
+      <w>114</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=.()</panel_attributes>
     <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
@@ -845,10 +710,10 @@ group=1</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>752</x>
-      <y>1384</y>
-      <w>112</w>
-      <h>64</h>
+      <x>666</x>
+      <y>1038</y>
+      <w>84</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>The LoggedUser 
 (and passengers)
@@ -859,10 +724,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>184</x>
-      <y>560</y>
-      <w>80</w>
-      <h>240</h>
+      <x>240</x>
+      <y>420</y>
+      <w>60</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extends&gt;&gt;</panel_attributes>
@@ -871,10 +736,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>568</x>
-      <y>1552</y>
-      <w>128</w>
-      <h>56</h>
+      <x>528</x>
+      <y>1164</y>
+      <w>96</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>EndRide</panel_attributes>
     <additional_attributes/>
@@ -882,10 +747,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
-      <y>1376</y>
-      <w>80</w>
-      <h>192</h>
+      <x>564</x>
+      <y>1032</y>
+      <w>60</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extends&gt;&gt;</panel_attributes>
@@ -894,10 +759,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>688</x>
-      <y>1568</y>
-      <w>240</w>
-      <h>32</h>
+      <x>618</x>
+      <y>1176</y>
+      <w>180</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extends&gt;&gt;</panel_attributes>
@@ -906,208 +771,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>344</x>
-      <y>1192</y>
-      <w>192</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>StartActiveRideWell</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>528</x>
-      <y>1216</y>
-      <w>56</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>336</x>
-      <y>1272</y>
-      <w>192</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>ActiveRideWithPassengers</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>432</x>
-      <y>1240</y>
-      <w>24</w>
-      <h>48</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>584</x>
-      <y>1648</y>
-      <w>160</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>EndRideBadly</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>664</x>
-      <y>1592</y>
-      <w>24</w>
-      <h>72</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>552</x>
-      <y>1784</y>
-      <w>160</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>LeaveCarNonSafeArea</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>624</x>
-      <y>1696</y>
-      <w>24</w>
-      <h>104</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>360</x>
-      <y>1552</y>
-      <w>136</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>EndRideWell</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>488</x>
-      <y>1568</y>
-      <w>96</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>112</x>
-      <y>1632</y>
-      <w>136</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>LeaveCarPlugged</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>200</x>
-      <y>1592</y>
-      <w>200</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;50.0;230.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>352</x>
-      <y>1688</y>
-      <w>176</w>
-      <h>48</h>
-    </coordinates>
-    <panel_attributes>LeaveCarGoodBattery</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>416</x>
-      <y>1600</y>
-      <w>24</w>
-      <h>104</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>736</x>
-      <y>1784</y>
-      <w>168</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>LeaveCarOutOfPower</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>704</x>
-      <y>1688</y>
-      <w>128</w>
-      <h>112</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>140.0;120.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>112</x>
-      <y>1552</y>
-      <w>168</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>LeaveCarSuggestedPlace</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>272</x>
-      <y>1568</y>
-      <w>104</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>104</x>
-      <y>1288</y>
-      <w>136</w>
-      <h>56</h>
+      <x>180</x>
+      <y>966</y>
+      <w>102</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>EnableMoneySaving</panel_attributes>
     <additional_attributes/>
@@ -1115,10 +782,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>1104</y>
-      <w>216</w>
-      <h>200</h>
+      <x>222</x>
+      <y>828</y>
+      <w>162</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extends&gt;&gt;</panel_attributes>
@@ -1127,21 +794,21 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>232</x>
-      <y>1216</y>
-      <w>88</w>
-      <h>136</h>
+      <x>210</x>
+      <y>912</y>
+      <w>84</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=.()</panel_attributes>
-    <additional_attributes>90.0;150.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>272</x>
-      <y>1336</y>
-      <w>104</w>
-      <h>64</h>
+      <x>138</x>
+      <y>906</y>
+      <w>78</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>The LoggedUser
 enales the
@@ -1153,10 +820,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>160</x>
-      <y>1336</y>
-      <w>80</w>
-      <h>88</h>
+      <x>222</x>
+      <y>1002</y>
+      <w>60</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;includes&gt;&gt;</panel_attributes>
@@ -1165,34 +832,287 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>96</x>
-      <y>1408</y>
-      <w>152</w>
-      <h>48</h>
+      <x>174</x>
+      <y>1056</y>
+      <w>114</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>ProvideAddressPosition</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLUseCase</id>
+    <id>Relation</id>
     <coordinates>
-      <x>192</x>
-      <y>1696</y>
-      <w>120</w>
-      <h>56</h>
+      <x>246</x>
+      <y>270</y>
+      <w>60</w>
+      <h>132</h>
     </coordinates>
-    <panel_attributes>LeaveCarSafeArea</panel_attributes>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>462</x>
+      <y>342</y>
+      <w>78</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>LoggedUser 
+selects an 
+AvailableCar
+bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>288</x>
-      <y>1600</y>
-      <w>128</w>
-      <h>120</h>
+      <x>246</x>
+      <y>354</y>
+      <w>228</w>
+      <h>18</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;130.0;140.0;10.0</additional_attributes>
+    <panel_attributes>lt=.()</panel_attributes>
+    <additional_attributes>360.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>276</x>
+      <y>414</y>
+      <w>138</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>210.0;310.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>360</x>
+      <y>696</y>
+      <w>138</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>EnableNearnessConfirmation</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>402</x>
+      <y>636</y>
+      <w>60</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>612</x>
+      <y>648</y>
+      <w>78</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>The LoggedUser
+is close enough 
+to the 
+ReservedCar
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>402</x>
+      <y>654</y>
+      <w>222</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=.()</panel_attributes>
+    <additional_attributes>350.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>162</x>
+      <y>588</y>
+      <w>114</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>ExpireActiveReservation</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>924</y>
+      <w>60</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>438</x>
+      <y>942</y>
+      <w>78</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>The LoggedUser
+starts the engine 
+of
+the ReservedCar
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>954</y>
+      <w>48</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.()</panel_attributes>
+    <additional_attributes>10.0;20.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>834</y>
+      <w>144</w>
+      <h>366</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>220.0;590.0;10.0;590.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>276</x>
+      <y>1134</y>
+      <w>84</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>The LoggedUser 
+(and passengers)
+exit the car
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>1086</y>
+      <w>102</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=.()</panel_attributes>
+    <additional_attributes>10.0;80.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>600</x>
+      <y>1284</y>
+      <w>114</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>ComputeTotalCost</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>1206</y>
+      <w>132</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>384</x>
+      <y>1284</y>
+      <w>150</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>ApplyDiscountsAndPenalties</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>528</x>
+      <y>1296</y>
+      <w>84</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>120</x>
+      <y>1272</y>
+      <w>60</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>ReservedCar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>228</x>
+      <y>1284</y>
+      <w>114</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>CheckCarGPSPosition</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>1290</y>
+      <w>60</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>162</x>
+      <y>1290</y>
+      <w>78</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;participate&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
   </element>
 </diagram>
