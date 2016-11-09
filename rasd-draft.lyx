@@ -234,14 +234,14 @@ By providing the identity of a car from the list of available ones, the
 \series bold
 [G3.2]: 
 \series default
-By submitting information required by the reservation form for a car, the
- registered user shall be able to book that car and see the receipt of the
+By submitting information required by the reservation form for a Car, the
+ Registered User shall be able to book that Car and see the receipt of the
  reservation successfully if and only if:
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-- the car is available and 
+- the Car is available and 
 \end_layout
 
 \begin_layout Standard
@@ -363,8 +363,12 @@ A reserved car shall be automatically unlocked if and only if
 \end_deeper
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-[G5.3]: When the registered user notifies the condition of nearness to the
- car, the active reservation shall be associated to a ride.
+
+\series bold
+[G5.3]:
+\series default
+ When the registered user notifies the condition of nearness to the car,
+ the active reservation shall be associated to a ride.
  The user shall be notified about the beginning of a new ride and the charging
  for a given amount of money per minute shall begin.
 \end_layout
@@ -552,8 +556,8 @@ Domain Properties
 \end_layout
 
 \begin_layout Standard
-Domain Properties expressed considering the relations among user, system,
- environment, transactional system and system on board.
+Domain Properties expressed considering the relations among User, System,
+ Environment, Transactional System and On Board System.
 \end_layout
 
 \begin_layout Subsection
@@ -641,8 +645,8 @@ For these domain properties the presence of User is also mentioned.
 \series bold
 [D2.1]:
 \series default
- The Transactional System receives informations of total payment the User
- is required to pay.
+ The Transactional System receives informations of total payment that the
+ User is required to pay.
 \end_layout
 
 \begin_layout Labeling
@@ -705,7 +709,7 @@ For these domain properties the presence of User is also mentioned.
 [D3.3]:
 \series default
  Electronical components of cars allows the correct interaction between
- user and the system on board.
+ user and the System On Board.
 \end_layout
 
 \begin_layout Subsection
@@ -739,7 +743,7 @@ For these domain properties the presence of User is also mentioned.
 [D4.3]:
 \series default
  Internet connection is faster enough for allowing the bidirectional flows
- of informations among entities (users and system).
+ of informations among entities (Users and System).
 \end_layout
 
 \begin_layout Subsection
@@ -753,7 +757,7 @@ For these domain properties the presence of User is also mentioned.
 [D5.1]:
 \series default
  No loss of Users' position due to satellite encoding comes up during the
- interaction between each user and the system.
+ interaction between each User and the System.
 \end_layout
 
 \begin_layout Labeling
@@ -772,7 +776,7 @@ For these domain properties the presence of User is also mentioned.
 [D5.3]:
 \series default
  No loss of cars' position due to satellite encoding comes up during the
- interaction between each user and the system.
+ interaction between each User and the System.
 \end_layout
 
 \begin_layout Labeling
@@ -824,7 +828,7 @@ For these domain properties the presence of User is also mentioned.
 \series bold
 [D6.4]:
 \series default
- On Board System informs the driver of nearest safe parkings for the car.
+ On Board System informs the driver of nearest safe area for the car.
 \end_layout
 
 \begin_layout Labeling
@@ -871,8 +875,8 @@ For these domain properties the presence of User is also mentioned.
 \series bold
 [D6.9]:
 \series default
- On Board System encondes and tells to the system the amount of money the
- user is required to pay.
+ On Board System encodes and tells to the system the amount of money the
+ User is required to pay.
 \end_layout
 
 \begin_layout Labeling
@@ -898,112 +902,260 @@ Glossary
 \end_layout
 
 \begin_layout Itemize
-Registered user: a physical person that can access to the services provided
- by the PowerEnJoy digital management system by means of a valid account.
+
+\series bold
+Registered user:
+\series default
+ a physical person that can access to the services provided by the PowerEnJoy
+ digital management system by means of a valid account.
 \end_layout
 
 \begin_layout Itemize
-Car: it's a vehicle that is managed by the PowerEnJoy digital management
+
+\series bold
+User: 
+\series default
+it is a general person who uses the System and has a contact with any of
+ its functionalities.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Car:
+\series default
+ it's a vehicle that is managed by the PowerEnJoy digital management system.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Vehicle: 
+\series default
+in this document is sometimes mentioned as a synonymous of Car.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Available car:
+\series default
+ it's a car for which there is neither active reservation nor active aide
+ related to it.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Active reservation:
+\series default
+ it's a reservation that hasn't expired and hasn't yet converted in an active
+ ride.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Active ride:
+\series default
+ it's a relation between an user and a car that represents the concrete
+ usage of the car by the user.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Reservation:
+\series default
+ it's a relation between an user and a car that represents the user's willing
+ of preventing other users to use the car.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Reservation form:
+\series default
+ it's a set of information that are required from the user in order to make
+ a new valid reservation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Valid position:
+\series default
+ it's either a GPS position or a address position.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+GPS position:
+\series default
+ it's a couple of coordinates (latitude and longitude) provided by a GPS
  system.
 \end_layout
 
 \begin_layout Itemize
-Available car: it's a car for which there is no active reservation nor active
- aide related to it.
+
+\series bold
+Address position:
+\series default
+ it's a string that represents a specific position by means of words.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Valid credentials:
+\series default
+ it's a set of personal information that have legal validity; this set includes:
+ full name, date of birth, number of the identity card and number of the
+ driving license.
  
 \end_layout
 
 \begin_layout Itemize
-Active reservation: it's a reservation that hasn't expired and that hasn't
- yet converted in an active ride.
+
+\series bold
+Valid payment informations:
+\series default
+ it's the set of information that allows the system to indentify an active
+ PayPal active account.
  
 \end_layout
 
 \begin_layout Itemize
-Active ride: it's a relation between an user and a car that represents the
- concrete usage of the car by the user.
+
+\series bold
+Expiration fee: 
+\series default
+amount of money (in EUR) that the user has to pay when she/he lets an active
+ reservation expire.
 \end_layout
 
 \begin_layout Itemize
-Reservation: it's a relation between an user and a car that represents the
- user's will to prevent other users to use the car.
+
+\series bold
+Current relevant car's information:
+\series default
+ it's a set of informations that represent the current state of a car and
+ that includes: model of the car, name of the car, registration number of
+ the car ,number of allowed passengers, state of the battery, valid position
+ of the car.
 \end_layout
 
 \begin_layout Itemize
-Reservation form: it's a set of information that are required from the user
- in order to make a new valid reservation.
+
+\series bold
+Current active ride information:
+\series default
+ it's a set of information that represent the current state of an active
+ ride and that includes: the amount of money that has been charged to the
+ user so far, the duration (in minutes) of the ride so far.
 \end_layout
 
 \begin_layout Itemize
-Valid position: it's either a GPS position or a address position.
+
+\series bold
+Condition of nearness:
+\series default
+ it represents the condition in which a user must be able to access the
+ reserved car because the user is close to the car.
 \end_layout
 
 \begin_layout Itemize
-GPS position: it's a couple of coordinates (latitude and longitude) provided
- by a GPS system.
-\end_layout
 
-\begin_layout Itemize
-Address position: it's a string that represents a specific position by means
- of words.
-\end_layout
-
-\begin_layout Itemize
-Valid credentials: it's a set of personal information that have legal validity;
- this set includes: full name, date of birth, number of the identity card
- and number of the driving license.
+\series bold
+Safe area:
+\series default
+ it's set of GPS positions that is pre-defined by the management system.
  
 \end_layout
 
 \begin_layout Itemize
-Valid payment information: it's the set of information that allows the system
- to indentify an active PayPal active account.
- 
+
+\series bold
+Parking penalty:
+\series default
+ amount of money (in EUR) that the user has to pay when she/he parks the
+ car in a non safe area.
 \end_layout
 
 \begin_layout Itemize
-Expiration fee: amount of money (in EUR) that the user has to pay when she/he
- lets an active reservation expire.
+
+\series bold
+Power grid station:
+\series default
+ it's a safe area that provides a power grid to re-charge the car.
 \end_layout
 
 \begin_layout Itemize
-Current relevant car's information: it's a set of information that represent
- the current state of a car and that includes: model of the car, name of
- the car, registration number of the car ,number of allowed passengers,
- state of the battery, valid position of the car.
+
+\series bold
+Money saving option:
+\series default
+ it's a option that can be enabled by the user for an active ride.
 \end_layout
 
 \begin_layout Itemize
-Current active ride information: it's a set of information that represent
- the current state of an active ride and that includes: the amount of money
- that has been charged to the user so far, the duration (in minutes) of
- the ride so far.
+
+\series bold
+Driver: 
+\series default
+it is considered the way to call the Registered User within the period of
+ utilization of a Car.
 \end_layout
 
 \begin_layout Itemize
-Condition of nearness: it represents the condition in which a user must
- be able to access the reserved car because the user is close to the car.
+
+\series bold
+System: 
+\series default
+it is the entity of current object of study.
 \end_layout
 
 \begin_layout Itemize
-Safe area: it's set of GPS positions that is pre-defined by the management
- system.
- 
+
+\series bold
+Environment: 
+\series default
+it is the complement of the System in terms of Universe.
+ It concerns all the functionalities and the System hasn't to implement.
+ Participants to Environment are identified in User, Transactional System
+ and On Board System.
 \end_layout
 
 \begin_layout Itemize
-Parking penalty: amount of money (in EUR) that the user has to pay when
- she/he parks the car in a non safe area.
+
+\series bold
+Transactional System: 
+\series default
+it is the entity which makes money transactions from the Registered User
+ to the System and viceversa after a service or in exceptional cases.
 \end_layout
 
 \begin_layout Itemize
-Power grid station: it's a safe area that provides a power grid to re-charge
- the car.
+
+\series bold
+On Board System: 
+\series default
+it is the System integrated in the Car and which interacts with the Driver
+ during the ride.
+ It keeps open also a comunication with the System, doing the role of interprete
+r between User and System.
 \end_layout
 
 \begin_layout Itemize
-Money saving option: it's a option that can be enabled by the user for an
- active ride.
+
+\series bold
+Total payment: 
+\series default
+all the informations about the User, its ride and the payment in relation
+ of these two factors.
 \end_layout
 
 \begin_layout Section
@@ -1190,7 +1342,8 @@ Functional Requirements
 \series bold
 [G1.1] 
 \series default
-the System shall correctly accept and process the registration.
+the System shall correctly accept and process the registration controlling
+ input datas from the User.
 \end_layout
 
 \begin_layout Labeling
@@ -1201,6 +1354,17 @@ the System shall correctly accept and process the registration.
 \series default
 The system shall allert the user if the registration has been maden with
  errors.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R1.2]: 
+\series default
+If a registration has been maden with errors, the System suggests to the
+ User to try again for some fields of the registration form or for all of
+ it depending on the particular intance of error.
 \end_layout
 
 \begin_layout Labeling
@@ -1223,8 +1387,8 @@ The System shall store datas of a User who has completed successfully the
 \series bold
 [R2.1]: 
 \series default
-After a correct registration, the system shall allow User to access and
- use the service.
+After a correct registration, the System shall allow User to access and
+ use the service, displaying to it all the pages and the messages needed.
 \end_layout
 
 \begin_layout Labeling
@@ -1237,8 +1401,11 @@ Referring to Goal
 \series bold
 [G2.1] 
 \series default
-the system shall match the position of the User with the position of the
- available cars within a certain region.
+the System shall match the position of the User with the position of the
+ available Cars within a certain region.
+ The positions are provided by the GPL service and there shall be a function
+ which returns a List of all Cars within a certain area and available for
+ the User.
 \end_layout
 
 \begin_layout Labeling
@@ -1251,8 +1418,11 @@ Referring to Goal
 \series bold
 [G2.2] 
 \series default
-the system shall instantly match the position of the User with the position
+the System shall instantly match the position of the User with the position
  of a new available cars in the same area.
+ Hence there shall be a particular function which receives the notification
+ of this particular event and update the List showed to the User with the
+ new value.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1269,8 +1439,11 @@ Referring to Goal
 \series bold
 [G3.1]
 \series default
- after selecting the car, the system shall send to the user informations
+ after selecting the car, the System shall send to the User informations
  about the vehicle and the compilation form for booking it.
+ The informations are retrieved from the Main Database and informations
+ given by the User throught the compilation form have to be controlled for
+ validating the reservation.
 \end_layout
 
 \begin_layout Labeling
@@ -1285,16 +1458,11 @@ Referring to Goal
 \series default
 the system shall control if the User who wants to book the car hasn't a
  pending request on another vehicle.
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
-[R3.3]: 
-\series default
-If the User has a pending request on another car, the new one is rejected
- by the system.
+ It is important for the System to keep track of all the pending requests
+ and it shall either prevents the User of making a new request in case of
+ a pending one or permits the condition, but without accepts the request
+ and informing the User of the pending one.
+ 
 \end_layout
 
 \begin_layout Labeling
@@ -1307,7 +1475,7 @@ Referring to Goal
 \series bold
 [G3.3] 
 \series default
-the system shall confirm the accept the user request of booking.
+the System shall confirm the accept the user request of booking.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1324,7 +1492,11 @@ Referring to Goal
 \series bold
 [G4.1] 
 \series default
-the system shall keep track of time passed from the acceptance of a reservation.
+the system shall keep track of time elapsed from the acceptance of a reservation.
+ This is permitted by the meaning of a Timeout.
+ The countdown starts from the Timeout value and arrives to zero.
+ In that moment, if the User hasn't done anything concerning its reservation,
+ the System will set the extra fee to pay.
 \end_layout
 
 \begin_layout Labeling
