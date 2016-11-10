@@ -2173,7 +2173,7 @@ Flow of events
 
 \begin_layout Plain Layout
 1.
- The System shows the registration form the NonLoggedUser
+ The System shows the registration form to the NonLoggedUser
 \begin_inset Newline newline
 \end_inset
 
@@ -2400,8 +2400,9 @@ Flow of events
 
 \begin_layout Plain Layout
 2.
- NonLoggedUser fills the registration form with the personal email and the
- password that was provided via email after the registration of a new User.
+ The NonLoggedUser fills the registration form with the personal email and
+ the password that was provided via email after the registration of a new
+ User.
 \begin_inset Newline newline
 \end_inset
 
@@ -2523,7 +2524,7 @@ Actors
 \begin_inset Text
 
 \begin_layout Plain Layout
-LoggedUser, Network, MobilePhone, AvailableCar
+LoggedUser, Network, MobilePhone
 \end_layout
 
 \end_inset
@@ -2574,7 +2575,7 @@ Flow of events
 
 \begin_layout Plain Layout
 2.
- The System searches AvailableCars within a certain distance from the position
+ The System searches available cars within a certain distance from the position
  submitted by the User
 \begin_inset Newline newline
 \end_inset
@@ -2736,10 +2737,6 @@ Flow of events
 \begin_layout Plain Layout
 1.
  The MobilePhone returns the current GPS position
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -3027,8 +3024,8 @@ Entry condition
 \begin_inset Text
 
 \begin_layout Plain Layout
-LoggedUser selects an AvailableCar from the ones that are on the map that
- shows the AvailableCars nearby the LoggedUser position
+LoggedUser selects an available car from the ones that are on the map that
+ shows the available cars nearby the LoggedUser position
 \end_layout
 
 \end_inset
@@ -3256,10 +3253,6 @@ Flow of events
 \begin_layout Plain Layout
 1.
  The System shows the information about the active reservation of the LoggedUser
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -3352,7 +3345,7 @@ Use case name
 \begin_inset Text
 
 \begin_layout Plain Layout
-UserDeletesActiveReservation
+DeleteActiveReservation
 \end_layout
 
 \end_inset
@@ -3588,7 +3581,7 @@ Entry condition
 
 \begin_layout Plain Layout
 The System has counted one hour from when the active reservation was made
- by a LoggedUser.
+ by a LoggedUser and the active reservation isn't associated to a ride
 \end_layout
 
 \end_inset
@@ -3703,6 +3696,154 @@ The deletion by expiration of an active reservation must be transactional
 
 
 \begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="4cm">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+EnableNearnessConfirmation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MobilePhone, LoggedUser
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The MobilePhone provides a GPSPosition that is within a certain distance
+ from the reserved car that is associated to the active reservation of the
+ LoggedUser
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System enables the LoggedUser to notify the condition of nearness to
+ the reserved car
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System informs the LoggedUser about the possibility to notify the condition
+ of nearness to the reserved car by a notification
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- If the System is unable to deterine the GPS position of the LoggedUser,
+ the System informs the LoggedUser and suggests her/him about how to solve
+ the problem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="2">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="middle" width="4cm">
@@ -3761,9 +3902,8 @@ Entry condition
 \begin_inset Text
 
 \begin_layout Plain Layout
-The LoggedUser views her/his active reservation for the ReservedCar and
- the GPS position of the LoggedUser is within a certain distance from the
- ReservedCar
+The LoggedUser submits to the System her/his condition of nearness to the
+ ReservedCar via the Network.
 \end_layout
 
 \end_inset
@@ -3784,26 +3924,6 @@ Flow of events
 
 \begin_layout Plain Layout
 1.
- The System sends to the LoggedUser a notification about the possibility
- to notify her/his condition of nearness to the ReservedCar
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-2.
- The LoggedUser submits to the System her/his condition of nearness to the
- ReservedCar via the Network.
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-3.
  The System unlocks the ReservedCar
 \begin_inset Newline newline
 \end_inset
@@ -3812,7 +3932,7 @@ Flow of events
 \end_layout
 
 \begin_layout Plain Layout
-4.
+2.
  The System associates a ride to the active reservation
 \begin_inset Newline newline
 \end_inset
@@ -3821,7 +3941,7 @@ Flow of events
 \begin_inset Newline newline
 \end_inset
 
-5.
+3.
  The System starts charging the LoggedUser for the the parking fee
 \begin_inset Newline newline
 \end_inset
@@ -3830,7 +3950,7 @@ Flow of events
 \begin_inset Newline newline
 \end_inset
 
-6.
+4.
  The System informs the LoggedUser about the beginning of the ride and the
  state of the charging via the on board system of the ReservedCar
 \end_layout
@@ -3882,16 +4002,6 @@ Exceptions
 \end_layout
 
 \begin_layout Plain Layout
-- If the System is unable to deterine the GPS position of the LoggedUser,
- the System informs the LoggedUser and suggests her/him about how to solve
- the problem
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
 - If the System is unable to perform the operation, the System informs the
  LoggedUser about the problem
 \end_layout
@@ -3933,6 +4043,10 @@ Special requirements
 \end_inset
 
  
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
@@ -4208,6 +4322,16 @@ Flow of events
 \end_inset
 
 3.
+ On the basis of the state of the ReservedCar the System applies discounts
+ and penalties to the active reservation of the LoggedUser.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+4.
  The System informs the LoggedUser about the beginning of the active ride
  and the state of the charging via the on board system of the ReservedCar
 \end_layout
@@ -4230,149 +4354,6 @@ Exit condition
 
 \begin_layout Plain Layout
 The System notifies the beginning of the active ride to the LoggedUser
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="middle" width="4cm">
-<column alignment="left" valignment="top" width="10cm">
-<row>
-<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Use case name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ActiveRideWithPassengers
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-LoggedUser, ReservedCar
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry condition
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The LoggedUser starts the engine of the ReservedCar and the System perceives
- other passengers in the ReservedCar
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit condition
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The System associates a discount to the active ride 
 \end_layout
 
 \end_inset
@@ -4543,7 +4524,8 @@ Exit condition
 \begin_inset Text
 
 \begin_layout Plain Layout
-The System notifies the ending of the active ride to the LoggedUser
+The System notifies the ending of the active ride to the LoggedUser on the
+ on board system of the ReservedCar
 \end_layout
 
 \end_inset
@@ -4645,7 +4627,7 @@ Entry condition
 \begin_inset Text
 
 \begin_layout Plain Layout
-The LoggedUser exits the ReservedCar
+The LoggedUser (and other passengers) exits the ReservedCar
 \end_layout
 
 \end_inset
@@ -4668,6 +4650,16 @@ Flow of events
 1.
  The System ends the ride associated to the active reservation of the LoggedUser
  for the ReservedCar
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+2.
+ On the basis of the state of the ReservedCar, the System associates discounts
+ and penalties to the activer reservation
 \begin_inset Newline newline
 \end_inset
 
@@ -4878,8 +4870,17 @@ Flow of events
 
 \begin_layout Plain Layout
 3.
- The System sends a receipt of the ended active reservation to the LoggedUser
- via email
+ The System executes the payment for the total cost of the active reservation
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ The System sends a receipt of the ended active reservation and the payment
+ to the LoggedUser via email
 \begin_inset Newline newline
 \end_inset
 
@@ -4970,288 +4971,6 @@ The System shall send the receipt of the ended active reservation within
 
 
 \begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="middle" width="4cm">
-<column alignment="left" valignment="top" width="10cm">
-<row>
-<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Use case name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-LeaveCarNonSafeArea
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-LoggedUser, ReservedCar
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry condition
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The LoggedUser ends the ride and leaves the ReservedCar in non safe area
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.
- The System charges the LoggedUser for the parking penalty
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit condition
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The System informs the LoggedUser about the charge of the parking penalty
- via a notification
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="middle" width="4cm">
-<column alignment="left" valignment="top" width="10cm">
-<row>
-<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Use case name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-LeaveCarOutOfPower
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Actors
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-LoggedUser, ReservedCar
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Entry condition
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The LoggedUser ends the ride and leaves the ReservedCar at more than 3 KM
- from the nearest power grid station or with more than 80% of the battery
- empty
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Flow of events
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1.
- The System charges the LoggedUser for the power penalty
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exit condition
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-The System informs the LoggedUser about the charge of the parking penalty
- via a notification
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Exceptions
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
 \end_inset
 
 
