@@ -554,7 +554,7 @@ payment</panel_attributes>
       <w>100</w>
       <h>30</h>
     </coordinates>
-    <panel_attributes>Licence ID</panel_attributes>
+    <panel_attributes>License ID</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -568,7 +568,7 @@ payment</panel_attributes>
     <panel_attributes>lt=&lt;-
 m1=1
 m2=1
-driving licence</panel_attributes>
+license</panel_attributes>
     <additional_attributes>10.0;90.0;140.0;10.0</additional_attributes>
   </element>
   <element>
