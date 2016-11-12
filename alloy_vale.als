@@ -5,24 +5,40 @@ one sig False extends Bool{}
 // mutual exclusion is implicit when using extends
 
 // Users and their attributes
-abstract sig User{}
-sig NonLoggedUser extends User{}
-sig LoggedUser  extends User {
+sig User{
 	email: one EmailAddress,
-	payment: one PaymentPreference
+	payment: one PaymentPreference,
+	license: one LicenseID
 }
 
-sig LicenseID {
-	license: some User
+sig UsersSet {
+	users: set User
 }
 
-//sig EmailAddress, PaymentPreference, LicenseID {}
+fact {
+	all e: EmailAddress | one u: User | u.email = e
+}
+
+fact {
+	all p: payment | one u: User | u.payment = p
+}
+
+
+// User registration
+
+pred registerUser (s, s': UsersSet, u: User){
+	s'.users = s.users + u
+}
+
+sig EmailAddress, PaymentPreference, LicenseID {}
 
 abstract sig CarState{}
-one sig Available extends CarStatus{}
-one sig Reserved extends CarStatus{}
-one sig OutOfService extends CarStatus{}
+one sig Available extends CarState{}
+one sig Reserved extends CarState{}
+one sig OutOfService extends CarState{}
 
 sig Car{
 	state: one CarState
 }
+
+run registerUser for 3 
