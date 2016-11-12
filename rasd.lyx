@@ -2975,6 +2975,17 @@ The System must send the receipt of the ended active reservation within
 UML Use Case diagram
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Use cases diagram.svg
+	display false
+	scale 28
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 UML Sequence diagrams
 \end_layout
