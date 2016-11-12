@@ -1,0 +1,2311 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\setlength{\parindent}{0pt}
+\end_preamble
+\options titlepage
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "TeX Gyre Pagella"
+\font_sans "default" "Sans Serif"
+\font_typewriter "default" "Monospace"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command makeindex
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+RASD
+\begin_inset Newline newline
+\end_inset
+
+Requirement Analysis and Specification Document
+\end_layout
+
+\begin_layout Author
+Luca Marzi
+\begin_inset Newline newline
+\end_inset
+
+Valeria Mazzola
+\begin_inset Newline newline
+\end_inset
+
+Federico Nigro
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Problem analysis
+\end_layout
+
+\begin_layout Standard
+We manage to design and develop PowerEnJoy that is a digital management
+ system for car-sharing service that exclusively employs electric cars.
+\end_layout
+
+\begin_layout Standard
+The service is to be provided to the users by means of a mobile application
+ that is available for free both for iOS and Android based devices.
+ The system will provide all the major functionalities that are provided
+ by other concurrent car-sharing services such as EniEnjoy, Car2Go, Share'nGo
+ etc.
+\end_layout
+
+\begin_layout Standard
+The system will require the user to register an account that must be associated
+ to his/her personal information that have legal validity: full name, date
+ of birth, number of the identity card and number of the driving license.
+ At the moment of the account registration the user will be asked to provide
+ at least one payment method to be associated to the account.
+ The system only supports one payment method that is PayPal.
+\end_layout
+
+\begin_layout Standard
+The system will allow registered users to discover available cars nearby
+ their current position.
+ Registered users will be allowed to book a car for a limited time (1 hour).
+ Within this time the user will either decide to use the car for a ride
+ or delete hit/her reservation; if the user doesn't use the car and doesn't
+ delete his/her reservation, the reservation will expire, they will be charged
+ a fee of 1 EUR and the reserved car will become available again for other
+ users to reserve.
+\end_layout
+
+\begin_layout Standard
+In addition to the main functionalities regarding booking and usage of the
+ cars, the system will incentivize the virtuous behaviors of the users by
+ means of applying discounts or fees in the appropriate contexts.
+\end_layout
+
+\begin_layout Section
+Goals
+\end_layout
+
+\begin_layout Standard
+Goals expressed in terms of 
+\begin_inset Quotes eld
+\end_inset
+
+the world and the machine
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Subsection
+Registration
+\end_layout
+
+\begin_layout Section
+Domain properties and assumptions
+\end_layout
+
+\begin_layout Section
+Glossary
+\end_layout
+
+\begin_layout Section
+Constraints
+\end_layout
+
+\begin_layout Section
+Identifying stakeholders
+\end_layout
+
+\begin_layout Section
+Requirements
+\end_layout
+
+\begin_layout Subsection
+Functional requirements
+\end_layout
+
+\begin_layout Subsection
+Nonfunctional requirements
+\end_layout
+
+\begin_layout Section
+Scenarios
+\end_layout
+
+\begin_layout Subsection
+Scenario: Luca registers his new PowerEnJoy account.
+\end_layout
+
+\begin_layout Standard
+Luca accesses the system via the mobile app for the first time and has to
+ choose whether to log in with his credentials or create a new account.
+ Luca chooses to register a new account; the system shows a form that must
+ be filled with Luca’s credentials and payment information.
+ Luca fills the form and gives confirmation to the system.
+ Luca receives an email with the confirmation of the registration and the
+ password that Luca will use to access the system.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Federico searches for nearby cars.
+ 
+\end_layout
+
+\begin_layout Standard
+Federico is in need for a car.
+ First he opens the PowerEnJoy application by providing his credentials,
+ then he uses the app to search for a nearby available car.
+ Federico is shown the location of all available cars within a fixed number
+ of kilometers.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Valeria reserves a car for usage.
+\end_layout
+
+\begin_layout Standard
+Valeria uses the PowerEnJoy application to look for available cars and finds
+ one near to her current location.
+ She decides to reserve the car and pick it up later.
+ When Valeria reaches the car less than an hour later, she can unlock it
+ and start her drive.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Charlie books a car and doesn’t pick up it within one hour from
+ the reservation.
+ 
+\end_layout
+
+\begin_layout Standard
+Charlie reserves a free car by means of the mobile app.
+ As time goes by, Charlie realizes that he doesn’t need the car anymore
+ but doesn’t cancel his reservation.
+ After one hour from when Charlie made it, the reservation is cancelled
+ and the car can be reserved by some other user.
+ Charlie receives a notification on his smartphone that informs him about
+ the cancellation of his reservation and of the fee of 1 EUR he is receiving
+ because the reservation expired.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Sally gets close to a reserved car to unlock it.
+\end_layout
+
+\begin_layout Standard
+Sally has previously reserved a car she intended to use.
+ When she gets near it, she uses the PowerEnJoy application to confirm her
+ location.
+ The system then unlocks the car.
+ Sally is now able to enter the car and use it.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Schroeder keeps track of the cost of his ride through the screen
+ on the car.
+\end_layout
+
+\begin_layout Standard
+After Schroeder unlocks his car and enters it, he sees the car's screen
+ is now displaying information about the duration of the ride and its current
+ cost.
+ As time goes by, he can see the cost rise so he can keep track of it.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Patty parks the car in a safe area and leaves it.
+\end_layout
+
+\begin_layout Standard
+Patty arrives in a safe area and decides to park the car.
+ Patty stops the engine, leaves the key in the appropriate location and
+ exits the car.
+ As she closes the door, the system locks the car automatically and stops
+ charging the user.
+ Patty receives a notification on his smartphone that informs him about
+ the end of the ride.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Marcie parks and the car and leaves it with no more than 50% of
+ the battery empty.
+\end_layout
+
+\begin_layout Standard
+Marcie parks the car in a safe area and leaves it.
+ The system behaves as described in Scenario 3.7.
+ At the end of the ride, the system checks the status the car’s battery.
+ If the battery is left with no more than 50% of the battery empty, the
+ system applies a 20% discount on the ride.
+ Marcie receives a notification on her smartphone that informs her about
+ the end of the ride and the discount that has been applied thanks to her
+ virtuous behavior.
+ 
+\end_layout
+
+\begin_layout Subsection
+Scenario: Linus searches for cars near to a specific location.
+\end_layout
+
+\begin_layout Standard
+Linus is about to visit a friend's house.
+ He needs to know if he's going to be able to find any available car in
+ its proximity, for his trip back home.
+ Linus uses the PowerEnJoy app to search for available cars near his friend's
+ address.
+ He is shown all the available cars within a fixed number of kilometers
+ from his friend's house.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Snoopy brings two passengers on a ride and receives a 10% discount.
+\end_layout
+
+\begin_layout Standard
+Snoopy and two friends long to spend some time together driving on the hills
+ and taking some fotos of the countryside.
+ While they are still in the village they check their mobile devices to
+ search for a PowerEnJoy car and reserve one for their use.
+ As soon as they enter the car, the system is notified that there are at
+ least two passengers in the car beside the driver.
+ The three friends are then shown a message on the car screen, informing
+ them that their behaviour is worth Snoopy a 10% discount on the ride.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Lucy recharges the car after the ride and gets a 30% discount.
+\end_layout
+
+\begin_layout Standard
+Lucy has been using a PowerEnJoy car.
+ She parks the car at a parking area equipped with charging stations.
+ She then plugs the car into one of the rechargers.
+ When she checks her PowerEnJoy app for the price of the ride, she sees
+ that a discount of 30% has been applied to it.
+ 
+\end_layout
+
+\begin_layout Subsection
+Scenario: Mario leaves the car too far from a charging station.
+\end_layout
+
+\begin_layout Standard
+At the end of his ride, Mario leaves the PowerEnJoy car far from the city.
+ The system detects the car is farther than 3 km from the nearest charging
+ facility.
+ As a result, Mario is charged a fee of 30% the cost of the ride.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Luigi leaves the car with a nearly empty battery.
+\end_layout
+
+\begin_layout Standard
+At the end of his ride, Luigi leaves the PowerEnJoy car far from the city.
+ The system detects the car's battery is less than 20% full.
+ As a result, Luigi is charged a fee of 30% the cost of the ride.
+\end_layout
+
+\begin_layout Subsection
+Scenario: Peach reserves a car and enables the “money saving option”.
+\end_layout
+
+\begin_layout Standard
+Peach wants to reserve a car.
+ Luca chooses the car and decides to active the money saving option in order
+ to get a discount on the ride.
+ The system shows on the map the locations where she can leave the car in
+ order to the get the discount.
+ Peach proceeds with the confirmation of the reservation.
+\end_layout
+
+\begin_layout Section
+Actors
+\end_layout
+
+\begin_layout Subsection
+The end user.
+\end_layout
+
+\begin_layout Standard
+The human end users who will interact with the PowerEnJoy mobile application.
+\end_layout
+
+\begin_layout Subsection
+The user's mobile phone.
+\end_layout
+
+\begin_layout Standard
+The hardware-software system that is the user's mobile phone, including
+ both the operating system and the actual hardware, with the necessary support
+ for GPS, communication, and a working system necessary for the app to work
+ properly.
+\end_layout
+
+\begin_layout Subsection
+The car.
+\end_layout
+
+\begin_layout Standard
+The system will communicate with the cyber-physical system that is the car
+ through an appropriate communication protocol.
+\end_layout
+
+\begin_layout Subsection
+The network.
+\end_layout
+
+\begin_layout Standard
+The system will use the existing networking infrastructure for all necessary
+ communications.
+\end_layout
+
+\begin_layout Subsection
+The payment system.
+\end_layout
+
+\begin_layout Standard
+All payment transactions will happen through an external existing payment
+ system.
+ The PowerEnJoy system will communicate with such payment system in order
+ for the necessary information flow to happen between the two.
+\end_layout
+
+\begin_layout Section
+Use Case identification
+\end_layout
+
+\begin_layout Subsection
+NewUserRegistration
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NewUserRegistration
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+NonLoggedUser
+\end_layout
+
+\begin_layout Itemize
+Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NonLoggedUser communicates the will to register a new User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The System shows the registration form the NonLoggedUser
+\end_layout
+
+\begin_layout Itemize
+NonLoggedUser fills the registration form with the information required
+ by the registration form
+\end_layout
+
+\begin_layout Itemize
+NonLoggedUser submits the filled registration form to the System via the
+ Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System confirms the creation of a new User and sends an email, carrying
+ the password that has been generated by the system and associated to the
+ new User, to the email address that was specified in the registration form.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+If the Network doesn't deliver the information provided by the NonLoggedUser,
+ the System informs the NonLoggedUser and allows the NonLoggedUser to perform
+ the operation again
+\end_layout
+
+\begin_layout Itemize
+If the NonLoggedUser provides invalid information, the System informs the
+ NonLoggedUser about what's wrong with the provided information
+\end_layout
+
+\begin_layout Itemize
+If the NonLoggedUser doesn't receive the email carrying the password, the
+ NonLoggedUser informs the System.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Special requirements
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System must deliver the email carrying the password to the user within
+ 1 minute from when the new User was created.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+UserLogin
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UserLogin
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+NonLoggedUser
+\end_layout
+
+\begin_layout Itemize
+Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NonLoggedUser communicates the will to log in
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The System shows the login form to the NonLoggedUser
+\end_layout
+
+\begin_layout Itemize
+NonLoggedUser fills the registration form with the personal email and the
+ password that was provided via email after the registration of a new User.
+\end_layout
+
+\begin_layout Itemize
+NonLoggedUser submits the filled login form to the System via the Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The system confirms the log in
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+If the Network doesn't deliver the information provided by, the System informs
+ the NonLoggedUser and allows the NonLoggedUser to perform the operation
+ again
+\end_layout
+
+\begin_layout Itemize
+If the NonLoggedUser provides invalid information, the System informs the
+ NonLoggedUser about what's wrong with the provided information
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+FindAvailableCars
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FindAvailableCars
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+LoggedUser
+\end_layout
+
+\begin_layout Itemize
+Network
+\end_layout
+
+\begin_layout Itemize
+MobilePhone
+\end_layout
+
+\begin_layout Itemize
+AvailableCar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LoggedUser communicates the will to see available cars around his/her current
+ position
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The LoggedUser sumbits a valid position to the System.
+\end_layout
+
+\begin_layout Itemize
+The System searches AvailableCars within a certain distance from the position
+ submitted by the User
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System shows to the LoggedUser a map showing the position of AvailableCars
+ that have been found
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+If the Network doesn't deliver the information provided by LoggedUser, the
+ System informs the LoggedUser and allows the LoggedUser to perform the
+ operation again
+\end_layout
+
+\begin_layout Itemize
+If there aren't AvailableCars nearby the position specified by the LoggedUser,
+ the system explicitly informs the LoggedUser about this condition
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ProvideGPSPosition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ProvideGPSPosition
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+LoggedUser
+\end_layout
+
+\begin_layout Itemize
+MobilePhone
+\end_layout
+
+\begin_layout Itemize
+Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LoggedUser is asked to provide a valid position by the System, the LoggedUser
+ decides to provide a GPS position
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The MobilePhone returns the current GPS position
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System receives a GPS position as response to the request of providing
+ a valid position
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+If the MobilePhone isn't able to provide the current GPS position, the System
+ informs the LoggedUser and suggests him to provide an address
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ProvideAddressPosition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ProvideAddressPosition
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+LoggedUser
+\end_layout
+
+\begin_layout Itemize
+Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LoggedUser is asked to provide a valid position by the System, the LoggedUser
+ decides to provide an address
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The System shows a text field to be filled with an address.
+\end_layout
+
+\begin_layout Itemize
+The LoggedUser fills the text field
+\end_layout
+
+\begin_layout Itemize
+The LoggedUser submits the information to the System
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System receives an address as response to the request of providing a
+ valid position
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+If the LoggedUser provides an invalid position, the System informs the LoggedUse
+r about what's wrong with the provided position
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ReserveAvailableCar
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ReserveAvailableCar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+LoggedUser
+\end_layout
+
+\begin_layout Itemize
+AvailableCar
+\end_layout
+
+\begin_layout Itemize
+Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LoggedUser selects an AvailableCar from the ones that are on the map that
+ shows the AvailableCars nearby the LoggedUser position
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The System shows the reservation form for the specific car whose identity
+ is provided by the LoggedUser
+\end_layout
+
+\begin_layout Itemize
+The LoggedUser sees all the information about the AvailableCar provided
+ by the reservation form
+\end_layout
+
+\begin_layout Itemize
+The LoggedUser confirms the will to reserve the AvailableCar via the Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System confirms the reservation for the AvailableCar and shows to the
+ LoggedUser the information about the active reservation that has been placed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+If the Network doesn't deliver the information provided by LoggedUser, the
+ System informs the LoggedUser and allows the LoggedUser to perform the
+ operation again
+\end_layout
+
+\begin_layout Itemize
+If the System isn't unable to perform the operation, the System informs
+ the LoggedUser about what's the problem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Special requirements
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The insertion of a new active reservation by a LoggedUser should be transactiona
+l with respect to other LoggedUsers that want to insert a new active reservation
+ for the same AvailableCar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ViewActiveReservation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ViewActiveReservation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+LoggedUser
+\end_layout
+
+\begin_layout Itemize
+Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry conditions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The System has placed a new active reservation for the LoggedUser
+\end_layout
+
+\begin_layout Itemize
+The LoggedUser communicates to the System the will to see the information
+ about her/his active reservation via the Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The System shows the information about the active reservation of the LoggedUser
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The LoggedUser sees all the information about her/his active reservation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+If the Network doesn't deliver the information provided by LoggedUser, the
+ System informs the LoggedUser and allows the LoggedUser to perform the
+ operation again
+\end_layout
+
+\begin_layout Itemize
+If the System is unable to perform the operation, the System informs the
+ LoggedUser about the problem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+UserDeletesActiveReservation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UserDeletesActiveReservation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+LoggedUser
+\end_layout
+
+\begin_layout Itemize
+Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The LoggedUser communicates to the System the will of deleting her/his active
+ reservation via the Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The System receives the information required for deleting an active reservation
+\end_layout
+
+\begin_layout Itemize
+The System asks the LoggedUser to confirm the will to delete the active
+ reservation
+\end_layout
+
+\begin_layout Itemize
+The LoggedUsed confirms 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System deletes the active reservation of the LoggedUser
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+If the Network doesn't deliver the information provided by LoggedUser, the
+ System informs the LoggedUser and allows the LoggedUser to perform the
+ operation again
+\end_layout
+
+\begin_layout Itemize
+If the System isn't unable to perform the operation, the System informs
+ the LoggedUser about what's the problem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Special requirements
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The deletion by LoggedUser deletion of an active reservation must be transaction
+al
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ExpireActiveReservation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ExpireActiveReservation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+LoggedUser
+\end_layout
+
+\begin_layout Itemize
+Network
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System has counted one hour from when the active reservation was made
+ by a LoggedUser.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The System deletes the active reservation
+\end_layout
+
+\begin_layout Itemize
+The System charges the LoggedUser of the expiration fee
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System inform the LoggedUser about the reservation expiration and the
+ payment of the expiration fee via a notification and an email.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+none
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Special requirements
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The deletion by expiration of an active reservation must be transactional
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+StartRide
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+StartRide
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+LoggedUser
+\end_layout
+
+\begin_layout Itemize
+MobilePhone
+\end_layout
+
+\begin_layout Itemize
+Network
+\end_layout
+
+\begin_layout Itemize
+ReservedCar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The LoggedUser views her/his active reservation for the ReservedCar and
+ the GPS position of the LoggedUser is within a certain distance from the
+ ReservedCar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The System sends to the LoggedUser a notification about the possibility
+ to notify her/his condition of nearness to the ReservedCar
+\end_layout
+
+\begin_layout Itemize
+The LoggedUser submits to the System her/his condition of nearness to the
+ ReservedCar via the Network.
+\end_layout
+
+\begin_layout Itemize
+The System unlocks the ReservedCar
+\end_layout
+
+\begin_layout Itemize
+The System associates a ride to the active reservation
+\end_layout
+
+\begin_layout Itemize
+The System starts charging the LoggedUser for the the parking fee
+\end_layout
+
+\begin_layout Itemize
+The System informs the LoggedUser about the beginning of the ride and the
+ state of the charging via the on board system of the ReservedCar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System notifies the beginning of the ride to the LoggedUser
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+If the Network doesn't deliver the information provided by LoggedUser, the
+ System informs the LoggedUser and allows the LoggedUser to perform the
+ operation again
+\end_layout
+
+\begin_layout Itemize
+If the System is unable to determine the GPS position of the LoggedUser,
+ the System informs the LoggedUser and suggests her/him about how to solve
+ the problem
+\end_layout
+
+\begin_layout Itemize
+If the System is unable to perform the operation, the System informs the
+ LoggedUser about the problem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Special requirements
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+The ReservedCar must be unlocked by the System within 1 minute from when
+ the LoggedUser notified the condition of nearness to the ReservedCar
+\end_layout
+
+\begin_layout Itemize
+The association the ride to the the active reservation shall be transactional.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+EnableMoneySavingOption
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Use Case name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Actors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entry condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flow of events
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exit condition
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exceptions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Special requirements
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
