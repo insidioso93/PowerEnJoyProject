@@ -1,4 +1,4 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 508
 \begin_document
 \begin_header
@@ -169,31 +169,1830 @@ the world and the machine
 \end_layout
 
 \begin_layout Subsection
-Registration
+[G1]: Registration: 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G1.1]:
+\series default
+ The User shall receive a password to access the services if and only if
+ she/he has provided
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- valid credentials that are not associated to any other User and 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- valid payment information.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+[G2]: Discovering available Cars and Car's informations:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G2.1]: 
+\series default
+After providing a valid position, the Registered User shall be able to discover
+ the positions of all available Cars within a certain distance from the
+ specified position.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G2.2]: 
+\series default
+The User shall be notified about the positions of other available Cars within
+ a certain distance from specified position when those Cars become available.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G2.3]: 
+\series default
+Multiple requests which consist of more than one User who wants to reserve
+ the same Car, shall be correctly managed.
+\end_layout
+
+\begin_layout Subsection
+[G3]: Car booking:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G3.1]: 
+\series default
+By providing the identity of a Car from the list of available ones, the
+ Registered User shall be able to see all the current Car’s relevant information
+s and the reservation form for the specific Car.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G3.2]: 
+\series default
+By submitting informations required by the reservation form for a Car, the
+ Registered User shall be able to book that Car and see the receipt of the
+ reservation successfully if and only if:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the Car is available and 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- there’s no other active registration made by the User for any other car.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+[G4]: Reservation validity:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G4.1]: 
+\series default
+After exactly one hour from when an active reservation was made the active
+ reservation expires if and only if
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the active reservation hasn't been deleted by the User and
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the active reservation hasn't any ride associated to it.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G4.2]:
+\series default
+ The Registered User shall be notified about the expiration of the reservation
+ and shall pay the expiration fee if and only if 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- her/his active reservation expires.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G4.3]:
+\series default
+ When an active reservation expires the Car associated to that reservation
+ shall be tagged as available for the other Users by the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G4.4]: 
+\series default
+The Registered User shall be able to delete her/his active reservation if
+ and only if
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the time elapsed from the beginning of reservetion is still less than
+ one hour.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G4.5]:
+\series default
+ When an active reservation is deleted, the Car associated to that reservation
+ shall be tagged as available by the System.
+\end_layout
+
+\begin_layout Subsection
+[G5]: Car's usage:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.1]:
+\series default
+ The User shall be able to notify the condition of nearness to the reserved
+ Car if and only if
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the User owns an active reservation for the Car
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the GPS position of the User is within a certain distance from the reserved
+ Car.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.2]: 
+\series default
+A reserved Car shall be automatically unlocked if and only if 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the User who owns the active reservation on the Car notifies the condition
+ of nearness to it.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.3]:
+\series default
+ When the registered User notifies the condition of nearness to the Car,
+ the active reservation shall be associated to a ride.
+ The User shall be notified about the beginning of the new ride.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.4]: 
+\series default
+When the User starts the engine of the Car, the ride associated to the active
+ reservation for that Car shall be converted in an active ride.
+ The User shall be notified about the beginning of a new active ride and
+ the charging for a given amount of money per minute shall begin.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.5]:
+\series default
+ The User shall be able to see the current active ride relevant information
+ on the Car’s screen.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.6]:
+\series default
+ The User shall be notified about the end of the active ride and the charge
+ towards the User shall stop if and only if:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the Car is parked and 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the User and all the passengers exit the Car.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.7]: 
+\series default
+At the end of an active ride, the System should charge the User for a parking
+ penalty and notify the User about the charge if and only if:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the Car is parked in a non safe area.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.8]: 
+\series default
+The Car locks itself automatically if and only if 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- it is parked and the User and all the passengers exit it.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.9]: 
+\series default
+If the registered User uses the Car with at least two other passengers on
+ board, there shall be applied a discount of 10% on the total cost of the
+ current active ride at the end of it.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.10]:
+\series default
+ At the end of an active ride there shall be applied a discount of 20% on
+ the total cost of the active ride if
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the Car is left with no more than 50% of the battery empty.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.11]: 
+\series default
+At the end of an active ride there shall be applied a discount of 30% on
+ the total cost of the active ride if 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the Car is parked at a power grid station and the User plugs the Car into
+ the power grid.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.12]:
+\series default
+ At the end of an active ride there shall be a charging of 30% more on the
+ total cost of the active ride if 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the Car is parked at more than 3KM from the nearest power grid station.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.13]:
+\series default
+ When an active ride starts the registered User shall be able to activate
+ the money saving option.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.14]: 
+\series default
+By activating the money saving option, the registered User shall be able
+ to see a list of suggested parking area.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.15]: 
+\series default
+At the end of the active ride the System shall apply a discount on the total
+ cost of the active ride if:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- the Car is parked at a parking area that was suggested to the User by
+ the System when the User activated the money saving option.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G5.16]: 
+\series default
+At the end of the active ride, there shall be computed the total cost for
+ the active ride, considering all the discounts and penalties that have
+ been applied to the active ride and a receipt shall be sent to the User.
+\end_layout
+
+\begin_layout Subsection
+[G6]: Management of Exceptions:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G6.1]: 
+\series default
+The User shall be alerted in case of errors and exceptions that can subsist
+ during the various interactions between him/her and the System.
+ If the particular interrupted operation or set of operations can be repeated
+ again, this is done through a new interaction.
+\end_layout
+
+\begin_layout Subsection
+[G7]: Correct Mailing service management:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[G7.1]: 
+\series default
+User has to correctly communicates through Mail with the System.
 \end_layout
 
 \begin_layout Section
 Domain properties and assumptions
 \end_layout
 
+\begin_layout Standard
+The Domain Properties are expressed considering the relations among User,
+ System, Payment System, Car's System and other parts of Environment.
+\end_layout
+
+\begin_layout Subsection
+[D1]: Aspects of the Environment regarding the User:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D1.1]:
+\series default
+ The Users have the proper software platforms for using the system application
+ (Android, Windows, Mac OS).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D1.2]:
+\series default
+ The Users have the proper software components and drivers for allowing
+ the application to run properly.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D1.3]:
+\series default
+ The Users have the application installed on their devices and ready for
+ the utilization (interaction with the System).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D1.4]:
+\series default
+ The Users have internet access and navigation availability.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D1.5]:
+\series default
+ The Users are registered and logged for using the service.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D1.6]:
+\series default
+ The Users have GPS and their position can be easily detected when needed.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D1.7]:
+\series default
+ An User cannot reserve a prenotation of a Car already in Use.
+\end_layout
+
+\begin_layout Subsection
+[D2]: Aspects of the Environment regarding the Payment System:
+\end_layout
+
+\begin_layout Standard
+For these domain properties the presence of User is also mentioned.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D2.1]:
+\series default
+ The Payment System receives informations of total payment that the User
+ is required to pay.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D2.2]:
+\series default
+ With the end of single service and during the payment, no error related
+ to the Payment System occurs.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D2.3]:
+\series default
+ After the payment the Payment System shall state only two exclusive results:
+ failure or success.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D2.4]:
+\series default
+ In case of payment failures due to the User, she/he is required to try
+ again or to signal its problem to the System by the Payment System.
+\end_layout
+
+\begin_layout Subsection
+[D3]: Aspects of the Environment regarding the Car Utilization:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D3.1]:
+\series default
+ The accurate position of each Car is known by GPS.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D3.2]:
+\series default
+ When an end of utilization for a Car occurs, the User is instantly advised
+ of this event.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D3.3]:
+\series default
+ Electronical components of Cars allows the correct interaction between
+ User and the Car's System.
+\end_layout
+
+\begin_layout Subsection
+[D4]: Aspects of the Environment regarding the connection to Internet:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D4.1]:
+\series default
+ No connection problems due to the ISP come up during the interaction between
+ each User and the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D4.2]:
+\series default
+ No connection problems due to the damage of one of the involved hardware
+ devices occur.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D4.3]:
+\series default
+ Internet connection is faster enough for allowing the bidirectional flows
+ of informations among entities (Users and System).
+\end_layout
+
+\begin_layout Subsection
+[D5]: Aspects of the Environment regarding the GPS position:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D5.1]:
+\series default
+ No loss of the Users' position due to satellite encoding comes up during
+ the interaction between each User and the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D5.2]:
+\series default
+ No loss of the Users' position due to hardware damage occurs.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D5.3]:
+\series default
+ No loss of the Cars' position due to satellite encoding comes up during
+ the interaction between each User and the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D5.4]:
+\series default
+ No loss of the Cars' position due to hardware damage occurs.
+\end_layout
+
+\begin_layout Subsection
+[D6]: Aspects of the Environment regarding the Car's System:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.1]:
+\series default
+ The Car's System unlocks the Car when a confirmation for prenotation is
+ valuated positively.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.2]:
+\series default
+ The Car's System informs the driver of any issues related to possible Car's
+ damages and problems.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.3]:
+\series default
+ The Car's System informs the driver of any issues coming from the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.4]:
+\series default
+ The Car's System informs the driver of nearest safe area for the Car (valuated
+ by the System).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.5]:
+\series default
+ The Car's System informs the driver of the instantly amount of money she/he
+ has to pay.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.6]:
+\series default
+ The Car's System is equipped with a GPS navigator.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.7]:
+\series default
+ The GPS navigator can tell the User the shortest path to a given destination.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.8]:
+\series default
+ The Car's System communicates with the System when necessary for signaling
+ an issue.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.9]:
+\series default
+ The Car's System encodes and tells to the System all the informations about
+ the ride for calculating the payment.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.10]:
+\series default
+ The Car's System locks the car after the utilization.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.11]:
+\series default
+ The Car's System permits the communication between an User and an operator
+ in case of assitence.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[D6.12]: 
+\series default
+The Car's System alerts the User and the System in case of some exceptions
+ which come up in its context.
+\end_layout
+
 \begin_layout Section
 Glossary
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Available Car:
+\series default
+ it's a Car for which there is neither active reservation nor active ride
+ related to it.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Active reservation:
+\series default
+ it's a reservation that hasn't expired and hasn't yet converted in an active
+ ride.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Active ride:
+\series default
+ it's a relation between an User and a Car that represents the concrete
+ utilization of the Car by the User.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Reservation:
+\series default
+ it's a relation between an User and a Car that represents the User's will
+ of preventing other Users to use the Car.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Reservation form:
+\series default
+ it's a set of information that are required from the User in order to make
+ a new valid reservation.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Valid position:
+\series default
+ it's either a GPS position or an address position.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+GPS position:
+\series default
+ it's a couple of coordinates (latitude and longitude) provided by a GPS
+ system.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Address position:
+\series default
+ it's a string that represents a specific position by means of words.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Valid credentials:
+\series default
+ it's a set of personal informations that have legal validity; this set
+ includes: full name, date of birth, number of the identity card and number
+ of the driving license.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Valid payment informations:
+\series default
+ it's the set of information that allows the System to indentify an active
+ PayPal active account.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Expiration fee: 
+\series default
+amount of money (in EUR) that the User has to pay when she/he lets an active
+ reservation expire.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Current relevant car's information:
+\series default
+ it's a set of informations that represent the current state of a Car and
+ that includes: model of the Car, name of the Car, registration number of
+ the Car ,number of allowed passengers, state of the battery, valid position
+ of the Car.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Current active ride information:
+\series default
+ it's a set of information that represent the current state of an active
+ ride and that includes: the amount of money that has been charged to the
+ user so far, the duration (in minutes) of the ride so far.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Condition of nearness:
+\series default
+ it represents the condition in which a User must be able to access the
+ reserved Car because the User is close to the car.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Safe area:
+\series default
+ it's set of GPS positions that is pre-defined by the System.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Parking penalty:
+\series default
+ amount of money (in EUR) that the User has to pay when she/he parks the
+ Car in a non safe area.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Power grid station:
+\series default
+ it's a safe area that provides a power grid to re-charge the Car.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Money saving option:
+\series default
+ it's a option that can be enabled by the User for an active ride.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Mobile Phone: 
+\series default
+it is one of the devices that the User can use for run the application of
+ the System.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Passenger: 
+\series default
+she/he could be the User or one of the other people who get on the Car with
+ the User at the beginning of a ride.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Driver: 
+\series default
+in the text sometimes refers to a User who is using the Car effectively,
+ during an active ride.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Vehicle: 
+\series default
+in the text sometimes refers to another term to indicate the Car.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Car's display: 
+\series default
+component of the Car which allows to the User to visualize informations
+ and interacts with the Car's System.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Car's sensors: 
+\series default
+components of the Car which reveal the presence of a certain number of passenger
+s to tell to the Car's System.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Car's control panel: 
+\series default
+component of the Car which permits the interaction between the Car's System
+ and the User.
+\end_layout
+
+\begin_layout Section
+Text Assumptions
+\end_layout
+
+\begin_layout Itemize
+The logic of the application is contained in the server tecnologies from
+ which the System works.
+\end_layout
+
+\begin_layout Itemize
+We should develop a multi-platform application.
+\end_layout
+
+\begin_layout Itemize
+Datas of Users are stored in a database owned by the System and are strongly
+ protected.
+\end_layout
+
+\begin_layout Itemize
+Datas of Vehicles of the company are also stored in a database and are strongly
+ protected.
+\end_layout
+
+\begin_layout Itemize
+Necessary database's transactions take place within the database and the
+ System application contexts.
+\end_layout
+
+\begin_layout Itemize
+GPS positions of Cars are always monitored and taken into the account.
+\end_layout
+
+\begin_layout Itemize
+if the System changes some of its policies, the User is correctly advised
+ by Mail or by a notification on its profile.
+\end_layout
+
+\begin_layout Itemize
+If other kinds of exceptions come up during the service and outside the
+ System context (exceptions of Payment System or of database) the User is
+ alerted anyway.
+ The System has to do an action to guarantee the service anyway.
 \end_layout
 
 \begin_layout Section
 Constraints
 \end_layout
 
+\begin_layout Subsection
+Regulatory policies
+\end_layout
+
+\begin_layout Itemize
+The User has to be informed about the policies of the System.
+ In particular, the User who makes a registration, has to confirm her/his
+ acknowledgement about System's rules, her/his responsabilities and the
+ responsabilities of the System.
+ User confirms also the treatment of its sensible informations according
+ to the needs of the System.
+ Finally the System must not use notifications to send SPAM, in the respecting
+ of the privacy low.
+\end_layout
+
+\begin_layout Itemize
+The System has to be adapted to the conventions, rules and policies of the
+ various platforms which will finally offer its services.
+ Hence, the System has to respect market policies of Google Play Store,
+ Apple App Store and Windows Store.
+\end_layout
+
+\begin_layout Subsection
+Hardware Limitations
+\end_layout
+
+\begin_layout Itemize
+The System will be designed exclusively for devices (mobile phones, tablets,
+ laptops in particular configuration) which can be costantly monitored through
+ the web.
+ It is important that the device has an active 3G (or higher) connectivity
+ during all the service.
+\end_layout
+
+\begin_layout Itemize
+The System will be designed exclusively for devices (mobile phones, tablets,
+ laptops in particular configuration) which can be constantly identified
+ geographically.
+ It is important that the device has an active GPS service.
+\end_layout
+
+\begin_layout Itemize
+The device on which the System's application will run needs a certain amount
+ of RAM memory at minimum for processing all the tasks of the System's applicati
+on.
+ Some disk memory for storing permanent datas coming from the installation,
+ and temporary informations coming from the running of the application,
+ are essential too.
+\end_layout
+
+\begin_layout Itemize
+The System is finally designed for all the newest version of the software
+ (and all the hardware on which the software runs) of the companies cited
+ before.
+ 
+\end_layout
+
+\begin_layout Subsection
+Interfaces to other applications
+\end_layout
+
+\begin_layout Itemize
+The System interacts with the Database in which User's and Car's informations
+ are permanently stored through MySQL.
+ So the System is strongly dependent of this tool.
+\end_layout
+
+\begin_layout Itemize
+Every money transaction between the System and the Users is regulated through
+ PayPall (our Payment System in reality).
+\end_layout
+
+\begin_layout Itemize
+The Car's System mediates the interactions among the Users and the System
+ during the active ride context.
+ The Car's System has, in particular, an internal software, with its specificati
+ons, which can allow these interactions.
+\end_layout
+
+\begin_layout Subsection
+Parallel operations
+\end_layout
+
+\begin_layout Itemize
+The System has to manage parallel requestes and instances of the service
+ as already discussed in the goals.
+ The System's multitasking behaviour is the base to allow the utilization
+ of the service for multiple Users.
+ This is important for the reliability of operations too because at every
+ instance the System has to manage sensible informations stored in its internal
+ database.
+\end_layout
+
+\begin_layout Subsection
+Criticality of the application
+\end_layout
+
+\begin_layout Itemize
+Having a set of restarting points is a peculiar characteristic for the System.
+ When a critical error compromise an operation, the System has to understand
+ how and when restore it for offering a consistant service to the User anyway.
+\end_layout
+
+\begin_layout Subsection
+Safety and Security considerations
+\end_layout
+
+\begin_layout Itemize
+Since the payments are processed through the PayPall service, there aren't
+ payment issues concerning the System.
+ 
+\end_layout
+
+\begin_layout Itemize
+It is different for Database operations because they are managed by the
+ Database, but it is important for the System to correctly manipulate the
+ instances coming from different Users.
+\end_layout
+
 \begin_layout Section
 Identifying stakeholders
+\end_layout
+
+\begin_layout Standard
+The stakeholder is a large company of car renting which wants to offer a
+ new and innovative service in terms of energy saving and nature environment
+ protection.
+ This purpose will be reached accordingly to cities and territorial policies
+ and principal electric cars constructors.
 \end_layout
 
 \begin_layout Section
 Requirements
 \end_layout
 
+\begin_layout Standard
+Assuming the validity of the Domain Properties listed before and in order
+ to fullfill the goals in the 
+\series bold
+Goals
+\series default
+ paragraph, the following requirements can be derived.
+ The requirements are explicitily referred on how the system shall correctly
+ interact with the User and respecting the Domain Properties:
+\end_layout
+
 \begin_layout Subsection
-Functional requirements
+Functional Requirements
+\end_layout
+
+\begin_layout Subsubsection
+[R1] Registration manegement:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R1.1]:
+\series default
+ Referring to Goal 
+\series bold
+[G1.1] 
+\series default
+the System shall correctly accept and process the registration controlling
+ input datas from the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R1.2]: 
+\series default
+The System shall allert the user if the registration has been maden with
+ errors.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R1.2]: 
+\series default
+If a registration has been maden with errors, the System suggests to the
+ User to try again for some fields of the registration form or for all of
+ it depending on the particular intance of error.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R1.3]: 
+\series default
+The System shall store datas of a User who has completed successfully the
+ registration.
+\end_layout
+
+\begin_layout Subsubsection
+[R2] Discovering available cars and single car's informations management:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R2.1]: 
+\series default
+After a correct registration, the System shall allow User to access and
+ use the service, displaying to it all the pages and the messages needed
+ at every instance.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R2.2]: 
+\series default
+Referring to Goal 
+\series bold
+[G2.1] 
+\series default
+the System shall match the position of the User with the position of the
+ available Cars within a certain region.
+ The positions are provided by the GPL service and there shall be a function
+ which returns a List of all Cars within a certain area and available for
+ the User in that moment.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R2.3]: 
+\series default
+Referring to Goal 
+\series bold
+[G2.2] 
+\series default
+the System shall instantly match the position of the User with the position
+ of a new available Car in the same area.
+ Hence there shall be a particular function which receives the notification
+ of this particular event and update the List showed to the User with the
+ new value.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R2.4]: 
+\series default
+Referring to Goal 
+\series bold
+[G2.3] 
+\series default
+the System shall control and correctly manage instances of prenotations.
+ This means 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- having a queue in which requestes are located at time of their formulation
+ and 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- a global trace of the first prenotation for the single Car, which permits
+ to avoid a multiple prenotation it.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+[R3] Car booking manegement:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R3.1]: 
+\series default
+Referring to Goal 
+\series bold
+[G3.1]
+\series default
+ after selecting the car, the System shall send to the User informations
+ about the vehicle and the compilation form for booking it.
+ The informations are retrieved from the internal Database and informations
+ given by the User through the compilation form have to be controlled for
+ validating the reservation.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R3.2]: 
+\series default
+Referring to Goal 
+\series bold
+[G3.2] 
+\series default
+the system shall control if the User who wants to book the car, hasn't a
+ pending request on another vehicle.
+ It is important for the System to keep track of all the pending requests
+ and it shall either 
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- prevents the User of making a new request in case of a pending one 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- or permits the condition, but without accepts the request and informing
+ the User of the pending one.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R3.3]: 
+\series default
+Referring to Goal 
+\series bold
+[G3.2] 
+\series default
+the System shall confirm the User request of booking.
+\end_layout
+
+\begin_layout Subsubsection
+[R4] Reservation validity management:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R4.1]: 
+\series default
+Referring to Goal 
+\series bold
+[G4.1] 
+\series default
+the system shall keep track of time elapsed from the acceptance of a reservation.
+ This is permitted by the meaning of a Timeout.
+ The countdown starts from the Timeout value and arrives to zero.
+ In that moment, if the User hasn't done anything concerning its reservation,
+ the System will set the extra fee to pay.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R4.2]: 
+\series default
+Referring to Goal 
+\series bold
+[G4.1] 
+\series default
+the System shall cancel the active reservation if the User expresses this
+ will.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R4.3]: 
+\series default
+Referring to Goal 
+\series bold
+[G4.1] 
+\series default
+the System shall cancel the active reservation if an hour from the reservation
+ was made has passed.
+ Hence the reservation is expired.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R4.4]: 
+\series default
+Referring to Goal 
+\series bold
+[G4.1] [G4.3] 
+\series default
+the System shall render available the Car in case of an expired reservation.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R4.5]: 
+\series default
+Referring to Goal 
+\series bold
+[G4.1] [G4.5] 
+\series default
+the System shall render available the Car in case of a canceled reservation.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R4.5]: 
+\series default
+Referring to Goal 
+\series bold
+[G4.2] 
+\series default
+the System shall advise the User if the reservation expires and about the
+ extra fee to pay.
+\end_layout
+
+\begin_layout Subsubsection
+[R5] Car's usage management:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.1]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.1] 
+\series default
+the System shows correctly to the User the possibility to be notified about
+ the nearness.
+ The System in fact controls the position of the User and the position of
+ the reserved Car at any time and, within a certain distance between the
+ two entities, alerts the User of the event.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.2]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.2] 
+\series default
+the System unlocks the Car by receiving the answer on the notify showed
+ to the User.
+ When the System informs the User about the nearness to the Car, a pending
+ instance of confirmation is created.
+ The reply to this instance comes from the User and the System, after an
+ effective matching of positions, sends to the Car's System the request
+ of unlocking the Car.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.3]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.3] 
+\series default
+the System shall:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- convert the active reservation in a new active ride
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- inform the User of the beginning of a new active ride via the Car's System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+- start charging the User of an amount of money to pay per minute, the User
+ knows about this by the Car's System too.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.4]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.4] 
+\series default
+the System shall give to the User all relevant informations about the current
+ ride via the Car's System, the Car's System effectively interacts with
+ the User through Car's display, Car's sensors and Car's control panel.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.5]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.5] 
+\series default
+the System shall stop the ride instance and the charge towards the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.6]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.6] 
+\series default
+the System shall detects if the User parked the Car in a non safe area via
+ GPL signalation.
+ Hence it shall notify the User of the extra fee to pay in this case by
+ sending her/him a notification on its device.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.7]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.7] 
+\series default
+the System shall detects if the User and all the other passengers get off
+ the car via GPL signalation and the end of the service signalations.
+ Hence the Car's System is allerted and the car is locked.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.8]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.8] 
+\series default
+the System shall detects if the User is driving the car with at least two
+ other passengers on board.
+ This shall be possible because the Car's System detects the presence of
+ a certain amount of people through Car's sensors and sends a notification
+ to the System.
+ Once Verified the situation, the System applies the discount at the end
+ of the ride and using the Payment System for interacting with the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.9]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.9] 
+\series default
+the System shall detect the battery level at the end of the current drive.
+ If it is left no more than 50% empty, the System keeps track of the discount
+ of 20% that it shall apply on the total cost and, afterwards, it sends
+ datas for the Payment System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.10]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.10] 
+\series default
+the System shall be allerted by the Car's System if the Car is left by the
+ User in a power grid station and if the Car is plugged to the power grid.
+ In this case the System shall apply the mentioned discount.
+ Datas for the payment are sended to the Payment System afterwards.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.11]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.11] 
+\series default
+the System shall detect if the Car has been parked at more than 3 KM from
+ a power greed station.
+ In this case the last User is required to pay the mentioned fee.
+ The User is alerted of this by the utilization of the application on its
+ device.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.12]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.12] 
+\series default
+the System shall be advised by the User and through the Transactional System
+ if the Money Saving Option is enabled at the beginning of the ride.
+ If it so, the appropriate solution will be implemented for this kind of
+ utilization.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.13]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.13] 
+\series default
+if the money saving option is enabled the System shall compute in real time
+ the distance among car position and the nearest safe parking areas.
+ The resulting datas are sended again to the Car's System, which displays
+ results to the User via Car's display.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.14]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.14] 
+\series default
+if the money saving option is enabled and the System detects that the User
+ has parked the Car in one of the last and suggested safe parking area,
+ the mentioned discount is applied.
+ The resulted information is known by the User through the Car's System
+ and/or visualizing a notification on its device.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R5.15]: 
+\series default
+Referring to Goal 
+\series bold
+[G5.15] 
+\series default
+at the end of an active ride the System has all the fields related to discounts
+ and amends that are correctly compiled and ready to be sended to the Payment
+ System in order to make a receipt towards the User.
+\end_layout
+
+\begin_layout Subsubsection
+[R6] Management of the Exceptions by the System:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R6.1]: 
+\series default
+Referring to Goal 
+\series bold
+[G6.1] 
+\series default
+the System shall correctly manage every kind of exception that can be generated
+ in the context.
+ Some of those exceptions are not showed directly to the User but other
+ has to be.
+ In any case it's important for the System to configured the point in which
+ has to restart in case of error and which action is required from the User
+ after the communication.
+ The deep analysis of all the cases of exceptions shall be true for all
+ the situations mentioned.
+\end_layout
+
+\begin_layout Subsubsection
+[R7] Correct manegement of Mailing service by the System:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+[R7.1]: 
+\series default
+Referring to Goal 
+\series bold
+[G7.1] 
+\series default
+the System shall configure automatic messages to be sent to the User in
+ case of events that need this kind of service.
 \end_layout
 
 \begin_layout Subsection
@@ -396,44 +2195,44 @@ Actors
 \end_layout
 
 \begin_layout Subsection
-The end user.
+The User.
 \end_layout
 
 \begin_layout Standard
-The human end users who will interact with the PowerEnJoy mobile application.
+The human end user who will interact with the PowerEnJoy mobile application.
 \end_layout
 
 \begin_layout Subsection
-The user's mobile phone.
+The User's device.
 \end_layout
 
 \begin_layout Standard
-The hardware-software system that is the user's mobile phone, including
+The hardware-software system that could be the user's mobile phone, including
  both the operating system and the actual hardware, with the necessary support
  for GPS, communication, and a working system necessary for the app to work
  properly.
 \end_layout
 
 \begin_layout Subsection
-The car.
+The Car's System.
 \end_layout
 
 \begin_layout Standard
-The system will communicate with the cyber-physical system that is the car
+The System will communicate with the cyber-physical system that is the Car
  through an appropriate communication protocol.
 \end_layout
 
 \begin_layout Subsection
-The network.
+The Network.
 \end_layout
 
 \begin_layout Standard
-The system will use the existing networking infrastructure for all necessary
+The System will use the existing networking infrastructure for all necessary
  communications.
 \end_layout
 
 \begin_layout Subsection
-The payment system.
+The Payment System.
 \end_layout
 
 \begin_layout Standard
@@ -2988,6 +4787,868 @@ UML Use Case diagram
 
 \begin_layout Section
 UML Sequence diagrams
+\end_layout
+
+\begin_layout Subsection
+Registration phase
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+A non registered User asks for obtaining a registration to the System, the
+ System understands who is the User by reading his/her IP address and the
+ Socket Port designed for the application.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.1: 
+\series default
+The System puts the User's request inside a queue.
+ The User waits for a System aswer during this time.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.2: 
+\series default
+The System informs the User that his/her request is OK.
+ There's a confirmation message inside the aswer.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+In a second time The System sends to the User the registration form to be
+ compiled.
+ UserParameters refers to the object which will contain Datas of the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.1: 
+\series default
+The User compiles the form sent by the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.2: 
+\series default
+The System receives the compiled form from the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.3: 
+\series default
+The System processes User's compiled form and analyzes if every field is
+ well compiled.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+loop: 
+\series default
+Two System's variables govern the loop process: 
+\bar under
+Registration
+\bar default
+: it is setted as True if and only if the System successfully completes
+ the Registration of the current User and 
+\bar under
+Exit
+\bar default
+: it points out the User decision to leave the context without complete
+ its registration.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+If there's an error or more inside the compiled form, the System informs
+ the User about the specific lack through the error message.
+ Hence the User is required to check the error and compile again the missing
+ part of the form.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.1: 
+\series default
+The User effectively compiles again the form.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.2: 
+\series default
+The User confirms again the compilation.
+ The missing parameters are contained in a variable someParameters, which
+ will be trasferred to the System during the sending.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4: 
+\series default
+If the form compiled by the User is OK, the System informs the User of the
+ correctness of all the transaction.
+ Now the User is registered to the System and can gain its services.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.1: 
+\series default
+The System automatically logs the User for the first time.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename Sequence Diagrams Simplified/SequenceDiagramRegistrationSimplified.svg
+	lyxscale 80
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Autentication phase
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+The User sends to the System an autentication request.
+ The request contains User's name and User's password.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.1: 
+\series default
+The System puts the request in a queue and, after the elaborations of older
+ ones, analyzes it.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+The Access is denied if User's password and/or User's name aren't correct,
+ the System informs the User by sending her/him an error message.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.2: 
+\series default
+The User is asked to confirm the receipt of the error message instance.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+Once the System has verified that inputs from the User are correct, it sends
+ to the User the confirmation message for the autentication.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.1: 
+\series default
+The profile page is finally showed to the User.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Sequence Diagrams Simplified/SequenceDiagramAutenticationSimplified.svg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Searching and Booking a nearby Car
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+The User sends a request of displaying all the nearby Cars to the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1.1: 
+\series default
+A list of all nearby Cars is returned from the previous request.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+The User selects a Car from the list.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.1: 
+\series default
+The System checks if the Car is still available (another User could have
+ asked for that car before and quickly).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+The confirmation is setted as false and User is advised of this event.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.1: 
+\series default
+The User confirm the notification, she/he is afterwards called to select
+ another Car from available ones.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4: 
+\series default
+Confirmation is true and the System retrieves Car's informations.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.1 
+\series default
+The User is informed of the correctness of selection.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.2: 
+\series default
+System shows to the User prenotation details automatically.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.3: 
+\series default
+System shows to the User selected Car's details automatically.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Sequence Diagrams Simplified/SequenceDiagramSearchingAndBookingNearbyCarSimplified.svg
+	lyxscale 80
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Time Expiration 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4: 
+\series default
+A System's confirmation of occurred Reservation
+\series bold
+ 
+\series default
+is sent to the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.1: 
+\series default
+The System waits for the User's proximity to the Car, meanwhile it updates
+ the countdown starting from the variable Timeout = 60 minutes (the decrementing
+ is supposed to be in seconds).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.2: 
+\series default
+If the countdown reaches 0 s and the User isn't in proximity of the Car
+ yet, the System alerts the User of the expiration of the reservation.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.3: 
+\series default
+The User is required to confirm the System notification.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.4: 
+\series default
+The User is warned about the extra fee she/he has to pay for this case.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Sequence Diagrams Simplified/SequenceDiagramTimeExpirationSimplified.svg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The System unlocks a Car
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+The System checks the nearness condition betweed the User and the reserved
+ Car.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+When the nearness condition is satisfied, the User is alerted and a popup
+ to be clicked is sended to him (it is supposed to be a button enabled at
+ time of nearness).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.1: 
+\series default
+The popup is clicked by the User, the System receives the corresponding
+ notification.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+The System unlocks the reserved Car.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.1: 
+\series default
+Car's System notify the System that the Car is now unlocked.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3.2: 
+\series default
+The System alerts the User that the Car is now unlocked.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Sequence Diagrams Simplified/UnlockingACarSimplified.svg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+End of a ride and payment
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+The User informs the Car's System of the end of the Ride.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+Car's System asks a confirmation of end of ride to the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.1: 
+\series default
+The User confirms the end of the ride.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+Car's System alerts the System of the end of the ride for the current User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4: 
+\series default
+The System asks for User Datas relatively
+\series bold
+ 
+\series default
+to the ended ride.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.1: 
+\series default
+Car's System sends required Datas to the System (currentRide is the object
+ in which all this datas will be allocated).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+5: 
+\series default
+The System processes the request with Datas obtained from the Car's System
+ and for the Payment System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+6: 
+\series default
+The System launches a payment instance to the Payment System in which a
+ specific request for User's payment is formulated.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+6.1: 
+\series default
+The Payment System processes the request sent by The System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+6.2: 
+\series default
+The Payment System informs the System that the request was well processed.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+7: 
+\series default
+The Payment System launches a payment request towards the specified User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+7.1: 
+\series default
+There is a payment transaction which could be or not be well done.
+ In this last case the User is required to try again with the payment.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+8: 
+\series default
+The payment completed with errors for some reasons.
+ The System is informed of this event.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+8.1: 
+\series default
+The User is informed of the fault in the payment by the System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+8.2: 
+\series default
+The User confirms the notification of the System.
+ Now the User is required to try again with the payment or to signaling
+ its problem to the System directly.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+9: 
+\series default
+The payment is OK.
+ The Payment System informs the System of this event.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+9.1: 
+\series default
+The User is also informed by the System of the success of the payment.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+9.2: 
+\series default
+The User confirms the notification of the System.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Sequence Diagrams Simplified/FinishARideSimplified.svg
+	lyxscale 55
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Activating the Money Saving Option
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+1: 
+\series default
+The User activates the Money Saving Option by notifying it to the Car's
+ System (or, alternatively, to the System during the reservation phase).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2: 
+\series default
+the Car's System wants to know from the User the final destination of her/his
+ ride.
+ The term 
+\bar under
+Destination
+\bar default
+ refers to an object where geographic coordinates of the destination will
+ be compiled by the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.1: 
+\series default
+The User fills the form showed by the Car's System with the coordinates
+ of the destination.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+2.2: 
+\series default
+The User sends his/her reply to the Car's System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+3: 
+\series default
+The Car's System checks if the given destination is correct.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+loop: 
+\series default
+the Car's System continuing on the asking of a correct Destination if and
+ only if: 
+\bar under
+CorrectDestCondition
+\bar default
+ is false, is the case in which the User has specified an incorrect position,
+ or the 
+\bar under
+Exit
+\bar default
+ condition is true and this is the case in which the User decides to come
+ back to the previous context without finishing the operation.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4: 
+\series default
+the Car's System alerts the User that the given destination is an incorrect
+ one.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.1: 
+\series default
+the User fills again the coordinates of the destination.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+4.2: 
+\series default
+the User gives back the 
+\bar under
+Destination
+\bar default
+ instance to the Car's System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+5: 
+\series default
+the Car's System asks the System to give to it a set of Safe Area within
+ a certain distance from the destination given by the User.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+5.1: 
+\series default
+the System processes the request of the Car's System, calculating the coordinate
+s of Safe Areas from the given destination.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+5.2: 
+\series default
+the System returns Safe Areas to the Car's System.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+6: 
+\series default
+the Car's System shows the Safe Areas to the User by diplaying them on the
+ screen on board.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+6.1: 
+\series default
+the User is required to select one of the given Safe Areas.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+6.2: 
+\series default
+for selecting one of the given Safe Areas, the User clicks on one of them.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+7: 
+\series default
+the Car's System calculates the shorter path from the actual position of
+ the Car to the given destination.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+8: 
+\series default
+the Car's System shows the calculated path to the Driver by displaying it
+ on the Car's display.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Sequence Diagrams Simplified/ActivatingSaveMoneyOption.svg
+	lyxscale 80
+	scale 30
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
