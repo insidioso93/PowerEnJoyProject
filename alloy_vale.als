@@ -74,8 +74,10 @@ sig Reservation {
 	end: lone Time,
 	ride: lone Ride
 }
+//TODO: constraint on timing: end after start
 
 sig Time {}
+//TODO: ordering on time????
 
 pred makeReservation (s, s': ManagementSystem, r: Reservation, u: User, c, c': Car) {
 	u in s.users and
@@ -104,8 +106,52 @@ one sig ManagementSystem{
 
 
 // Rides
+sig Ride {
+	start: one Time,
+	end: lone Time,
+	activations: set ActiveRide
+}
+//TODO: constraint on timing: end after start
 
-sig Ride {}
+pred startRide (re, re': Reservation, ri: ride) {
+	re.ride = none and re'.ride = ri and
+	ri.activations = none and // no activations yet
+	re.user = re'.user and re.car = re'.car and re.start = re'.start and re.end = none and re'.end = none //unchanged properties of reservation
+}
+
+sig ActiveRide {
+	start: one Time,
+	end: lone Time,
+	passengers: one Int
+}
+//TODO: constraint on timing: end after start
+
+pred startActiveRide (r, r': Ride, ar: ActiveRide) {
+	r'.activations = r.activations + ar and
+	ar.end = none and
+	r.start = r'.start and r.end = none and r'.end = none
+	//TODO: constraint: all completed activations already have an <end> time
+}
+
+pred endActiveRide (ar, ar': ActiveRide) {
+	ar.start = ar'.start and
+	ar.passengers = ar'.passengers and
+	ar.end = none and ar'.end !=none
+}
+
+pred endRideAndReservation (s, s': ManagementSystem, re, re': Reservation, ri, ri': Ride){
+	ri.start = ri'.start and ri.activations = ri'.activations and // unchanged properties of ride
+	ri.end = none and ri'.end != none and //ride has finished
+
+	re.user = re'.user and re.car = re'.car and re.start = re'.start and re.ride = re'.ride and// unchanged properties of reservation
+	re.end = none and re'.end != none //reservation has finished
+
+	and
+	
+	s'.reservations = s.reservations - re' and
+	s'.users = s.users and
+	s'.reservedCars = s.reservedCars - re'.car // car is no longer reserved. Is it available of out of order? ( TODO )
+}
 
 //run registerUser for 3
 //run park for 4 but 0 User
