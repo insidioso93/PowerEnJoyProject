@@ -110,6 +110,22 @@ Introduction
 \end_layout
 
 \begin_layout Subsection
+(Hours dedicated to the project)
+\end_layout
+
+\begin_layout Itemize
+Luca Marzi: 28 h
+\end_layout
+
+\begin_layout Itemize
+Valeria Mazzola: 28 h
+\end_layout
+
+\begin_layout Itemize
+Federico Nigro: 28 h
+\end_layout
+
+\begin_layout Subsection
 Problem analysis
 \end_layout
 
@@ -5784,6 +5800,17 @@ System model
 
 \begin_layout Subsection
 UML Class Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Req-level_class_diagram.svg
+	scale 50
+	BoundingBox 0bp 0bp 400bp 800bp
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
