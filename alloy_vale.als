@@ -60,41 +60,10 @@ fact {
 //	c.state = Reserved and
 //}
 
-// Reservations
-sig Reservation {
-	user: one User,
-	car: one Car,
-	start: one Time,
-	end: lone Time,
-	ride: lone Ride,
-	cost: one Cost,
-	discounts: set Discount,
-	paid: one Bool
-}
-//TODO: constraint on timing: end after start
-
-sig Time {}
-//TODO: ordering on time????
-
 sig Cost{}
 sig Discount {
 }
 
-pred makeReservation (s, s': ManagementSystem, r: Reservation) {
-	s'.reservations = s.reservations + r and
-	r.car in s.availableCars and
-	r.car in s'.reservedCars and
-	r.ride = none //no ride has started yet
-	
-}
-
-pred deleteReservation (s, s': ManagementSystem, r: Reservation) {
-	s'.reservations = s.reservations - r and
-	r.car in s.reservedCars and
-	r.car in s'.availableCars and
-	r.ride = none
-}
-	
 
 
 // TODO: pred expireReservation
@@ -123,11 +92,50 @@ one sig ManagementSystem{
 }
 
 
+// Reservations
+sig Reservation {
+	user: one User,
+	car: one Car,
+	start: one Time,
+	end: lone Time,
+	ride: lone Ride,
+	cost: one Cost,
+	discounts: set Discount,
+	paid: one Bool
+}
+fact noOrphanRides{
+	(all r: Ride | one re: Reservation | re.ride = r) // all rides happen inside exactly one reservation
+}
+//TODO: constraint on timing: end after start
+
+pred makeReservation (s, s': ManagementSystem, r: Reservation) {
+	s'.reservations = s.reservations + r and
+	r.car in s.availableCars and
+	r.car in s'.reservedCars and
+	r.ride = none //no ride has started yet
+	
+}
+
+pred deleteReservation (s, s': ManagementSystem, r: Reservation) {
+	s'.reservations = s.reservations - r and
+	r.car in s.reservedCars and
+	r.car in s'.availableCars and
+	r.ride = none
+}
+
+
+sig Time {}
+//TODO: ordering on time????
+
+
 // Rides
 sig Ride {
 	start: one Time,
 	end: lone Time,
 	activations: set ActiveRide
+}
+fact noOrphanActiveRides{
+	(all ar: ActiveRide | one r: Ride | ar in r.activations) // all active rides happen inside exactly one ride
 }
 //TODO: constraint on timing: end after start
 
@@ -141,6 +149,8 @@ sig ActiveRide {
 	start: one Time,
 	end: lone Time,
 	passengers: one Int
+}{
+	passengers <= 4 and passengers > 0//  bounds on number of passengers
 }
 //TODO: constraint on timing: end after start
 
@@ -174,5 +184,7 @@ pred endRideAndReservation (s, s': ManagementSystem, re, re': Reservation, ri, r
 //run registerUser for 3
 //run park for 4 but 0 User
 
-run registerUser for 3
-run makeReservation for 3 but 3 User
+run registerUser for 2
+run makeReservation for 2
+run startRide for 2
+run startActiveRide for 2
