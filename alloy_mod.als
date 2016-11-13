@@ -3,7 +3,18 @@ abstract sig Bool{}
 one sig True extends Bool{}
 one sig False extends Bool{}
 
-sig SafeArea{}
+sig Position{
+	latitude: Int,
+	longitude: Int
+}
+
+abstract sig ParkingArea{
+	position: one Position
+}
+
+sig SafeArea extends ParkingArea{}
+sig NonSafeArea extends ParkingArea{}
+
 
 //sig Plug{}
 //sig PowerStation extends SafeArea{
@@ -42,21 +53,12 @@ one sig ManagementSystem{
 	(no disjoint u1,u2: User | u1.license = u2.license) and						    //No RegisteredUsers with same Drinving License
 	(all c: Car |  c not in cars implies activeReservations.c= none) and			 	    //Only on service Cars can be reserved 	
 	(all u: User | u not in registeredUsers implies u.activeReservations = none) and	    //Only RegisteredUser can reserve Cars
-	(all u: User | u in registeredUsers implies u.license != none and u.payment != none ) //RegisteredUsers provides have provided valid information
+	(all u: User | u in registeredUsers implies u.license != none and u.payment != none ) //RegisteredUser have provided valid information
+
 }
 
-sig ActiveReservation{
-	ownerUser: one User,
-	reservedCar: one  Car,
-	ride: Ride
-}
-
-sig Ride{
-	activeRide: set ActiveRide
-}
 
 //Predicates
-
 //Find AvailableCars
 pred AvailableCar[c: Car]{
 	c in ManagementSystem.cars and (ManagementSystem.activeReservations).c = none
