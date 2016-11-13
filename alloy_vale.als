@@ -29,13 +29,7 @@ pred userDeletion (s, s': ManagementSystem, u: User) {
 }
 
 // Cars
-abstract sig CarState{}
-one sig Available extends CarState{}
-one sig Reserved extends CarState{}
-one sig OutOfService extends CarState{}
-
 sig Car{
-	state: one CarState,
 	pos: one GPSPosition
 }
 // Different cars can appear in the same GPS position because the position is not precise.
@@ -180,4 +174,5 @@ pred endRideAndReservation (s, s': ManagementSystem, re, re': Reservation, ri, r
 //run registerUser for 3
 //run park for 4 but 0 User
 
+run registerUser for 3
 run makeReservation for 3 but 3 User
