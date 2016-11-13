@@ -1,4 +1,4 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
 \lyxformat 508
 \begin_document
 \begin_header
@@ -4937,8 +4937,9 @@ The System automatically logs the User for the first time.
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 \begin_inset Graphics
-	filename Sequence Diagrams Simplified/SequenceDiagramRegistrationSimplified.svg
+	filename diagrams-svg/SequenceDiagramRegistrationSimplified.svg
 	lyxscale 80
+	display false
 	scale 30
 
 \end_inset
@@ -5010,7 +5011,8 @@ The profile page is finally showed to the User.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename Sequence Diagrams Simplified/SequenceDiagramAutenticationSimplified.svg
+	filename diagrams-svg/SequenceDiagramAutenticationSimplified.svg
+	display false
 	scale 30
 
 \end_inset
@@ -5116,8 +5118,9 @@ System shows to the User selected Car's details automatically.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename Sequence Diagrams Simplified/SequenceDiagramSearchingAndBookingNearbyCarSimplified.svg
+	filename diagrams-svg/SequenceDiagramSearchingAndBookingNearbyCarSimplified.svg
 	lyxscale 80
+	display false
 	scale 30
 
 \end_inset
@@ -5183,7 +5186,8 @@ The User is warned about the extra fee she/he has to pay for this case.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename Sequence Diagrams Simplified/SequenceDiagramTimeExpirationSimplified.svg
+	filename diagrams-svg/UnlockingACar.svg
+	display false
 	scale 30
 
 \end_inset
@@ -5255,7 +5259,8 @@ The System alerts the User that the Car is now unlocked.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename Sequence Diagrams Simplified/UnlockingACarSimplified.svg
+	filename diagrams-svg/UnlockingACar.svg
+	display false
 	scale 30
 
 \end_inset
@@ -5444,8 +5449,9 @@ The User confirms the notification of the System.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename Sequence Diagrams Simplified/FinishARideSimplified.svg
+	filename diagrams-svg/FinishARideSimplified.svg
 	lyxscale 55
+	display false
 	scale 20
 
 \end_inset
@@ -5642,8 +5648,9 @@ the Car's System shows the calculated path to the Driver by displaying it
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename Sequence Diagrams Simplified/ActivatingSaveMoneyOption.svg
+	filename diagrams-svg/ActivatingSaveMoneyOption.svg
 	lyxscale 80
+	display false
 	scale 30
 
 \end_inset
