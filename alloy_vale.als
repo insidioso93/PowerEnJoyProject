@@ -7,31 +7,24 @@ one sig False extends Bool{}
 // Users and their attributes
 sig User{
 	email: one EmailAddress,
-	payment: one PaymentPreference,
-	license: one LicenseID,
+	license: lone DrivingLicense,
+	payment: set PaymentPreference,
 	gps: lone GPSPosition
 }
 
-sig EmailAddress, PaymentPreference, LicenseID {}
+sig EmailAddress, DrivingLicense {}
+abstract sig PaymentPreference{}
+sig Paypal extends PaymentPreference{}
 
-fact {
+fact emailAddressIsUnique{
 	all e: EmailAddress | one u: User | u.email = e
 }
 
-fact {
-	all p: PaymentPreference | one u: User | u.payment = p
-}
 
-
-// User registration
-sig UsersSet {
-	users: set User
-}
-
-pred registerUser (s, s': UsersSet, u: User){
+pred registerUser (s, s': ManagementSystem, u: User){
 	s'.users = s.users + u
 }
-pred userDeletion (s, s': UsersSet, u: User) {
+pred userDeletion (s, s': ManagementSystem, u: User) {
 	s'.users = s.users - u
 }
 
@@ -84,14 +77,30 @@ sig Reservation {
 
 sig Time {}
 
-sig ReservationsSet {
+pred makeReservation (s, s': ManagementSystem, r: Reservation, u: User, c, c': Car) {
+	u in s.users and
+	c in s.availableCars and // the car is available
+	c not in s.reservations.car and // there is no reservation yet fot the car
+	u not in s.reservations.user and // there is no reservation yet for the user
+	s'.reservations = s.reservations + r and
+	r.user = u and r.car = c' and
+	u in s'.users and
+	c' in s'.reservedCars and // the car becomes reserved
+	r.ride = none //no ride has started yet
+}
+
+// The system
+one sig ManagementSystem{
+	users: set User,
+	availableCars: set Car,
+	reservedCars: set Car,
+	outOfOrderCars: set Car,
 	reservations: set Reservation
+}{
+	(availableCars & reservedCars = none) and
+	(availableCars & outOfOrderCars = none) and
+	(reservedCars & outOfOrderCars= none)
 }
-
-pred makeReservation (s, s': ReservationsSet, r: Reservation) {
-	s'.reservations = s.reservations + r
-}
-
 
 
 // Rides
