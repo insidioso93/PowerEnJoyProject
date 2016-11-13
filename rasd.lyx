@@ -1,4 +1,4 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 508
 \begin_document
 \begin_header
@@ -1193,6 +1193,14 @@ component of the Car which permits the interaction between the Car's System
  and the User.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+On Board System: 
+\series default
+term which indicates the Car's System in some Sequence Diagram.
+\end_layout
+
 \begin_layout Section
 Text Assumptions
 \end_layout
@@ -1971,6 +1979,144 @@ the System shall configure automatic messages to be sent to the User in
 
 \begin_layout Subsection
 Nonfunctional requirements
+\end_layout
+
+\begin_layout Subsubsection
+User Interface
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Main Menu: 
+\series default
+it is the first interface showed to the User after her/his log to the service.
+ In the Main Menu the User can see the principal informations associated
+ by the System to her/him: her/his name and surname and her/his email address.
+ There are some links to the other following interfaces:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+User Profile
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Reserve a Car.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+User Profile: 
+\series default
+it is the profile of the User in which there are detailed informations about
+ her/him and in particular, the informations already showed in the Main
+ Menu, her/his home address, her/his telephone number and her/his mobile
+ number, there is also the possibility to show an image for the profile.
+ The logged User can always modify the parameters through clicking on the
+ appropriate button.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Reserve a Car: 
+\series default
+it is the interface in which it is displayed to the User the map of the
+ area in which her/his position is currently revealed by the System.
+ In particular, the User is in the centre of the Map and she/he can find
+ the available Cars around her/him in real time.
+ If one of the Car within the area becomes unavailable, the User is instantly
+ informed of it by seeing on the screen of its mobile the Car becoming from
+ green to orange and after a while disappearing from the map.
+ Once the User clicks on one of available Car, the System redirect her/him
+ on the
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Reservation Menu.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Reservetion Menu: 
+\series default
+it is the interface in which the User compiles effectively the reservation
+ form for booking the selected Car.
+ Some characteristics of the Car are immediatly showed by the System to
+ the User (other detailed characteristics are retrieved after the prenotation).
+ After the confirmation the User is redirected again to the previous interface,
+ but on the map there is only the reserved Car right now.
+ There is also the 
+\begin_inset Quotes eld
+\end_inset
+
+nearby button
+\begin_inset Quotes erd
+\end_inset
+
+ which will be enabled by the System after the condition of nearness between
+ the User and the Car is verified.
+ For this case there is also the shortest path from the User to the Car,
+ which can help the User to reach the reserved vehicle.
+\end_layout
+
+\begin_layout Subsubsection
+Documentation
+\end_layout
+
+\begin_layout Standard
+We will refer to the following documents for having a global view of the
+ System in terms of its functionalities to be implemented without redundancy
+ afterwards.
+ These documents are designed to be a complete sketch of what the System
+ is intended to be:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RASD (Requirement Analysis and Specification Document):
+\series default
+ it is a first attempt to deeply understand what the System shall do and
+ not do accordingly to the goals.
+ RASD is particularly designed to sharply design which are the requirements
+ for modeling the System.
+ Domain Properties and Text Assumptions aids instead to take which are the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+border
+\begin_inset Quotes erd
+\end_inset
+
+ of our System into account in terms of functionalities and which other
+ responsabilities are of other Actors inside the Environments.
+ Diagrams and Alloy modeling tries finally to shows the different cases
+ of utilization and the different situations the System could be during
+ the offering of the service.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+DD (Design Document): 
+\series default
+it is the document in which specific aspects of the System will be studied.
+ There will be the reference to the adopted tecnologies for the creation
+ of the System and a particular emphasis on its structure.
 \end_layout
 
 \begin_layout Section
