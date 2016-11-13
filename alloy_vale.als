@@ -86,10 +86,10 @@ sig Cost{}
 sig Discount {
 }
 
-pred makeReservation (s, s': ManagementSystem, r: Reservation, u: User, c, c': Car) {
+pred makeReservation (s, s': ManagementSystem, r: Reservation) {
 	s'.reservations = s.reservations + r and
 	r.car in s.availableCars and
-	r.car in s'.availableCars and
+	r.car in s'.reservedCars and
 	r.ride = none //no ride has started yet
 	
 }
