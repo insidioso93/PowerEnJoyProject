@@ -183,14 +183,12 @@ the world and the machine
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- valid credentials that are not associated to any other User and 
+\begin_layout Itemize
+valid credentials that are not associated to any other User and 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- valid payment information.
+\begin_layout Itemize
+valid payment information.
 \end_layout
 
 \end_deeper
@@ -256,14 +254,12 @@ By submitting informations required by the reservation form for a Car, the
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the Car is available and 
+\begin_layout Itemize
+the Car is available and
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- there’s no other active registration made by the User for any other car.
+\begin_layout Itemize
+there’s no other active registration made by the User for any other car.
 \end_layout
 
 \end_deeper
@@ -282,14 +278,12 @@ After exactly one hour from when an active reservation was made the active
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the active reservation hasn't been deleted by the User and
+\begin_layout Itemize
+the active reservation hasn't been deleted by the User and
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the active reservation hasn't any ride associated to it.
+\begin_layout Itemize
+the active reservation hasn't any ride associated to it.
 \end_layout
 
 \end_deeper
@@ -304,9 +298,8 @@ After exactly one hour from when an active reservation was made the active
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- her/his active reservation expires.
+\begin_layout Itemize
+her/his active reservation expires.
  
 \end_layout
 
@@ -332,10 +325,9 @@ The Registered User shall be able to delete her/his active reservation if
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the time elapsed from the beginning of reservetion is still less than
- one hour.
+\begin_layout Itemize
+the time elapsed from the beginning of reservetion is still less than one
+ hour.
 \end_layout
 
 \end_deeper
@@ -364,14 +356,12 @@ The Registered User shall be able to delete her/his active reservation if
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the User owns an active reservation for the Car
+\begin_layout Itemize
+the User owns an active reservation for the Car
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the GPS position of the User is within a certain distance from the reserved
+\begin_layout Itemize
+the GPS position of the User is within a certain distance from the reserved
  Car.
 \end_layout
 
@@ -386,9 +376,8 @@ A reserved Car shall be automatically unlocked if and only if
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the User who owns the active reservation on the Car notifies the condition
+\begin_layout Itemize
+the User who owns the active reservation on the Car notifies the condition
  of nearness to it.
 \end_layout
 
@@ -437,14 +426,12 @@ When the User starts the engine of the Car, the ride associated to the active
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the Car is parked and 
+\begin_layout Itemize
+the Car is parked and 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the User and all the passengers exit the Car.
+\begin_layout Itemize
+the User and all the passengers exit the Car.
 \end_layout
 
 \end_deeper
@@ -459,9 +446,8 @@ At the end of an active ride, the System should charge the User for a parking
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the Car is parked in a non safe area.
+\begin_layout Itemize
+the Car is parked in a non safe area.
 \end_layout
 
 \end_deeper
@@ -475,9 +461,8 @@ The Car locks itself automatically if and only if
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- it is parked and the User and all the passengers exit it.
+\begin_layout Itemize
+it is parked and the User and all the passengers exit it.
 \end_layout
 
 \end_deeper
@@ -503,9 +488,8 @@ If the registered User uses the Car with at least two other passengers on
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the Car is left with no more than 50% of the battery empty.
+\begin_layout Itemize
+the Car is left with no more than 50% of the battery empty.
 \end_layout
 
 \end_deeper
@@ -520,9 +504,8 @@ At the end of an active ride there shall be applied a discount of 30% on
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the Car is parked at a power grid station and the User plugs the Car into
+\begin_layout Itemize
+the Car is parked at a power grid station and the User plugs the Car into
  the power grid.
 \end_layout
 
@@ -538,9 +521,8 @@ At the end of an active ride there shall be applied a discount of 30% on
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the Car is parked at more than 3KM from the nearest power grid station.
+\begin_layout Itemize
+the Car is parked at more than 3KM from the nearest power grid station.
  
 \end_layout
 
@@ -576,10 +558,9 @@ At the end of the active ride the System shall apply a discount on the total
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- the Car is parked at a parking area that was suggested to the User by
- the System when the User activated the money saving option.
+\begin_layout Itemize
+the Car is parked at a parking area that was suggested to the User by the
+ System when the User activated the money saving option.
 \end_layout
 
 \end_deeper
@@ -1523,15 +1504,13 @@ the System shall control and correctly manage instances of prenotations.
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- having a queue in which requestes are located at time of their formulation
+\begin_layout Itemize
+having a queue in which requestes are located at time of their formulation
  and 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- a global trace of the first prenotation for the single Car, which permits
+\begin_layout Itemize
+a global trace of the first prenotation for the single Car, which permits
  to avoid a multiple prenotation it.
 \end_layout
 
@@ -1574,14 +1553,12 @@ the system shall control if the User who wants to book the car, hasn't a
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- prevents the User of making a new request in case of a pending one 
+\begin_layout Itemize
+prevents the User of making a new request in case of a pending one 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- or permits the condition, but without accepts the request and informing
+\begin_layout Itemize
+or permits the condition, but without accepts the request and informing
  the User of the pending one.
  
 \end_layout
@@ -1744,19 +1721,16 @@ the System shall:
 \end_layout
 
 \begin_deeper
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- convert the active reservation in a new active ride
+\begin_layout Itemize
+convert the active reservation in a new active ride
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- inform the User of the beginning of a new active ride via the Car's System.
+\begin_layout Itemize
+inform the User of the beginning of a new active ride via the Car's System.
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-- start charging the User of an amount of money to pay per minute, the User
+\begin_layout Itemize
+start charging the User of an amount of money to pay per minute, the User
  knows about this by the Car's System too.
 \end_layout
 
