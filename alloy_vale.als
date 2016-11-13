@@ -113,7 +113,7 @@ sig Ride {
 }
 //TODO: constraint on timing: end after start
 
-pred startRide (re, re': Reservation, ri: ride) {
+pred startRide (re, re': Reservation, ri: Ride) {
 	re.ride = none and re'.ride = ri and
 	ri.activations = none and // no activations yet
 	re.user = re'.user and re.car = re'.car and re.start = re'.start and re.end = none and re'.end = none //unchanged properties of reservation
