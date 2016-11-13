@@ -8,13 +8,22 @@ sig Position{
 	longitude: Int
 }
 
+fact DifferentCoordinatesForDifferentPositions{
+	all disjoint p1,p2: Position | p1.latitude != p2.latitude or p1.longitude != p2.longitude
+}
+
 abstract sig ParkingArea{
 	position: one Position
 }
 
+fact DifferentPositionForParkingAreas{
+	all disjoint p1,p2: ParkingArea |
+	p1.position != p2.position
+}
+
+
 sig SafeArea extends ParkingArea{}
 sig NonSafeArea extends ParkingArea{}
-
 
 //sig Plug{}
 //sig PowerStation extends SafeArea{
@@ -27,7 +36,7 @@ sig NonSafeArea extends ParkingArea{}
 
 //Vehicles
 sig Car{
-	
+	position: Position
 }
 
 //Users
@@ -48,23 +57,50 @@ one sig ManagementSystem{
 	registeredUsers: set User,
 	cars: set Car,
 	resigerestedUsers: set User,
-	activeReservations: User lone -> lone Car
+	activeReservations: User lone -> lone Car,
+	rides: Ride
 }{
-	(no disjoint u1,u2: User | u1.license = u2.license) and						    //No RegisteredUsers with same Drinving License
-	(all c: Car |  c not in cars implies activeReservations.c= none) and			 	    //Only on service Cars can be reserved 	
-	(all u: User | u not in registeredUsers implies u.activeReservations = none) and	    //Only RegisteredUser can reserve Cars
-	(all u: User | u in registeredUsers implies u.license != none and u.payment != none ) //RegisteredUser have provided valid information
+	(no disjoint u1,u2: User | u1.license = u2.license) and						   //No RegisteredUsers with same Drinving License
+	(all c: Car |  c not in cars implies activeReservations.c= none) and			 	   //Only on service Cars can be reserved 	
+	(all u: User | u not in registeredUsers implies u.activeReservations = none) and	   //Only RegisteredUser can reserve Cars
+	(all u: User | u in registeredUsers implies u.license != none and u.payment != none )//RegisteredUser have provided valid information
 
 }
-
 
 //Predicates
 //Find AvailableCars
-pred AvailableCar[c: Car]{
-	c in ManagementSystem.cars and (ManagementSystem.activeReservations).c = none
+pred AvailableCar[c: ManagementSystem.cars]{
+	(ManagementSystem.activeReservations).c = none
 }
 
+pred ActiveReservationOfUserForCar[u: ManagementSystem.registeredUsers, c: ManagementSystem.cars]{
+	u->c in ManagementSystem.activeReservations
+}
+
+//RegisteredUser makes a Reservation
+pred UserMakesReservation[a, a' : ManagementSystem.activeReservations, u: ManagementSystem.registeredUsers, c: ManagementSystem.cars]{
+	AvailableCar[c] and 
+	a' = a + u->c
+}
+//RegisteredUser deletes a Reservation
+pred UserDeletesActiveReservation[a, a' : ManagementSystem.activeReservations, u: ManagementSystem.registeredUsers, c: ManagementSystem.cars]{
+	ActiveReservationOfUserForCar	[u,c] and 
+	a' = a - u->c
+}
+
+
 //Goals
+assert UserDeletesExitstingActiveReservation{
+	all a, a': ManagementSystem.activeReservations, u: ManagementSystem.registeredUsers, c: ManagementSystem.cars | 
+	UserDeletesActiveReservation[a, a', u, c] implies ActiveReservationOfUserForCar[u, c]
+}
+
+
+assert OnlyAvailableCarsCanBeReserved{
+	all a, a': ManagementSystem.activeReservations, u: ManagementSystem.registeredUsers, c: ManagementSystem.cars | 
+	UserMakesReservation[a, a', u, c] implies AvailableCar[c]
+}
+
 assert UserRegisteredWithValidInformation{
 	all u: User | u in ManagementSystem.registeredUsers implies
 	u.license != none and //A Valid Driving License
@@ -83,9 +119,8 @@ assert AtMostOneCarReservedByUser{
 	implies (ManagementSystem.activeReservations).c1 != (ManagementSystem.activeReservations).c2
 }
 
-
-check UserRegisteredWithValidInformation
-run AvailableCar for 4
+check UserDeletesExitstingActiveReservation for 2
+run UserMakesReservation for 4
 
 
 
