@@ -72,24 +72,38 @@ sig Reservation {
 	car: one Car,
 	start: one Time,
 	end: lone Time,
-	ride: lone Ride
+	ride: lone Ride,
+	cost: one Cost,
+	discounts: set Discount,
+	paid: one Bool
 }
 //TODO: constraint on timing: end after start
 
 sig Time {}
 //TODO: ordering on time????
 
-pred makeReservation (s, s': ManagementSystem, r: Reservation, u: User, c, c': Car) {
-	u in s.users and
-	c in s.availableCars and // the car is available
-	c not in s.reservations.car and // there is no reservation yet fot the car
-	u not in s.reservations.user and // there is no reservation yet for the user
-	s'.reservations = s.reservations + r and
-	r.user = u and r.car = c' and
-	u in s'.users and
-	c' in s'.reservedCars and // the car becomes reserved
-	r.ride = none //no ride has started yet
+sig Cost{}
+sig Discount {
 }
+
+pred makeReservation (s, s': ManagementSystem, r: Reservation, u: User, c, c': Car) {
+	s'.reservations = s.reservations + r and
+	r.car in s.availableCars and
+	r.car in s'.availableCars and
+	r.ride = none //no ride has started yet
+	
+}
+
+pred deleteReservation (s, s': ManagementSystem, r: Reservation) {
+	s'.reservations = s.reservations - r and
+	r.car in s.reservedCars and
+	r.car in s'.availableCars and
+	r.ride = none
+}
+	
+
+
+// TODO: pred expireReservation
 
 // The system
 one sig ManagementSystem{
@@ -102,6 +116,16 @@ one sig ManagementSystem{
 	(availableCars & reservedCars = none) and
 	(availableCars & outOfOrderCars = none) and
 	(reservedCars & outOfOrderCars= none)
+	
+	and (all c: reservedCars | one r: reservations | r.car = c) //all available cars appear in exactly one reservation
+	and (all c: availableCars | no r: reservations | r.car = c)
+	and (all c: outOfOrderCars | no r: reservations | r.car = c) //no reservation for non reserved cars
+	and (all u: users | lone r: reservations | r.user = u) // each user has at most one reservation
+
+	//there are no users, no cars, no reservations untracked by the system
+	and (all u: User | u in users)
+	and (all c: Car | c in availableCars or c in reservedCars or c in outOfOrderCars)
+	and (all r: Reservation | r in reservations)
 }
 
 
@@ -130,7 +154,7 @@ pred startActiveRide (r, r': Ride, ar: ActiveRide) {
 	r'.activations = r.activations + ar and
 	ar.end = none and
 	r.start = r'.start and r.end = none and r'.end = none
-	//TODO: constraint: all completed activations already have an <end> time
+	//TODO: constraint: all completed activations already have an <end> time, also all timings make sense (are in acceptable order)
 }
 
 pred endActiveRide (ar, ar': ActiveRide) {
