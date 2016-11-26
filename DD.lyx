@@ -1,0 +1,288 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extarticle
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+DD
+\begin_inset Newline newline
+\end_inset
+
+Design Document
+\end_layout
+
+\begin_layout Author
+Luca Marzi
+\begin_inset Newline newline
+\end_inset
+
+Valeria Mazzola
+\begin_inset Newline newline
+\end_inset
+
+Federico Nigro
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+The purpose of this document is to clear the design of the PowerEnJoy applicatio
+n up for developers.
+ Next paragraphs will be focused on an expansion of the different technical
+ components integrated in the application and their functionalities, starting
+ from what the RASD has introduced.
+ The analysis will comprise the next elements:
+\end_layout
+
+\begin_layout Itemize
+high level architecture
+\end_layout
+
+\begin_layout Itemize
+design patterns
+\end_layout
+
+\begin_layout Itemize
+main components and interfaces and thier interactions
+\end_layout
+
+\begin_layout Itemize
+runtime behaviours
+\end_layout
+
+\begin_layout Subsection
+Scope
+\end_layout
+
+\begin_layout Standard
+The System (described in the RASD as the entity containing the main aspects
+ of the application) is now divided in three complementary parts.
+ The first of them consists of the Mobile App, which interacts with the
+ User; the second is the Database Server, containing a protected copy of
+ User's and Car's datas and the third is the Application Server, which is
+ a Server Java.
+ This last element, in particular, has the important role to correctly and
+ syncronously manage the communications among the different entities and
+ actors, participating to the different horizontal and vertical instances
+ of the service.
+ We already show the principal actors up in the RASD and now we can say
+ that the Client is everyone who aims to drive one of the vehicles offered
+ by the Service, whilst different connections and interfaces exist between
+ the System and the Car's System (which surely has a proper application
+ inside) and between the System and the Payment System.
+ The aspect of the registration by the Client is important, because the
+ System has finally all the datas of her/him when it is needed and this
+ is a simplifiation on the various requests among actors too.
+ Hence we can assume that errors due to incorrect User's datas digited by
+ the User come up only during her/his registration time.
+ Other facilities are considered regarding the payment (characteristic of
+ the Payment System) and the primitives of interaction with the database.
+ In addiction to the main fucntionalities, the System can offer some extra
+ functionalities: a FAQ service, a communication with an operator at necessity,
+ a forum service and a news service are also guaranteed for the User.
+ We finally conclude this sub paragraph saying that features of applications
+ will be discussed in this document, keeping track of what the RASD already
+ drew up about the System, with some more details and modifications when
+ needed.
+ We can say also that the System itself will be built to be reliable and
+ efficient, according to its purpose and integration in the World and in
+ what we addressed as Environment in the RASD.
+\end_layout
+
+\begin_layout Subsection
+Definitions, acronyms and abbreviations
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Mobile App:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Application Server: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Server Java: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Database Server:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Horizontal instances:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Vertical instances:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Clients: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Service:
+\end_layout
+
+\begin_layout Subsection
+Sources and Reference Documents
+\end_layout
+
+\begin_layout Subsection
+Document Structure
+\end_layout
+
+\begin_layout Section
+Architectural Design
+\end_layout
+
+\begin_layout Subsection
+Overview
+\end_layout
+
+\begin_layout Subsection
+High level components and their interactions
+\end_layout
+
+\begin_layout Subsection
+Component View
+\end_layout
+
+\begin_layout Subsection
+Deployment View
+\end_layout
+
+\begin_layout Subsection
+Runtime View
+\end_layout
+
+\begin_layout Subsection
+Component Interfaces
+\end_layout
+
+\begin_layout Subsection
+Selected Architectural Styles and Patterns
+\end_layout
+
+\begin_layout Subsection
+Other decisions
+\end_layout
+
+\begin_layout Section
+User Interface Design
+\end_layout
+
+\begin_layout Section
+Requirement Tracebility
+\end_layout
+
+\begin_layout Section
+References
+\end_layout
+
+\begin_layout Section
+Hours of work
+\end_layout
+
+\end_body
+\end_document
