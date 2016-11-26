@@ -248,6 +248,166 @@ High level components and their interactions
 Component View
 \end_layout
 
+\begin_layout Standard
+The following section describes the component of the system and defines
+ their role in the architecture.
+\end_layout
+
+\begin_layout Subsubsection
+Car Unit Manager
+\end_layout
+
+\begin_layout Standard
+Each Car Unit Manager is in charge of communicating with a single car unit.
+ They are to be implemented as threads.
+\end_layout
+
+\begin_layout Standard
+The Car Unit Managers implement the communication protocol between the Cars,
+ previously identified as actors, and the core of the application to be
+ developed.
+ Therefore, this module will provide an interface to the rest of the application
+ allowing the exchange of the following types of messages:
+\end_layout
+
+\begin_layout Itemize
+ordinary telemetry such as GPS position, battery status and other sensor
+ information;
+\end_layout
+
+\begin_layout Itemize
+commands from the application to the car;
+\end_layout
+
+\begin_layout Itemize
+events from the car to the application.
+\end_layout
+
+\begin_layout Standard
+The Car Unit Manager is a thin module and has no knowledge of the application's
+ logic, or the cars' state.
+\end_layout
+
+\begin_layout Subsubsection
+Car Pool Manager
+\end_layout
+
+\begin_layout Standard
+The Car Pool Manager encapsulates the handling of car states logic, as well
+ as the car pool itself, meaning it must provide the following functionality:
+\end_layout
+
+\begin_layout Itemize
+car state handling;
+\end_layout
+
+\begin_layout Itemize
+authentication of cars into the system;
+\end_layout
+
+\begin_layout Itemize
+subscription of new cars to the pool and removal of old ones.
+\end_layout
+
+\begin_layout Standard
+The car states are described in the following state diagram:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Car-state-diagram.svg
+	display false
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to encapsulate the car states, the Car Pool Manager will interact
+ with the Car Unit Manager by issuing commands and receiving events.
+ It will also expose an interface to the Reservation Manager.
+ The Car Pool Manager must be able to respond to information queries such
+ as:
+\end_layout
+
+\begin_layout Itemize
+get the state of a car;
+\end_layout
+
+\begin_layout Itemize
+get a set of cars by position.
+\end_layout
+
+\begin_layout Standard
+The Car Pool Manager also has knowledge of parking areas and is in charge
+ of deciding if a car has been parked in an acceptable location.
+ This information is then sent to the Reservation Manager.
+\end_layout
+
+\begin_layout Standard
+The functionalities implemented by this module will trace requirements [R2.2],
+ [R2.3], [R4.4] *more TODO*
+\end_layout
+
+\begin_layout Subsubsection
+Reservation Manager
+\end_layout
+
+\begin_layout Standard
+The Reservation Manager is the core of the application, in charge of all
+ reservation operations, including the computation of a reservation's cost.
+\end_layout
+
+\begin_layout Standard
+It will interact with the other modules like so:
+\end_layout
+
+\begin_layout Itemize
+interaction with the Car Pool Manager:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+query cars by position;
+\end_layout
+
+\begin_layout Itemize
+query the state of a car;
+\end_layout
+
+\begin_layout Itemize
+change the state of a car as a result of operations such as the creation,
+ deletion or expiration of a reservation;
+\end_layout
+
+\begin_layout Itemize
+receive car events such as start/end of rides, activations/deactivations
+ of the car's engine;
+\end_layout
+
+\begin_layout Itemize
+receive special information, such as a badPark event, needed to account
+ for fees to the user;
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+interaction with the User Manager
+\end_layout
+
+\begin_layout Standard
+It will also interact with the external payment system in order for the
+ transactions to happen.
+\end_layout
+
+\begin_layout Standard
+It is to the Reservation Manager to ensure the correct handling of reservation
+ logic and the fulfilling of related requirements [R2.4], [R3.2], [R4.1], [R4.2],
+ [R4.3], [R4.5].
+\end_layout
+
 \begin_layout Subsection
 Deployment View
 \end_layout
