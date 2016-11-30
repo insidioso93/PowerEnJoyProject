@@ -88,7 +88,7 @@ SQL API</panel_attributes>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=)-[]
-CarControlServices</panel_attributes>
+ControlAPI</panel_attributes>
     <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -112,7 +112,7 @@ CarControlServices</panel_attributes>
       <h>28</h>
     </coordinates>
     <panel_attributes>lt=()-[]
-StateServices</panel_attributes>
+EventAPI</panel_attributes>
     <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -136,25 +136,25 @@ StateServices</panel_attributes>
       <h>77</h>
     </coordinates>
     <panel_attributes>symbol=component
-PaymentManager</panel_attributes>
+ReservationManager</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>245</x>
+      <x>231</x>
       <y>210</y>
-      <w>105</w>
+      <w>35</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=)-
-PaymentServices</panel_attributes>
+</panel_attributes>
     <additional_attributes>20.0;20.0;20.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
+      <x>238</x>
       <y>154</y>
       <w>21</w>
       <h>70</h>
@@ -216,23 +216,23 @@ UserToCarServices
     <coordinates>
       <x>336</x>
       <y>126</y>
-      <w>49</w>
+      <w>77</w>
       <h>21</h>
     </coordinates>
     <panel_attributes>lt=()-</panel_attributes>
-    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>371</x>
+      <x>399</x>
       <y>119</y>
-      <w>133</w>
+      <w>105</w>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=)-
-PaymentServices</panel_attributes>
-    <additional_attributes>20.0;20.0;170.0;20.0</additional_attributes>
+</panel_attributes>
+    <additional_attributes>20.0;20.0;130.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -343,5 +343,30 @@ AdministrationToCarsServices
 
 </panel_attributes>
     <additional_attributes>20.0;20.0;20.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>154</y>
+      <w>35</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=)-
+
+</panel_attributes>
+    <additional_attributes>20.0;50.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>329</x>
+      <y>189</y>
+      <w>217</w>
+      <h>259</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;290.0;350.0</additional_attributes>
   </element>
 </diagram>
