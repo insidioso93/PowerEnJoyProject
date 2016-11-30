@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>7</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>133</x>
-      <y>7</y>
-      <w>714</w>
-      <h>448</h>
+      <x>117</x>
+      <y>9</y>
+      <w>918</w>
+      <h>576</h>
     </coordinates>
     <panel_attributes>symbol=component
 ApplicationServer
@@ -17,62 +17,64 @@ group=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>126</x>
-      <y>301</y>
-      <w>77</w>
-      <h>28</h>
+      <x>108</x>
+      <y>405</y>
+      <w>90</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=[].&gt;
 
 group=2</panel_attributes>
-    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>42</x>
-      <y>301</y>
-      <w>112</w>
-      <h>35</h>
+      <x>0</x>
+      <y>405</y>
+      <w>126</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=()-
 UserServices
 
 group=2</panel_attributes>
-    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>189</x>
-      <y>273</y>
-      <w>161</w>
-      <h>77</h>
+      <x>180</x>
+      <y>351</y>
+      <w>234</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>symbol=component
 UserManager
-</panel_attributes>
+
+group=2</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>490</x>
-      <y>84</y>
-      <w>210</w>
-      <h>84</h>
+      <x>576</x>
+      <y>108</y>
+      <w>270</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>symbol=component
-CarsManager</panel_attributes>
+CarManager
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>525</x>
-      <y>448</y>
-      <w>63</w>
-      <h>84</h>
+      <x>621</x>
+      <y>576</y>
+      <w>81</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=)-[]
 
@@ -82,10 +84,10 @@ SQL API</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>98</y>
-      <w>147</w>
-      <h>35</h>
+      <x>1026</x>
+      <y>126</y>
+      <w>189</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=)-[]
 ControlAPI</panel_attributes>
@@ -94,10 +96,10 @@ ControlAPI</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>693</x>
-      <y>98</y>
-      <w>161</w>
-      <h>28</h>
+      <x>837</x>
+      <y>126</y>
+      <w>207</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 </panel_attributes>
@@ -106,10 +108,10 @@ ControlAPI</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>140</y>
-      <w>147</w>
-      <h>28</h>
+      <x>1026</x>
+      <y>180</y>
+      <w>189</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=()-[]
 EventAPI</panel_attributes>
@@ -118,10 +120,10 @@ EventAPI</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>693</x>
-      <y>140</y>
-      <w>161</w>
-      <h>28</h>
+      <x>837</x>
+      <y>180</y>
+      <w>207</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 </panel_attributes>
@@ -130,59 +132,10 @@ EventAPI</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>497</x>
-      <y>161</y>
-      <w>21</w>
-      <h>154</h>
-    </coordinates>
-    <panel_attributes>lt=()-</panel_attributes>
-    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>252</x>
-      <y>343</y>
-      <w>35</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=)-
-
-</panel_attributes>
-    <additional_attributes>20.0;60.0;20.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>259</x>
-      <y>385</y>
-      <w>280</w>
-      <h>77</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-</panel_attributes>
-    <additional_attributes>10.0;10.0;380.0;90.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>343</x>
-      <y>287</y>
-      <w>168</w>
-      <h>35</h>
-    </coordinates>
-    <panel_attributes>lt=)-
-UserToCarServices
-</panel_attributes>
-    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>525</x>
-      <y>161</y>
-      <w>35</w>
-      <h>56</h>
+      <x>621</x>
+      <y>207</y>
+      <w>45</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=)-
 
@@ -192,10 +145,10 @@ UserToCarServices
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>532</x>
-      <y>196</y>
-      <w>21</w>
-      <h>259</h>
+      <x>630</x>
+      <y>252</y>
+      <w>27</w>
+      <h>333</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 </panel_attributes>
@@ -204,21 +157,22 @@ UserToCarServices
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>637</x>
-      <y>266</y>
-      <w>161</w>
-      <h>77</h>
+      <x>702</x>
+      <y>342</y>
+      <w>207</w>
+      <h>99</h>
     </coordinates>
-    <panel_attributes>Administration</panel_attributes>
+    <panel_attributes>symbol=component
+Administration</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>287</y>
-      <w>175</w>
-      <h>28</h>
+      <x>1026</x>
+      <y>369</y>
+      <w>225</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=()-[]
 AdministrationServices</panel_attributes>
@@ -227,22 +181,22 @@ AdministrationServices</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>791</x>
-      <y>287</y>
-      <w>63</w>
-      <h>28</h>
+      <x>900</x>
+      <y>369</y>
+      <w>144</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 </panel_attributes>
-    <additional_attributes>70.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>546</x>
-      <y>378</y>
-      <w>119</w>
-      <h>77</h>
+      <x>648</x>
+      <y>486</y>
+      <w>153</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 </panel_attributes>
@@ -251,10 +205,10 @@ AdministrationServices</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>637</x>
-      <y>336</y>
-      <w>35</w>
-      <h>63</h>
+      <x>765</x>
+      <y>432</y>
+      <w>45</w>
+      <h>81</h>
     </coordinates>
     <panel_attributes>lt=)-
 
@@ -264,10 +218,10 @@ AdministrationServices</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>644</x>
-      <y>161</y>
-      <w>21</w>
-      <h>56</h>
+      <x>774</x>
+      <y>207</y>
+      <w>27</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=()-</panel_attributes>
     <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
@@ -275,15 +229,101 @@ AdministrationServices</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>637</x>
-      <y>203</y>
-      <w>168</w>
-      <h>77</h>
+      <x>765</x>
+      <y>261</y>
+      <w>216</w>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=)-
 AdministrationToCarsServices
 
 </panel_attributes>
     <additional_attributes>20.0;20.0;20.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>180</x>
+      <y>108</y>
+      <w>234</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+ReservationManager</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>279</x>
+      <y>270</y>
+      <w>144</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=)-
+UserToCarServices
+</panel_attributes>
+    <additional_attributes>20.0;20.0;20.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>207</y>
+      <w>27</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=()-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>279</x>
+      <y>441</y>
+      <w>45</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=)-
+
+</panel_attributes>
+    <additional_attributes>20.0;60.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>495</y>
+      <w>351</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;370.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>387</x>
+      <y>207</y>
+      <w>45</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=)-
+
+</panel_attributes>
+    <additional_attributes>20.0;40.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>243</y>
+      <w>252</w>
+      <h>342</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;360.0</additional_attributes>
   </element>
 </diagram>
