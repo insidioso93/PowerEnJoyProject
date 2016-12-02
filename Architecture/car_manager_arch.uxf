@@ -34,7 +34,7 @@ ControlAPI</panel_attributes>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=()-[]
-EventAPI</panel_attributes>
+CarEventsAPI</panel_attributes>
     <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -60,19 +60,6 @@ EventAPI</panel_attributes>
     <panel_attributes>lt=.&gt;
 </panel_attributes>
     <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>32</x>
-      <y>208</y>
-      <w>152</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=()-[]
-UserToCarServices
-</panel_attributes>
-    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -109,5 +96,17 @@ CarPoolManager</panel_attributes>
     <panel_attributes>symbol=component
 CarUnitManager</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>64</x>
+      <y>208</y>
+      <w>120</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=()-[]
+CarAccess API</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
   </element>
 </diagram>
