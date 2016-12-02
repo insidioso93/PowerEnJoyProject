@@ -124,11 +124,11 @@ m1= SQL API</panel_attributes>
     <coordinates>
       <x>468</x>
       <y>144</y>
-      <w>171</w>
+      <w>189</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=-(
-m1= AdminitrationServices</panel_attributes>
+m1= AdminitrationServices API</panel_attributes>
     <additional_attributes>20.0;10.0;20.0;70.0</additional_attributes>
   </element>
   <element>
