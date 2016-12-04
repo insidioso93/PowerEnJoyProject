@@ -416,6 +416,58 @@ Deployment View
 Runtime View
 \end_layout
 
+\begin_layout Subsubsection
+Registration
+\end_layout
+
+\begin_layout Standard
+In this phase the NonRegisteredUser obtains a valid registration to the
+ service.
+ She/He 
+\series bold
+(1)
+\series default
+ expresses the will to make a registration by clicking on the registration
+ Button in the Mobile App.
+ The Mobile App sends a new request to the Server Java which 
+\series bold
+(2)
+\series default
+ opens a new connection with the DBMS for the future storage of datas from
+ the whole process.
+ At this point the Mobile App 
+\series bold
+(3)
+\series default
+ displays to the User the form with fields to be filled for the Registration.
+ The User compiles the form and confirms it to the Mobile App.
+ The Mobile App and the Server Java check if the compilation is maden correctly.
+ If it is not the Mobile App 
+\series bold
+(4) 
+\series default
+alerts the User of the lackness, else 
+\series bold
+(5) 
+\series default
+datas are finally stored in the DBMS from the Server and the User receives
+ the confirmation of the correct registration.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/DDSequenceDiagramRegistration.svg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Autentication
+\end_layout
+
 \begin_layout Subsection
 Component Interfaces
 \end_layout
