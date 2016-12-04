@@ -468,6 +468,352 @@ datas are finally stored in the DBMS from the Server and the User receives
 Autentication
 \end_layout
 
+\begin_layout Standard
+In this phase the User 
+\series bold
+(1)
+\series default
+ compiles the form with her/his User Name and her/his password, the Mobile
+ App sends the request for accessing to the Server Java, which questions
+ the DBMS.
+ The database makes a research and 
+\series bold
+(2) 
+\series default
+informs the Server that there isn't any correspondence between the datas
+ it has received and any of the stored instances, or 
+\series bold
+(3) 
+\series default
+the correspondence exists.
+ In every of these cases the Server warns the Mobile App of the current
+ event and the User is so alerted by the App.
+ If the autentication process ends without errors the Server retrieves correct
+ informations from the DBMS and 
+\series bold
+(4) 
+\series default
+as a final result the User can see her/his profile displayed by the Mobile
+ App.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/DDSequenceDiagramAutentication.svg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Activating the Money Saving Option
+\end_layout
+
+\begin_layout Standard
+In this phase, the User who gets on the Car, 
+\series bold
+(1) 
+\series default
+types on the Screen of the Car the will to activates the Money Saving Option.
+ The Car's System asks the User which is the final destination of her/his
+ journey.
+ The User types the Destination and 
+\series bold
+(3) 
+\series default
+the Car's System checks the validity of the just inserted coordinates through
+ the GPS service.
+ If the control reports any error, 
+\series bold
+(4) 
+\series default
+the User has to digit again the Destination (she/he can also come back to
+ the previous context without Activating the Money Saving Option); else
+ 
+\series bold
+(5)
+\series default
+ the Car's System makes a request to the Server for obtaining the list of
+ the available and nearest Safe Areas given the Position.
+ The Server processes the request and effectively returns to the Car's System
+ the requested list.
+ At this point, 
+\series bold
+(6) 
+\series default
+the list is showed to the User who selects one of the Areas.
+ It is the Car's System which finally 
+\series bold
+(7) 
+\series default
+computes the path to the Safe Area and 
+\series bold
+(8) 
+\series default
+shows it to the User through the Car's Screen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/DDActivatingSaveMoneyOption.svg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Finish a Ride
+\end_layout
+
+\begin_layout Standard
+The User tells to the Car's System that 
+\series bold
+(1) 
+\series default
+the ride ended and 
+\series bold
+(2) 
+\series default
+the Car's System asks for a confirmation.
+ The Car's System 
+\series bold
+(3)
+\series default
+ forwards the information to the Server which 
+\series bold
+(4) 
+\series default
+wants to know from the Car's System all the details of the ride, for proceding
+ to the payment phase.
+ The system on board effevtively provides the required datas.
+ The Server 
+\series bold
+(5) 
+\series default
+processes the incoming informations and after 
+\series bold
+(6)
+\series default
+ sends a request of payment to the Payment System.
+ This last component confirms the payment to the Server and 
+\series bold
+(7)
+\series default
+ explicitly asks for the payment to the User through the Mobile App.
+ The User fills the form with her/his sensible datas about credit card and
+ sends it again to the Payment System.
+ The whole money transaction can 
+\series bold
+(8) 
+\series default
+complete with errors and the User is alerted of this by the Mobile App;
+ or 
+\series bold
+(9) 
+\series default
+can complete correctly.
+ In this last phase the User and the Server are alerted and the Server fills
+ some fields in the DBMS with the history of current User's payment.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/DDFinishARide.svg
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Search and Book a nearby Car
+\end_layout
+
+\begin_layout Standard
+In this phase the Logged User makes the request 
+\series bold
+(1)
+\series default
+ to see the available Cars on the Screen of her/his device.
+ Hence the Mobile App asks to the Server for the list of all the available
+ Cars and, once obtained it, shows it to the User.
+ At this point the User 
+\series bold
+(2) 
+\series default
+selects one of the Car on the Screen.
+ The App forward the selection to the Server which controls if the Car is
+ still available.
+ If the Car is no available anymore, 
+\series bold
+(3) 
+\series default
+the User is informed by the App and there is the return to the previous
+ context.
+ Else 
+\series bold
+(4) 
+\series default
+the prenotation is confirmed, the Mobile App 
+\series bold
+(5) 
+\series default
+asks to the Server to retrieves the complete informations of the Car, 
+\series bold
+(6) 
+\series default
+The details of the reservation are showed to the User and 
+\series bold
+(7) 
+\series default
+she/he can see the details of the Car too.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/DDSearchBookNearbyCar.svg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Time Expiration
+\end_layout
+
+\begin_layout Standard
+Once 
+\series bold
+(1)
+\series default
+ a prenotation is confirmed, a countdown associated to the current ride
+ instance starts.
+ Reached a given timeout, 
+\series bold
+(2) 
+\series default
+the Server informs the Mobile App of the expiration and the User is warned
+ about the event and the amend to pay.
+ She/He will pay it afterwards through a redirection to the Payment System.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/DDSequenceDiagramTimeExpiration.svg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Locking a Car
+\end_layout
+
+\begin_layout Standard
+The Car's System 
+\series bold
+(1)
+\series default
+ constantly verify a leave condition which consists to understand if all
+ the passengers left the Car after a ride through the Car's Sensors.
+ After the Server has received the leave condition, 
+\series bold
+(2)
+\series default
+ it Locks the Car which confirms the event through an ack.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/DDLockingACar.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Unlocking a Car
+\end_layout
+
+\begin_layout Standard
+The Server 
+\series bold
+(1)
+\series default
+ constantly monitors the User position and it informs the Mobile App of
+ the nearness condition when it exists.
+ The Mobile App 
+\series bold
+(2)
+\series default
+ shows to the User a button or a popup, giving her/him the information of
+ nearness.
+ The User confirms the will to unlock the near Car and 
+\series bold
+(3) 
+\series default
+the Server sends the command to the Car System.
+ It finally warns the Server of the Unlock and 
+\series bold
+(4) 
+\series default
+the User is informed of the event.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/DDUnlockingACar.svg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Telemetry
+\end_layout
+
+\begin_layout Standard
+The Car constantly continues to communicate with the System during its lifetime.
+ In this particular case there is an updating of a first countdown T1 by
+ the Car's System.
+ If the Car's System doesn't send anything after the countdown is reached,
+ 
+\series bold
+(2) 
+\series default
+a position request is made by the Server after the achievement of a second
+ countdown in it.
+ Else 
+\series bold
+(3) 
+\series default
+the Car's System correctly sends its position to the Server Java, which
+ replies with an Ack.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/DDTelemetrySystem.svg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Component Interfaces
 \end_layout
