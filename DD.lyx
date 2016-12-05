@@ -498,33 +498,33 @@ Registration
 \begin_layout Standard
 In this phase the NonRegisteredUser obtains a valid registration to the
  service.
- She/He 
-\series bold
-(1)
-\series default
- expresses the will to make a registration by clicking on the registration
+ She/He
+\end_layout
+
+\begin_layout Enumerate
+expresses the will to make a registration by clicking on the registration
  Button in the Mobile App.
- The Mobile App sends a new request to the Server Java which 
-\series bold
-(2)
-\series default
- opens a new connection with the DBMS for the future storage of datas from
+ The Mobile App sends a new request to the Server Java which
+\end_layout
+
+\begin_layout Enumerate
+opens a new connection with the DBMS for the future storage of datas from
  the whole process.
- At this point the Mobile App 
-\series bold
-(3)
-\series default
- displays to the User the form with fields to be filled for the Registration.
+ At this point the Mobile App
+\end_layout
+
+\begin_layout Enumerate
+displays to the User the form with fields to be filled for the Registration.
  The User compiles the form and confirms it to the Mobile App.
  The Mobile App and the Server Java check if the compilation is maden correctly.
- If it is not the Mobile App 
-\series bold
-(4) 
-\series default
-alerts the User of the lackness, else 
-\series bold
-(5) 
-\series default
+ If it is not the Mobile App
+\end_layout
+
+\begin_layout Enumerate
+alerts the User of the lackness, else
+\end_layout
+
+\begin_layout Enumerate
 datas are finally stored in the DBMS from the Server and the User receives
  the confirmation of the correct registration.
 \end_layout
@@ -533,7 +533,7 @@ datas are finally stored in the DBMS from the Server and the User receives
 \begin_inset Graphics
 	filename diagrams-svg/DDSequenceDiagramRegistration.svg
 	display false
-	scale 20
+	scale 13
 
 \end_inset
 
@@ -545,30 +545,30 @@ Authentication
 \end_layout
 
 \begin_layout Standard
-In this phase the User 
-\series bold
-(1)
-\series default
- compiles the form with her/his User Name and her/his password, the Mobile
+In this phase the User
+\end_layout
+
+\begin_layout Enumerate
+compiles the form with her/his User Name and her/his password, the Mobile
  App sends the request for accessing to the Server Java, which questions
  the DBMS.
- The database makes a research and 
-\series bold
-(2) 
-\series default
+ The database makes a research and
+\end_layout
+
+\begin_layout Enumerate
 informs the Server that there isn't any correspondence between the datas
- it has received and any of the stored instances, or 
-\series bold
-(3) 
-\series default
+ it has received and any of the stored instances, or
+\end_layout
+
+\begin_layout Enumerate
 the correspondence exists.
  In every of these cases the Server warns the Mobile App of the current
  event and the User is so alerted by the App.
  If the authentication process ends without errors the Server retrieves
- correct informations from the DBMS and 
-\series bold
-(4) 
-\series default
+ correct informations from the DBMS and
+\end_layout
+
+\begin_layout Enumerate
 as a final result the User can see her/his profile displayed by the Mobile
  App.
 \end_layout
@@ -577,7 +577,7 @@ as a final result the User can see her/his profile displayed by the Mobile
 \begin_inset Graphics
 	filename diagrams-svg/DDSequenceDiagramAutentication.svg
 	display false
-	scale 20
+	scale 16
 
 \end_inset
 
@@ -590,45 +590,44 @@ Activating the Money Saving Option
 
 \begin_layout Standard
 In this phase, the User who gets on the Car, 
-\series bold
-(1) 
-\series default
+\end_layout
+
+\begin_layout Enumerate
 types on the Screen of the Car the will to activates the Money Saving Option.
  The Car's System asks the User which is the final destination of her/his
  journey.
- The User types the Destination and 
-\series bold
-(3) 
-\series default
+ The User types the Destination and
+\end_layout
+
+\begin_layout Enumerate
 the Car's System checks the validity of the just inserted coordinates through
  the GPS service.
- If the control reports any error, 
-\series bold
-(4) 
-\series default
+ If the control reports any error,
+\end_layout
+
+\begin_layout Enumerate
 the User has to digit again the Destination (she/he can also come back to
  the previous context without Activating the Money Saving Option); else
- 
-\series bold
-(5)
-\series default
- the Car's System makes a request to the Server for obtaining the list of
+\end_layout
+
+\begin_layout Enumerate
+the Car's System makes a request to the Server for obtaining the list of
  the available and nearest Safe Areas given the Position.
  The Server processes the request and effectively returns to the Car's System
  the requested list.
- At this point, 
-\series bold
-(6) 
-\series default
+ At this point,
+\end_layout
+
+\begin_layout Enumerate
 the list is showed to the User who selects one of the Areas.
- It is the Car's System which finally 
-\series bold
-(7) 
-\series default
-computes the path to the Safe Area and 
-\series bold
-(8) 
-\series default
+ It is the Car's System which finally
+\end_layout
+
+\begin_layout Enumerate
+computes the path to the Safe Area and
+\end_layout
+
+\begin_layout Enumerate
 shows it to the User through the Car's Screen.
 \end_layout
 
@@ -648,51 +647,51 @@ Finish a Ride
 \end_layout
 
 \begin_layout Standard
-The User tells to the Car's System that 
-\series bold
-(1) 
-\series default
-the ride ended and 
-\series bold
-(2) 
-\series default
+The User tells to the Car's System that
+\end_layout
+
+\begin_layout Enumerate
+the ride ended and
+\end_layout
+
+\begin_layout Enumerate
 the Car's System asks for a confirmation.
- The Car's System 
-\series bold
-(3)
-\series default
- forwards the information to the Server which 
-\series bold
-(4) 
-\series default
+ The Car's System
+\end_layout
+
+\begin_layout Enumerate
+forwards the information to the Server which
+\end_layout
+
+\begin_layout Enumerate
 wants to know from the Car's System all the details of the ride, for proceding
  to the payment phase.
  The system on board effevtively provides the required datas.
- The Server 
-\series bold
-(5) 
-\series default
-processes the incoming informations and after 
-\series bold
-(6)
-\series default
- sends a request of payment to the Payment System.
- This last component confirms the payment to the Server and 
-\series bold
-(7)
-\series default
- explicitly asks for the payment to the User through the Mobile App.
+ The Server
+\end_layout
+
+\begin_layout Enumerate
+processes the incoming informations and after
+\end_layout
+
+\begin_layout Enumerate
+sends a request of payment to the Payment System.
+ This last component confirms the payment to the Server and
+\end_layout
+
+\begin_layout Enumerate
+explicitly asks for the payment to the User through the Mobile App.
  The User fills the form with her/his sensible datas about credit card and
  sends it again to the Payment System.
- The whole money transaction can 
-\series bold
-(8) 
-\series default
+ The whole money transaction can
+\end_layout
+
+\begin_layout Enumerate
 complete with errors and the User is alerted of this by the Mobile App;
- or 
-\series bold
-(9) 
-\series default
+ or
+\end_layout
+
+\begin_layout Enumerate
 can complete correctly.
  In this last phase the User and the Server are alerted and the Server fills
  some fields in the DBMS with the history of current User's payment.
@@ -702,7 +701,7 @@ can complete correctly.
 \begin_inset Graphics
 	filename diagrams-svg/DDFinishARide.svg
 	display false
-	scale 15
+	scale 12
 
 \end_inset
 
@@ -714,42 +713,42 @@ Search and Book a nearby Car
 \end_layout
 
 \begin_layout Standard
-In this phase the Logged User makes the request 
-\series bold
-(1)
-\series default
- to see the available Cars on the Screen of her/his device.
+In this phase the Logged User makes the request
+\end_layout
+
+\begin_layout Enumerate
+to see the available Cars on the Screen of her/his device.
  Hence the Mobile App asks to the Server for the list of all the available
  Cars and, once obtained it, shows it to the User.
- At this point the User 
-\series bold
-(2) 
-\series default
+ At this point the User
+\end_layout
+
+\begin_layout Enumerate
 selects one of the Car on the Screen.
  The App forward the selection to the Server which controls if the Car is
  still available.
- If the Car is no available anymore, 
-\series bold
-(3) 
-\series default
+ If the Car is no available anymore,
+\end_layout
+
+\begin_layout Enumerate
 the User is informed by the App and there is the return to the previous
  context.
- Else 
-\series bold
-(4) 
-\series default
-the prenotation is confirmed, the Mobile App 
-\series bold
-(5) 
-\series default
-asks to the Server to retrieves the complete informations of the Car, 
-\series bold
-(6) 
-\series default
-The details of the reservation are showed to the User and 
-\series bold
-(7) 
-\series default
+ Else
+\end_layout
+
+\begin_layout Enumerate
+the prenotation is confirmed, the Mobile App
+\end_layout
+
+\begin_layout Enumerate
+asks to the Server to retrieves the complete informations of the Car,
+\end_layout
+
+\begin_layout Enumerate
+the details of the reservation are showed to the User and
+\end_layout
+
+\begin_layout Enumerate
 she/he can see the details of the Car too.
 \end_layout
 
@@ -757,7 +756,7 @@ she/he can see the details of the Car too.
 \begin_inset Graphics
 	filename diagrams-svg/DDSearchBookNearbyCar.svg
 	display false
-	scale 20
+	scale 15
 
 \end_inset
 
@@ -769,16 +768,16 @@ Time Expiration
 \end_layout
 
 \begin_layout Standard
-Once 
-\series bold
-(1)
-\series default
- a prenotation is confirmed, a countdown associated to the current ride
- instance starts.
- Reached a given timeout, 
-\series bold
-(2) 
-\series default
+Once
+\end_layout
+
+\begin_layout Enumerate
+a prenotation is confirmed, a countdown associated to the current ride instance
+ starts.
+ Reached a given timeout,
+\end_layout
+
+\begin_layout Enumerate
 the Server informs the Mobile App of the expiration and the User is warned
  about the event and the amend to pay.
  She/He will pay it afterwards through a redirection to the Payment System.
@@ -800,17 +799,17 @@ Locking a Car
 \end_layout
 
 \begin_layout Standard
-The Car's System 
-\series bold
-(1)
-\series default
- constantly verify a leave condition which consists to understand if all
+The Car's System
+\end_layout
+
+\begin_layout Enumerate
+constantly verify a leave condition which consists to understand if all
  the passengers left the Car after a ride through the Car's Sensors.
- After the Server has received the leave condition, 
-\series bold
-(2)
-\series default
- it Locks the Car which confirms the event through an ack.
+ After the Server has received the leave condition,
+\end_layout
+
+\begin_layout Enumerate
+it Locks the Car which confirms the event through an ack.
 \end_layout
 
 \begin_layout Standard
@@ -829,27 +828,27 @@ Unlocking a Car
 \end_layout
 
 \begin_layout Standard
-The Server 
-\series bold
-(1)
-\series default
- constantly monitors the User position and it informs the Mobile App of
- the nearness condition when it exists.
- The Mobile App 
-\series bold
-(2)
-\series default
- shows to the User a button or a popup, giving her/him the information of
+The Server
+\end_layout
+
+\begin_layout Enumerate
+constantly monitors the User position and it informs the Mobile App of the
+ nearness condition when it exists.
+ The Mobile App
+\end_layout
+
+\begin_layout Enumerate
+shows to the User a button or a popup, giving her/him the information of
  nearness.
- The User confirms the will to unlock the near Car and 
-\series bold
-(3) 
-\series default
+ The User confirms the will to unlock the near Car and
+\end_layout
+
+\begin_layout Enumerate
 the Server sends the command to the Car System.
- It finally warns the Server of the Unlock and 
-\series bold
-(4) 
-\series default
+ It finally warns the Server of the Unlock and
+\end_layout
+
+\begin_layout Enumerate
 the User is informed of the event.
 \end_layout
 
@@ -857,7 +856,7 @@ the User is informed of the event.
 \begin_inset Graphics
 	filename diagrams-svg/DDUnlockingACar.svg
 	display false
-	scale 30
+	scale 16
 
 \end_inset
 
@@ -873,16 +872,15 @@ The Car constantly continues to communicate with the System during its lifetime.
  In this particular case there is an updating of a first countdown T1 by
  the Car's System.
  If the Car's System doesn't send anything after the countdown is reached,
- 
-\series bold
-(2) 
-\series default
+\end_layout
+
+\begin_layout Enumerate
 a position request is made by the Server after the achievement of a second
  countdown in it.
- Else 
-\series bold
-(3) 
-\series default
+ Else
+\end_layout
+
+\begin_layout Enumerate
 the Car's System correctly sends its position to the Server Java, which
  replies with an Ack.
 \end_layout
