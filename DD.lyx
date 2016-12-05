@@ -245,6 +245,12 @@ High level components and their interactions
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Component-View"
+
+\end_inset
+
 Component View
 \end_layout
 
@@ -254,47 +260,66 @@ The following section describes the component of the system and defines
 \end_layout
 
 \begin_layout Subsubsection
-Car Unit Manager
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Car-Controller"
+
+\end_inset
+
+Car Controller
 \end_layout
 
 \begin_layout Standard
-Each Car Unit Manager is in charge of communicating with a single car unit.
- They are to be implemented as threads.
+The Car Controller manages the following:
+\end_layout
+
+\begin_layout Itemize
+which cars are in the system, with support for subscription of new cars
+ and deletion of old ones;
+\end_layout
+
+\begin_layout Itemize
+car state logic;
+\end_layout
+
+\begin_layout Itemize
+knowledge of parking areas and their position;
+\end_layout
+
+\begin_layout Itemize
+communication with the cars (including authentication).
 \end_layout
 
 \begin_layout Standard
-The Car Unit Managers implement the communication protocol between the Cars,
- previously identified as actors, and the core of the application to be
- developed.
- Therefore, this module will provide an interface to the rest of the application
- allowing the exchange of the following types of messages:
+The Car controller exposes an interface to the Business Manager, with the
+ following types of method:
 \end_layout
 
 \begin_layout Itemize
-ordinary telemetry such as GPS position, battery status and other sensor
- information;
+observers of car states and car sets;
 \end_layout
 
 \begin_layout Itemize
-commands from the application to the car;
+observer of car position;
 \end_layout
 
 \begin_layout Itemize
-events from the car to the application.
+modifiers of car states.
 \end_layout
 
 \begin_layout Standard
-The Car Unit Manager is a thin module and has no knowledge of the application's
- logic, or the cars' state.
+The Car Controller is made up of two subcomponents: the Car Pool Controller
+ and the Car Unit Controller.
 \end_layout
 
 \begin_layout Subsubsection
-Car Pool Manager
+Car Pool Controller
 \end_layout
 
 \begin_layout Standard
-The Car Pool Manager encapsulates the handling of car states logic, as well
- as the car pool itself, meaning it must provide the following functionality:
+The Car Pool Controller encapsulates the handling of car states logic, as
+ well as the car pool itself, meaning it must provide the following functionalit
+y:
 \end_layout
 
 \begin_layout Itemize
@@ -325,11 +350,19 @@ The car states are described in the following state diagram:
 \end_layout
 
 \begin_layout Standard
-In order to encapsulate the car states, the Car Pool Manager will interact
- with the Car Unit Manager by issuing commands and receiving events.
- It will also expose an interface to the Reservation Manager.
- The Car Pool Manager must be able to respond to information queries such
- as:
+In order to encapsulate the car states, the Car Pool Controller will interact
+ with the Car Unit Controller by issuing commands and receiving events.
+ It will also expose an interface to the Business Manager as described in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Car-Controller"
+
+\end_inset
+
+.
+ The Car Pool Controller must be able to respond to information queries
+ such as:
 \end_layout
 
 \begin_layout Itemize
@@ -341,23 +374,61 @@ get a set of cars by position.
 \end_layout
 
 \begin_layout Standard
-The Car Pool Manager also has knowledge of parking areas and is in charge
+The Car Pool Controller also has knowledge of parking areas and is in charge
  of deciding if a car has been parked in an acceptable location.
- This information is then sent to the Reservation Manager.
+ This information is then forwarded to the Business Manager in order for
+ it to account for fees or discount when necessary.
 \end_layout
 
 \begin_layout Standard
 The functionalities implemented by this module will trace requirements [R2.2],
- [R2.3], [R4.4] *more TODO*
+ [R2.3], [R4.4].
 \end_layout
 
 \begin_layout Subsubsection
-Reservation Manager
+Car Unit Manager
 \end_layout
 
 \begin_layout Standard
-The Reservation Manager is the core of the application, in charge of all
- reservation operations, including the computation of a reservation's cost.
+The Car Unit Controller is in charge of communicating with the car units.
+ 
+\end_layout
+
+\begin_layout Standard
+The Car Unit Controller implements the communication protocols between the
+ Cars, previously identified as actors, and the core of the application
+ to be developed.
+ Therefore, this module will provide an interface to the rest of the application
+ allowing the exchange of the following types of messages:
+\end_layout
+
+\begin_layout Itemize
+ordinary telemetry such as GPS position, battery status and other sensor
+ information;
+\end_layout
+
+\begin_layout Itemize
+commands from the application to the car;
+\end_layout
+
+\begin_layout Itemize
+events from the car to the application.
+\end_layout
+
+\begin_layout Standard
+The Car Unit Manager is a thin module and has no knowledge of the application's
+ logic, or the cars' state.
+ It is to be implemented as a thread pool, each thread in charge of keeping
+ the communication active with a single car.
+\end_layout
+
+\begin_layout Subsubsection
+Business Manager
+\end_layout
+
+\begin_layout Standard
+The Business Manager is the core of the application, in charge of all reservatio
+n operations, including the computation of a reservation's cost.
 \end_layout
 
 \begin_layout Standard
@@ -365,7 +436,7 @@ It will interact with the other modules like so:
 \end_layout
 
 \begin_layout Itemize
-interaction with the Car Pool Manager:
+interaction with the Car Controller:
 \end_layout
 
 \begin_deeper
@@ -378,8 +449,8 @@ query the state of a car;
 \end_layout
 
 \begin_layout Itemize
-change the state of a car as a result of operations such as the creation,
- deletion or expiration of a reservation;
+change the state of a car as a result of operations such as creation, deletion
+ or expiration of a reservation;
 \end_layout
 
 \begin_layout Itemize
@@ -394,7 +465,7 @@ receive special information, such as a badPark event, needed to account
 
 \end_deeper
 \begin_layout Itemize
-interaction with the User Manager
+interaction with the User Controller
 \end_layout
 
 \begin_layout Standard
@@ -403,9 +474,13 @@ It will also interact with the external payment system in order for the
 \end_layout
 
 \begin_layout Standard
-It is to the Reservation Manager to ensure the correct handling of reservation
- logic and the fulfilling of related requirements [R2.4], [R3.2], [R4.1], [R4.2],
- [R4.3], [R4.5].
+It is responsibility of the Business Manager to ensure the correct handling
+ of reservation logic and the fulfilling of related requirements [R2.4],
+ [R3.2], [R4.1], [R4.2], [R4.3], [R4.5].
+\end_layout
+
+\begin_layout Subsubsection
+User Controller
 \end_layout
 
 \begin_layout Subsection
@@ -457,6 +532,7 @@ datas are finally stored in the DBMS from the Server and the User receives
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/DDSequenceDiagramRegistration.svg
+	display false
 	scale 20
 
 \end_inset
@@ -465,7 +541,7 @@ datas are finally stored in the DBMS from the Server and the User receives
 \end_layout
 
 \begin_layout Subsubsection
-Autentication
+Authentication
 \end_layout
 
 \begin_layout Standard
@@ -488,8 +564,8 @@ informs the Server that there isn't any correspondence between the datas
 the correspondence exists.
  In every of these cases the Server warns the Mobile App of the current
  event and the User is so alerted by the App.
- If the autentication process ends without errors the Server retrieves correct
- informations from the DBMS and 
+ If the authentication process ends without errors the Server retrieves
+ correct informations from the DBMS and 
 \series bold
 (4) 
 \series default
@@ -500,6 +576,7 @@ as a final result the User can see her/his profile displayed by the Mobile
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/DDSequenceDiagramAutentication.svg
+	display false
 	scale 20
 
 \end_inset
@@ -558,6 +635,7 @@ shows it to the User through the Car's Screen.
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/DDActivatingSaveMoneyOption.svg
+	display false
 	scale 20
 
 \end_inset
@@ -623,6 +701,7 @@ can complete correctly.
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/DDFinishARide.svg
+	display false
 	scale 15
 
 \end_inset
@@ -677,6 +756,7 @@ she/he can see the details of the Car too.
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/DDSearchBookNearbyCar.svg
+	display false
 	scale 20
 
 \end_inset
@@ -707,6 +787,7 @@ the Server informs the Mobile App of the expiration and the User is warned
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/DDSequenceDiagramTimeExpiration.svg
+	display false
 	scale 20
 
 \end_inset
@@ -735,6 +816,7 @@ The Car's System
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/DDLockingACar.svg
+	display false
 	scale 40
 
 \end_inset
@@ -774,6 +856,7 @@ the User is informed of the event.
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/DDUnlockingACar.svg
+	display false
 	scale 30
 
 \end_inset
@@ -807,6 +890,7 @@ the Car's System correctly sends its position to the Server Java, which
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/DDTelemetrySystem.svg
+	display false
 	scale 20
 
 \end_inset
@@ -832,6 +916,19 @@ User Interface Design
 
 \begin_layout Section
 Requirement Tracebility
+\end_layout
+
+\begin_layout Standard
+All requirements not explicitly traced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Component-View"
+
+\end_inset
+
+ will result from the combined action of the formerly identified application
+ modules.
+ This is true for all [R5.*] requirements as well as [R6.1], [R7.1].
 \end_layout
 
 \begin_layout Section
