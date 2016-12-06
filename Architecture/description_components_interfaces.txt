@@ -1,0 +1,32 @@
+
+
+Componenti:
+
+	UserController: gestisce le richieste dell’utente (funzione di controller in MVC)
+	BusinessManager: gestisce la logica di business del sistema
+	PaymentManager: gestisce tutti tutto ciò che riguarda il servizio di pagamento (attraverso servizi esterni come PayPal)
+	CarController: gestisce la comunicazione con le macchine (funzione di controller in MVC)
+	AdministrationHelper: fornisce una API che può essere utilizzata per funzioni amministrative
+	CarManager: gestisce lo stato delle macchine all’interno della logica di business (modello)
+	ReservationManager: gestisce le prenotazioni all’interno della logica di business (modello)
+	UserManageR: gestisce lo stato (ed informazioni) all’interno della logica di business (modello)
+
+Interfacce:
+
+	UserServices: tutte le funzionalità della Business logic che sono visibili da parte dell’utente
+	UserBusinessServices: interfaccia fornita dal BusinessManager allo UserController per richiamare funzioni della logica di business
+	UserNotificationServices: servizi per la notifica verso l’utente
+	PaymentServices: tutti servizi che riguardano funzioni di pagamento (verifica metodo di pagamento, addebitamento ecc)
+	CarStatusServices: interfaccia fornita dal BusinessManager per permettere alle macchine di modificare il proprio stato all’interno della logica di business	
+	CarControlProtocol: interfaccia fornita dal CarController per inoltrare comandi alle macchine
+	CarControlAPI: API fornita dal CarOnBoardSystem per eseguire comandi/query sulla macchina fisica
+	CarEventAPI: API fornita dal CarController per permettere alla macchina di notificare eventi alla logica di Business
+	ReservationServices: interfaccia che include tutti i servizi per la creazione/gestione di prenotazioni
+	CarAccessAPI: INTERFACCIA NON ANCORA DEFINITA PER LA COMUNICAZIONE TRA RESERVATIONMANAGER E CARMANAGER
+	AuthenticationServices: interfaccia che espone tutti i servizi per autenticazione/registrazione/modifica informazioni dell’utenza 
+	
+	
+
+	
+
+
