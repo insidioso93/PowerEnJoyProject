@@ -140,15 +140,17 @@ Scope
 
 \begin_layout Standard
 The System (described in the RASD as the entity containing the main aspects
- of the application) is now divided in three complementary parts.
+ of the application) is now divided in five complementary parts.
  The first of them consists of the Mobile App, which interacts with the
  User; the second is the Database Server, containing a protected copy of
- User's and Car's datas and the third is the Application Server, which is
- a Server Java.
- This last element, in particular, has the important role to correctly and
- syncronously manage the communications among the different entities and
- actors, participating to the different horizontal and vertical instances
- of the service.
+ User's and Car's datas, the third is the Application Server, which is a
+ Server Java; the fourth part is the Administration App, from which the
+ administrators control the entire service process and the fifth part is
+ the Car's System (On Board System), whose role is to guaranteed the communicati
+on between the Application Server and the User.
+ The Server Java, has the important role to correctly and syncronously manage
+ the communications among the different entities and actors, participating
+ to the different horizontal and vertical instances of the service.
  We already show the main actors in the RASD and now we can say that the
  Client is everyone who aims to drive one of the vehicles offered by the
  Service, whilst different connections and interfaces exist between the
@@ -180,53 +182,109 @@ Definitions, acronyms and abbreviations
 \begin_layout Itemize
 
 \series bold
-Mobile App:
+Mobile App: 
+\series default
+the particular component of the System which aims to interacts with the
+ User friendly and giving all its needed to correctly offer the service
+ by the Application Server.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 Application Server: 
+\series default
+the particular component of the System which aims to efficiently offer the
+ service to the User, giving all the required informations and responding
+ to User inputs on the Mobile App.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 Server Java: 
+\series default
+it is the way the Application Server is built.
+ Designing the Server through this kind of technology means using a Java
+ environment, services and facilities.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Database Server:
+Database Server: 
+\series default
+it is where all the informations relative to the service's utilization are
+ stored, permanently or temporarily.
+ It has to be designed to have the important properties of databases: Atomicity
+ and Consistency of operations and datas, for all the time they are in the
+ database; Isolation, because the operations and datas of different Users
+ and different instances must be detached from each others and Durability,
+ because the database must ensure that datas won't be lost during their
+ permanence in static memory.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Horizontal instances:
+Horizontal instances: 
+\series default
+in the lecture above, it refers to multiple connections opened with different
+ Users in parallel way.
+ Users can communicate with the Server at the same time and without having
+ any overlap during the whole service.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Vertical instances:
+Vertical instances: 
+\series default
+in the lecture above, it refers to the chains of actions taken to reach
+ the scope of all the service relatives to a single User.
+ This term embraces the actions of the User and of the Server too.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
 Clients: 
+\series default
+it is the User and her/his Mobile App which generally interact with the
+ Server.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Service:
+Service: 
+\series default
+it is generally what the System longs to offer to Users and, in particular,
+ the topic, currently covered by the RASD and the DD too.
 \end_layout
 
-\begin_layout Subsection
-Sources and Reference Documents
+\begin_layout Itemize
+
+\series bold
+JSON
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Http
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+client-server protocol
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+cache
 \end_layout
 
 \begin_layout Section
@@ -235,6 +293,44 @@ Architectural Design
 
 \begin_layout Subsection
 Overview
+\end_layout
+
+\begin_layout Standard
+As mentioned before, the System is divided in different, indipendent, software
+ and hardware components.
+ The principal component is the Server Java.
+ Every other component interacts with the Server using different protocols,
+ designed for the particular purpose.
+ The communication with the Mobile App is due to the Http/Json protocols
+ and the meaning of the RESTful API architecture.
+ This architecture shows some foundamental principles up: between Client
+ and Server there are some web resources, manipulates for correctly allowing
+ the interaction between the two entities; hyperlinks are usefull for the
+ transactions and some interfaces are displayed continuosly to the User.
+ This kind of interfaces have some bonded and well-defined operations; some
+ content, which can be changed on demand and by the Server; a particular
+ protocol for regulating the trasmission.
+ The protocol is a client-server and stateless protocol and establishes
+ also how the cache is used and the tiers in which the System is generally
+ divided.
+ Going on the System division in tiers we have one layer, which is the client;
+ one another, which represents the On Board System (it contains its indipendent
+ system for the correct utilization of the features inside the Car, but
+ this component is strictly correlated to our System) and the Server, which
+ is responsible of all the controls on inputs from the two entities.
+ The logic of the application, in particular, is all up to the Server.
+ Finally the Server stores and retrieves informations from the Database
+ using MySql.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Architecture/architecture-draft.jpg
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
