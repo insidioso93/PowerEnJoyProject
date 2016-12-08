@@ -410,10 +410,11 @@ The car states are described in the following state diagram:
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Graphics
 	filename diagrams-svg/Car-state-diagram.svg
 	display false
-	scale 30
+	scale 32
 
 \end_inset
 
@@ -470,10 +471,11 @@ The internal structure of the Car Manager is composed of a Car Pool Manager,
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Graphics
 	filename diagrams-svg/car_manager_arch.svg
 	display false
-	scale 30
+	scale 35
 
 \end_inset
 
@@ -584,7 +586,20 @@ Deployment View
 \end_layout
 
 \begin_layout Standard
-TODO
+PowerEnJoy will be deployed as a three-tier architecture system as described
+ by the following diagram:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Graphics
+	filename diagrams-svg/deployment-diagram.svg
+	display false
+	scale 22
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -694,8 +709,8 @@ In this phase, the User who gets on the Car,
 
 \begin_layout Enumerate
 types on the Screen of the Car the will to activates the Money Saving Option.
- The Car's System asks the User which is the final destination of her/his
- journey.
+ The Server sideCar's System asks the User which is the final destination
+ of her/his journey.
  The User types the Destination and
 \end_layout
 
@@ -751,7 +766,7 @@ The User tells to the Car's System that
 \end_layout
 
 \begin_layout Enumerate
-the ride ended and
+the ride ended andServer side
 \end_layout
 
 \begin_layout Enumerate
@@ -1011,6 +1026,11 @@ We have a selected a modified MVC-like architecture, with the Business Manager
 n purposes.
 \end_layout
 
+\begin_layout Standard
+Our design also depicts a three-tier architecture, comprised of a client
+ layer, an application server layer and a database server layer.
+\end_layout
+
 \begin_layout Subsection
 Other decisions
 \end_layout
@@ -1021,7 +1041,7 @@ Administration View
 
 \begin_layout Standard
 We have decided to delay the implementation of the administration view for
- the this phase, while the development of the administration API and a view
+ this phase, while the development of the administration API and a view
  stub will be prioritary, in order to provide the stakeholders with a way
  to access the system as soon as possible.
 \end_layout
