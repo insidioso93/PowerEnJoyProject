@@ -5,6 +5,7 @@
 \save_transient_properties true
 \origin unavailable
 \textclass extarticle
+\options titlepage
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -109,12 +110,12 @@ Purpose
 \end_layout
 
 \begin_layout Standard
-The purpose of this document is to clear the design of the PowerEnJoy applicatio
-n up for developers.
+The purpose of this document is to define the design of the PowerEnJoy applicati
+on up for developers.
  Next paragraphs will be focused on an expansion of the different technical
  components integrated in the application and their functionalities, starting
  from what the RASD has introduced.
- The analysis will comprise the next elements:
+ The analysis will comprise the following elements:
 \end_layout
 
 \begin_layout Itemize
@@ -126,7 +127,7 @@ design patterns
 \end_layout
 
 \begin_layout Itemize
-main components and interfaces and thier interactions
+main components and interfaces and their interactions
 \end_layout
 
 \begin_layout Itemize
@@ -148,16 +149,16 @@ The System (described in the RASD as the entity containing the main aspects
  syncronously manage the communications among the different entities and
  actors, participating to the different horizontal and vertical instances
  of the service.
- We already show the principal actors up in the RASD and now we can say
- that the Client is everyone who aims to drive one of the vehicles offered
- by the Service, whilst different connections and interfaces exist between
- the System and the Car's System (which surely has a proper application
+ We already show the main actors in the RASD and now we can say that the
+ Client is everyone who aims to drive one of the vehicles offered by the
+ Service, whilst different connections and interfaces exist between the
+ Application Server and the Car's System (which surely has a proper application
  inside) and between the System and the Payment System.
  The aspect of the registration by the Client is important, because the
- System has finally all the datas of her/him when it is needed and this
- is a simplifiation on the various requests among actors too.
- Hence we can assume that errors due to incorrect User's datas digited by
- the User come up only during her/his registration time.
+ System has finally all the User's data when it is needed and this is a
+ simplifiation on the various requests among actors too.
+ Hence we can assume that errors due to incorrect data inserted by the User
+ only come up during the registration phase.
  Other facilities are considered regarding the payment (characteristic of
  the Payment System) and the primitives of interaction with the database.
  In addiction to the main fucntionalities, the System can offer some extra
@@ -167,7 +168,7 @@ The System (described in the RASD as the entity containing the main aspects
  will be discussed in this document, keeping track of what the RASD already
  drew up about the System, with some more details and modifications when
  needed.
- We can say also that the System itself will be built to be reliable and
+ We can also state that the System itself will be built to be reliable and
  efficient, according to its purpose and integration in the World and in
  what we addressed as Environment in the RASD.
 \end_layout
@@ -228,10 +229,6 @@ Service:
 Sources and Reference Documents
 \end_layout
 
-\begin_layout Subsection
-Document Structure
-\end_layout
-
 \begin_layout Section
 Architectural Design
 \end_layout
@@ -244,6 +241,15 @@ Overview
 High level components and their interactions
 \end_layout
 
+\begin_layout Standard
+A simple high level representation of the system is shown in the following
+ diagram.
+\end_layout
+
+\begin_layout Standard
+[TODO]
+\end_layout
+
 \begin_layout Subsection
 \begin_inset CommandInset label
 LatexCommand label
@@ -251,75 +257,140 @@ name "subsec:Component-View"
 
 \end_inset
 
-Component View
+Components of the application server
 \end_layout
 
 \begin_layout Standard
-The following section describes the component of the system and defines
- their role in the architecture.
+The following section describes the components of the application server
+ and defines their role in the architecture.
+\end_layout
+
+\begin_layout Subsubsection
+User Controller
+\end_layout
+
+\begin_layout Standard
+The User Controller module handles communication with the user's mobile
+ application.
+\end_layout
+
+\begin_layout Subsubsection
+Car Controller
+\end_layout
+
+\begin_layout Standard
+The Car Controller implements the communication protocol between the on-board
+ system of the cars, previously identified as actors, and the core of the
+ application to be developed.
+\end_layout
+
+\begin_layout Standard
+Therefore, this module will provide an interface to the rest of the application
+ allowing the exchange of the following types of messages:
+\end_layout
+
+\begin_layout Itemize
+ordinary telemetry such as GPS position, battery status and other sensor
+ information;
+\end_layout
+
+\begin_layout Itemize
+commands from the application to the car;
+\end_layout
+
+\begin_layout Itemize
+events from the car to the application.
+\end_layout
+
+\begin_layout Standard
+The Car Controller is a thin module and has no knowledge of the application's
+ logic, or the cars' state.
+ It is to be implemented as a thread pool, each thread in charge of keeping
+ the communication active with a single car.
+\end_layout
+
+\begin_layout Subsubsection
+Business Manager
+\end_layout
+
+\begin_layout Standard
+The Business Manager implements the business logic of the application.
+ It is composed of the following sub-components:
+\end_layout
+
+\begin_layout Itemize
+User Request Handler
+\end_layout
+
+\begin_layout Itemize
+User Manager
+\end_layout
+
+\begin_layout Itemize
+Reservation Manager
+\end_layout
+
+\begin_layout Itemize
+Car Manager
+\end_layout
+
+\begin_layout Standard
+They are described more in detail in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Sub-components-of-the"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The Business Manager is the core of the application.
+ As such, it will access the database to issue all the needed database operation
+s.
+\end_layout
+
+\begin_layout Subsubsection
+Administration Helper
+\end_layout
+
+\begin_layout Standard
+This module provides the API necessary for administration purposes.
+\end_layout
+
+\begin_layout Subsubsection
+Payment Manager
+\end_layout
+
+\begin_layout Standard
+The Payment Manager implements the interface between the application and
+ the external payment system used for monetary transactions.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Sub-components-of-the"
+
+\end_inset
+
+Sub-components of the Business Manager
 \end_layout
 
 \begin_layout Subsubsection
 \begin_inset CommandInset label
 LatexCommand label
-name "subsec:Car-Controller"
+name "subsec:Car-Manager"
 
 \end_inset
 
-Car Controller
+Car Manager
 \end_layout
 
 \begin_layout Standard
-The Car Controller manages the following:
-\end_layout
-
-\begin_layout Itemize
-which cars are in the system, with support for subscription of new cars
- and deletion of old ones;
-\end_layout
-
-\begin_layout Itemize
-car state logic;
-\end_layout
-
-\begin_layout Itemize
-knowledge of parking areas and their position;
-\end_layout
-
-\begin_layout Itemize
-communication with the cars (including authentication).
-\end_layout
-
-\begin_layout Standard
-The Car controller exposes an interface to the Business Manager, with the
- following types of method:
-\end_layout
-
-\begin_layout Itemize
-observers of car states and car sets;
-\end_layout
-
-\begin_layout Itemize
-observer of car position;
-\end_layout
-
-\begin_layout Itemize
-modifiers of car states.
-\end_layout
-
-\begin_layout Standard
-The Car Controller is made up of two subcomponents: the Car Pool Controller
- and the Car Unit Controller.
-\end_layout
-
-\begin_layout Subsubsection
-Car Pool Controller
-\end_layout
-
-\begin_layout Standard
-The Car Pool Controller encapsulates the handling of car states logic, as
- well as the car pool itself, meaning it must provide the following functionalit
-y:
+The Car Manager encapsulates the handling of car states logic, as well as
+ the car pool itself, meaning it must provide the following functionality:
 \end_layout
 
 \begin_layout Itemize
@@ -350,19 +421,9 @@ The car states are described in the following state diagram:
 \end_layout
 
 \begin_layout Standard
-In order to encapsulate the car states, the Car Pool Controller will interact
- with the Car Unit Controller by issuing commands and receiving events.
- It will also expose an interface to the Business Manager as described in
- 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Car-Controller"
-
-\end_inset
-
-.
- The Car Pool Controller must be able to respond to information queries
- such as:
+In order to encapsulate the car states, the Car Manager will interact with
+ the Car Controller by issuing commands and receiving events.
+ The Car Manager must be able to respond to information queries such as:
 \end_layout
 
 \begin_layout Itemize
@@ -370,14 +431,14 @@ get the state of a car;
 \end_layout
 
 \begin_layout Itemize
-get a set of cars by position.
+get a set of cars by position and state.
 \end_layout
 
 \begin_layout Standard
-The Car Pool Controller also has knowledge of parking areas and is in charge
+The Car Manager also has knowledge of the parking areas and is in charge
  of deciding if a car has been parked in an acceptable location.
- This information is then forwarded to the Business Manager in order for
- it to account for fees or discount when necessary.
+ This information is then forwarded to the Reservation Manager in order
+ for it to account for fees or discount when necessary.
 \end_layout
 
 \begin_layout Standard
@@ -385,50 +446,47 @@ The functionalities implemented by this module will trace requirements [R2.2],
  [R2.3], [R4.4].
 \end_layout
 
-\begin_layout Subsubsection
-Car Unit Manager
-\end_layout
-
 \begin_layout Standard
-The Car Unit Controller is in charge of communicating with the car units.
- 
-\end_layout
-
-\begin_layout Standard
-The Car Unit Controller implements the communication protocols between the
- Cars, previously identified as actors, and the core of the application
- to be developed.
- Therefore, this module will provide an interface to the rest of the application
- allowing the exchange of the following types of messages:
+The Car Manager will expose an interface to the Reservation Manager with
+ the following types of methods:
 \end_layout
 
 \begin_layout Itemize
-ordinary telemetry such as GPS position, battery status and other sensor
- information;
+observers of car states and car sets;
 \end_layout
 
 \begin_layout Itemize
-commands from the application to the car;
+observer of car position;
 \end_layout
 
 \begin_layout Itemize
-events from the car to the application.
+modifiers of car states.
 \end_layout
 
 \begin_layout Standard
-The Car Unit Manager is a thin module and has no knowledge of the application's
- logic, or the cars' state.
- It is to be implemented as a thread pool, each thread in charge of keeping
- the communication active with a single car.
+The internal structure of the Car Manager is composed of a Car Pool Manager,
+ handling authentications and subscriptions of cars to the pool, and a Car
+ State Manager, handling the car states.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/car_manager_arch.svg
+	display false
+	scale 30
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
-Business Manager
+Reservation Manager
 \end_layout
 
 \begin_layout Standard
-The Business Manager is the core of the application, in charge of all reservatio
-n operations, including the computation of a reservation's cost.
+The Reservation Manager is in charge of all reservation operations, including
+ the computation of a reservation's cost.
 \end_layout
 
 \begin_layout Standard
@@ -436,21 +494,24 @@ It will interact with the other modules like so:
 \end_layout
 
 \begin_layout Itemize
-interaction with the Car Controller:
+interaction with the Car Manager:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-query cars by position;
+issue queries as described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Car-Manager"
+
+\end_inset
+
+;
 \end_layout
 
 \begin_layout Itemize
-query the state of a car;
-\end_layout
-
-\begin_layout Itemize
-change the state of a car as a result of operations such as creation, deletion
- or expiration of a reservation;
+use the Car Manager's methods to change the state of a car as a result of
+ operations such as creation, deletion or expiration of a reservation;
 \end_layout
 
 \begin_layout Itemize
@@ -465,26 +526,65 @@ receive special information, such as a badPark event, needed to account
 
 \end_deeper
 \begin_layout Itemize
-interaction with the User Controller
+interaction with the User Request Handler
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+TODO
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 It will also interact with the external payment system in order for the
  transactions to happen.
 \end_layout
 
 \begin_layout Standard
-It is responsibility of the Business Manager to ensure the correct handling
+It is responsibility of the Reservation Manager to ensure the correct handling
  of reservation logic and the fulfilling of related requirements [R2.4],
  [R3.2], [R4.1], [R4.2], [R4.3], [R4.5].
 \end_layout
 
 \begin_layout Subsubsection
-User Controller
+User Manager
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsubsection
+User Request Handler
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsection
+Requirement tracebility
+\end_layout
+
+\begin_layout Standard
+All requirements not explicitly traced in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Component-View"
+
+\end_inset
+
+ will result from the combined action of the previously identified application
+ modules.
+ This is true for all [R5.*] requirements as well as [R6.1] and [R7.1].
 \end_layout
 
 \begin_layout Subsection
 Deployment View
+\end_layout
+
+\begin_layout Standard
+TODO
 \end_layout
 
 \begin_layout Subsection
@@ -833,13 +933,12 @@ The Server
 
 \begin_layout Enumerate
 constantly monitors the User position and it informs the Mobile App of the
- nearness condition when it exists.
+ nearness condition when he/she exits.
  The Mobile App
 \end_layout
 
 \begin_layout Enumerate
-shows to the User a button or a popup, giving her/him the information of
- nearness.
+shows the User a button or a popup, giving her/him the information of nearness.
  The User confirms the will to unlock the near Car and
 \end_layout
 
@@ -914,19 +1013,6 @@ User Interface Design
 
 \begin_layout Section
 Requirement Tracebility
-\end_layout
-
-\begin_layout Standard
-All requirements not explicitly traced in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "subsec:Component-View"
-
-\end_inset
-
- will result from the combined action of the formerly identified application
- modules.
- This is true for all [R5.*] requirements as well as [R6.1], [R7.1].
 \end_layout
 
 \begin_layout Section
