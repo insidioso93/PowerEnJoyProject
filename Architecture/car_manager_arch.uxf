@@ -18,24 +18,24 @@ CarManager</panel_attributes>
     <coordinates>
       <x>1089</x>
       <y>324</y>
-      <w>144</w>
+      <w>198</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>lt=)-[]
-ControlAPI</panel_attributes>
-    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+CarControlProtocol</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>1089</x>
       <y>378</y>
-      <w>144</w>
+      <w>198</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=()-[]
-CarEventsAPI</panel_attributes>
-    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+CarStatusServices</panel_attributes>
+    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
