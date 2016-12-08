@@ -435,7 +435,7 @@ Car Manager
 \begin_layout Standard
 They are described more in detail in 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "subsec:Sub-components-of-the"
 
 \end_inset
