@@ -1003,16 +1003,45 @@ Component Interfaces
 Selected Architectural Styles and Patterns
 \end_layout
 
+\begin_layout Standard
+We have a selected a modified MVC-like architecture, with the Business Manager
+ acting as a Model and multiple Controllers for distinct purposes.
+ There will also be multiple distinct View modules, in the mobile application
+ and in the car's on-board system, as well as a dedicated view for administratio
+n purposes.
+\end_layout
+
 \begin_layout Subsection
 Other decisions
 \end_layout
 
-\begin_layout Section
-User Interface Design
+\begin_layout Subsubsection
+Administration View
+\end_layout
+
+\begin_layout Standard
+We have decided to delay the implementation of the administration view for
+ the this phase, while the development of the administration API and a view
+ stub will be prioritary, in order to provide the stakeholders with a way
+ to access the system as soon as possible.
+\end_layout
+
+\begin_layout Subsubsection
+Encryption of car-to-server communication
+\end_layout
+
+\begin_layout Standard
+For security reasons, we decided to design an authentication feature for
+ cars managed by the system.
+ The identity of the cars will be checked by the server with a TLS-like
+ cryptographic handshake and all communication between car and server, including
+ ordinary telemetry, will be encrypted.
+ Validation and deprecation of the keys will be managed through the administrati
+on API and the keys physically inserted into the car's system by human operators.
 \end_layout
 
 \begin_layout Section
-Requirement Tracebility
+User Interface Design
 \end_layout
 
 \begin_layout Section
