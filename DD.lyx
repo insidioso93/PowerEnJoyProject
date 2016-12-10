@@ -345,7 +345,37 @@ A simple high level representation of the system is shown in the following
 \end_layout
 
 \begin_layout Standard
-[TODO]
+The architecture defines five main components that are:
+\end_layout
+
+\begin_layout Enumerate
+ApplicationServer: it's the component that handles the business loogic of
+ the system and takes care of all the requests made by the User through
+ the mobile application.
+ The ApplicationServer also interacts with the cars and handles their states.
+\end_layout
+
+\begin_layout Enumerate
+UserApp: it's the component that allows the User to access the services
+ of the System through a graphical interface.
+\end_layout
+
+\begin_layout Enumerate
+AdrministrationApp: it's a special app that is intended to be a desktop
+ appication by which some administration operations can be performed.
+\end_layout
+
+\begin_layout Enumerate
+CarOnBoardSystem: it's the component that it's installed into the physical
+ cars and interacts with their operating system.
+ The CarOnBoardSystem takes care of all the events of interests that happen
+ on the Car and all the commands that the ApplicationServer wants to perform
+ over the Car.
+\end_layout
+
+\begin_layout Enumerate
+DMBS: it's the component that provides a standard SQL API to all the components
+ that requires persistent data storage.
 \end_layout
 
 \begin_layout Subsection
@@ -651,7 +681,8 @@ User Manager
 \end_layout
 
 \begin_layout Standard
-TODO
+The User Manager provides all the services about User Athentication.
+ Among these services there are:
 \end_layout
 
 \begin_layout Subsubsection

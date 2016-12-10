@@ -54,12 +54,12 @@ RequestsHandler</panel_attributes>
     <coordinates>
       <x>600</x>
       <y>180</y>
-      <w>210</w>
+      <w>240</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=)-[]
 UserBusinessServices</panel_attributes>
-    <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -90,12 +90,12 @@ NotificationManager</panel_attributes>
     <coordinates>
       <x>600</x>
       <y>310</y>
-      <w>210</w>
+      <w>240</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=()-[]
 UserNotificationServices</panel_attributes>
-    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
