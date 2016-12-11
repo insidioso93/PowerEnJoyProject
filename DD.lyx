@@ -1424,7 +1424,22 @@ refers to the User Profile, accessible from the Main Menu and in which the
 once selected and after all the controls by the Server, the displayed Car
  becomes red and it appears also the Button to be pressed by the User once
  the nearness condition will be verified.
- (here to put the image!)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename User Experience/Final Scheme.jpg
+	display false
+	scale 30
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
