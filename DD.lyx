@@ -305,7 +305,7 @@ As mentioned before, the System is divided in different, indipendent, software
  and the meaning of the RESTful API architecture.
  This architecture shows some foundamental principles up: between Client
  and Server there are some web resources, manipulates for correctly allowing
- the interaction between the two entities; hyperlinks are usefull for the
+ the interaction between the two entities; hyperlinks are useful for the
  transactions and some interfaces are displayed continuosly to the User.
  This kind of interfaces have some bonded and well-defined operations; some
  content, which can be changed on demand and by the Server; a particular
@@ -313,11 +313,12 @@ As mentioned before, the System is divided in different, indipendent, software
  The protocol is a client-server and stateless protocol and establishes
  also how the cache is used and the tiers in which the System is generally
  divided.
- Going on the System division in tiers we have one layer, which is the client;
- one another, which represents the On Board System (it contains its indipendent
- system for the correct utilization of the features inside the Car, but
- this component is strictly correlated to our System) and the Server, which
- is responsible of all the controls on inputs from the two entities.
+ Going on the System division in tiers, we have one layer, which is the
+ client; one another, which represents the On Board System (it contains
+ its indipendent system for the correct utilization of the features inside
+ the Car, but this component is strictly correlated to our System) and the
+ Server, which is responsible of all the controls on inputs from the two
+ entities.
  The logic of the application, in particular, is all up to the Server.
  Finally the Server stores and retrieves informations from the Database
  using MySql.
@@ -360,7 +361,7 @@ The architecture defines five main components that are:
 \end_layout
 
 \begin_layout Enumerate
-ApplicationServer: it's the component that handles the business loogic of
+ApplicationServer: it's the component that handles the business logic of
  the system and takes care of all the requests made by the User through
  the mobile application.
  The ApplicationServer also interacts with the cars and handles their states.
@@ -1359,6 +1360,20 @@ on API and the keys physically inserted into the car's system by human operators
 
 \begin_layout Section
 User Interface Design
+\end_layout
+
+\begin_layout Standard
+This paragraph is strictly correlated to the 
+\begin_inset Quotes eld
+\end_inset
+
+Nonfunctional Requirements
+\begin_inset Quotes erd
+\end_inset
+
+ one, presented in the RASD document.
+ The images below, in particular, show an example of how the User friendly
+ will interact with the Mobile App illustrated in the document.
 \end_layout
 
 \begin_layout Section
