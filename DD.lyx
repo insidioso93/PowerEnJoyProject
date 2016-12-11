@@ -345,6 +345,17 @@ A simple high level representation of the system is shown in the following
 \end_layout
 
 \begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/high_view_architecture.svg
+	display false
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The architecture defines five main components that are:
 \end_layout
 
@@ -389,8 +400,23 @@ Components of the application server
 \end_layout
 
 \begin_layout Standard
-The following section describes the components of the application server
- and defines their role in the architecture.
+This section describes the components of the application server and defines
+ their role in the architecture.
+ The basic structure of the application is made up of a Business Manager,
+ handling application logic, and multiple controllers handling communication
+ with different actors, as shown in the following diagram.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Graphics
+	filename diagrams-svg/Application_Server_arch.svg
+	display false
+	scale 20
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -400,6 +426,17 @@ User Controller
 \begin_layout Standard
 The User Controller module handles communication with the user's mobile
  application.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/User_controller_arch.svg
+	display false
+	scale 30
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -471,6 +508,18 @@ reference "subsec:Sub-components-of-the"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Graphics
+	filename diagrams-svg/Business_manager_arch.svg
+	display false
+	scale 20
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -656,19 +705,35 @@ receive special information, such as a badPark event, needed to account
 
 \end_deeper
 \begin_layout Itemize
-interaction with the User Request Handler
+interaction with the User Request Handler:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 provides services for creating and handling reservations that are visible
- by the User through the User Request Handler
+ by the User through the User Request Handler.
 \end_layout
 
 \end_deeper
 \begin_layout Standard
 It will also interact with the external payment system in order for the
  transactions to happen.
+\end_layout
+
+\begin_layout Standard
+As timings are a core part of the reservation logic, a dedicated sub-module
+ is designed to handle the timers:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Reservation_manager_arch.svg
+	display false
+	scale 30
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -698,12 +763,14 @@ Authentication of an existing User
 Retrieving/Updating of User information
 \end_layout
 
-\begin_deeper
-\begin_layout Subsubsection
-User Request Handler d 
+\begin_layout Standard
+
 \end_layout
 
-\end_deeper
+\begin_layout Subsubsection
+User Request Handler
+\end_layout
+
 \begin_layout Standard
 The User Request Handler simply receives the requests of services coming
  from the User and forwards them to the correct business component.
