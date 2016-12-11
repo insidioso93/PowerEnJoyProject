@@ -763,10 +763,6 @@ Authentication of an existing User
 Retrieving/Updating of User information
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Subsubsection
 User Request Handler
 \end_layout
@@ -774,6 +770,90 @@ User Request Handler
 \begin_layout Standard
 The User Request Handler simply receives the requests of services coming
  from the User and forwards them to the correct business component.
+\end_layout
+
+\begin_layout Subsection
+Component interfaces
+\end_layout
+
+\begin_layout Standard
+This section describes the semantics of interfaces exposed by the modules
+ presented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Component-View"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Sub-components-of-the"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+UserServices Functionalities exposed by the application server to the mobile
+ application.
+\end_layout
+
+\begin_layout Description
+UserBusinessServices Interface exposed by the Business Manager for business
+ logic functionalities regarding the User.
+\end_layout
+
+\begin_layout Description
+UserNotificationServices Interface exposed by the User Controller to the
+ Business Manager in order to allow notification services on the mobile
+ app as well as email communication to the user.
+\end_layout
+
+\begin_layout Description
+PaymentServices Interface exposed by the Business Manager in order to allow
+ the Payment Manager, which acts as a controller, to handle all payment
+ functions.
+\end_layout
+
+\begin_layout Description
+CarStatusServices Interface exposed by the Car Manager, used by the Car
+ Controller to change the car states when necessary.
+\end_layout
+
+\begin_layout Description
+CarControlProtocol Interface exposed by the Car Controller, used by the
+ Business Manager to forward commands to the car units.
+\end_layout
+
+\begin_layout Description
+CarControlAPI Control communication protocol of the car that the Car Controller
+ will implement.
+ As this protocol may change between car vendors, the Car Controller will
+ implement all necessary alternatives.
+\end_layout
+
+\begin_layout Description
+CarEventAPI Communication protocol used by the cars to notify the application
+ of car events.
+ This protocol is also vendor specific.
+\end_layout
+
+\begin_layout Description
+ReservationServices Interface exposed by the Reservation Manager, used by
+ the User Request Handler to perform reservation related operations.
+\end_layout
+
+\begin_layout Description
+CarAccessAPI Interface exposed by the Car Manager, used by the Reservation
+ Manager for operations such as changes of car states.
+\end_layout
+
+\begin_layout Description
+AuthenticationServices Functionalities exposed by the User Manager, used
+ by the User Request Handler to perform authentication tasks as well as
+ the creation and deletion of user accounts.
 \end_layout
 
 \begin_layout Subsection
@@ -1220,10 +1300,6 @@ the Car's System correctly sends its position to the Server Java, which
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Component Interfaces
 \end_layout
 
 \begin_layout Subsection
