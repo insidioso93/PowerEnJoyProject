@@ -1391,8 +1391,7 @@ User Interface Design
 \end_layout
 
 \begin_layout Standard
-<<<<<<< HEAD
-This paragraph is strictly correlated to the 
+This first part of the paragraph is strictly correlated to the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1401,9 +1400,34 @@ Nonfunctional Requirements
 \end_inset
 
  one, presented in the RASD document.
- The images below, in particular, show an example of how the User friendly
+ The images below, in particular, show some examples of how the User friendly
  will interact with the Mobile App illustrated in the document.
-=======
+ Specifics and descriptions of this interfaces can be find in the RASD document:
+ the image 
+\series bold
+(1) 
+\series default
+illustrates the Main Menu of the application; the image 
+\series bold
+(2) 
+\series default
+refers to the User Profile, accessible from the Main Menu and in which the
+ User can also decide to modify some of her/his datas; the image 
+\series bold
+(3)
+\series default
+ shows how the User can reserve a Car seeing it displayed in green color
+ on the Map; 
+\series bold
+(4) 
+\series default
+once selected and after all the controls by the Server, the displayed Car
+ becomes red and it appears also the Button to be pressed by the User once
+ the nearness condition will be verified.
+ (here to put the image!)
+\end_layout
+
+\begin_layout Standard
 The user interface of the PowerEnJoy mobile app is described by the following
  UX diagram.
 \begin_inset Newline newline
@@ -1422,7 +1446,6 @@ The user interface of the PowerEnJoy mobile app is described by the following
 \end_inset
 
 
->>>>>>> 11909503acdea3622d0f0655d27bf2affb4e2171
 \end_layout
 
 \begin_layout Section
