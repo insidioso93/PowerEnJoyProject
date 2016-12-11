@@ -106,6 +106,22 @@ Introduction
 \end_layout
 
 \begin_layout Subsection
+Hours dedicated to the project
+\end_layout
+
+\begin_layout Itemize
+Luca Marzi: 20 h
+\end_layout
+
+\begin_layout Itemize
+Valeria Mazzola: 20 h
+\end_layout
+
+\begin_layout Itemize
+Federico Nigro: 20 h
+\end_layout
+
+\begin_layout Subsection
 Purpose
 \end_layout
 
@@ -261,30 +277,6 @@ Service:
 \series default
 it is generally what the System longs to offer to Users and, in particular,
  the topic, currently covered by the RASD and the DD too.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-JSON
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Http
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-client-server protocol
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-cache
 \end_layout
 
 \begin_layout Section
@@ -1431,7 +1423,7 @@ once selected and after all the controls by the Server, the displayed Car
 \begin_inset Graphics
 	filename User Experience/Final Scheme.jpg
 	display false
-	scale 30
+	scale 32
 
 \end_inset
 
@@ -1461,27 +1453,6 @@ The user interface of the PowerEnJoy mobile app is described by the following
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Algorithm Design
-\end_layout
-
-\begin_layout Standard
-Here are explained some of the algorithm that the System intends to use
- in order to provide some services:
-\end_layout
-
-\begin_layout Standard
-Di
-\end_layout
-
-\begin_layout Section
-References
-\end_layout
-
-\begin_layout Section
-Hours of work
 \end_layout
 
 \end_body
