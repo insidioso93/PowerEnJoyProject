@@ -439,6 +439,10 @@ The User Controller module handles communication with the user's mobile
 
 \end_layout
 
+\begin_layout Standard
+The User Controller traces requirement [R1.2].
+\end_layout
+
 \begin_layout Subsubsection
 Car Controller
 \end_layout
@@ -752,15 +756,19 @@ The User Manager provides all the services about User Athentication.
 \end_layout
 
 \begin_layout Itemize
-Registration of a new User
+registration of a new User;
 \end_layout
 
 \begin_layout Itemize
-Authentication of an existing User
+authentication of an existing User;
 \end_layout
 
 \begin_layout Itemize
-Retrieving/Updating of User information
+retrieving/updating of User information.
+\end_layout
+
+\begin_layout Standard
+This module traces requirements [R1.1] and [R1.3].
 \end_layout
 
 \begin_layout Subsubsection
@@ -769,7 +777,8 @@ User Request Handler
 
 \begin_layout Standard
 The User Request Handler simply receives the requests of services coming
- from the User and forwards them to the correct business component.
+ from the User and forwards them to the correct business component, therefore
+ tracing requirement [R2.1].
 \end_layout
 
 \begin_layout Subsection
