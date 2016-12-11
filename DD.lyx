@@ -323,6 +323,10 @@ As mentioned before, the System is divided in different, indipendent, software
  Finally the Server stores and retrieves informations from the Database
  using MySql.
  
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -343,6 +347,10 @@ High level components and their interactions
 \begin_layout Standard
 A simple high level representation of the system is shown in the following
  diagram.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -406,6 +414,10 @@ This section describes the components of the application server and defines
  The basic structure of the application is made up of a Business Manager,
  handling application logic, and multiple controllers handling communication
  with different actors, as shown in the following diagram.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -427,6 +439,10 @@ User Controller
 \begin_layout Standard
 The User Controller module handles communication with the user's mobile
  application.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -513,6 +529,10 @@ reference "subsec:Sub-components-of-the"
 \end_inset
 
 .
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -589,6 +609,10 @@ subscription of new cars to the pool and removal of old ones.
 
 \begin_layout Standard
 The car states are described in the following state diagram:
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -650,6 +674,10 @@ modifiers of car states.
 The internal structure of the Car Manager is composed of a Car Pool Manager,
  handling authentications and subscriptions of cars to the pool, and a Car
  State Manager, handling the car states.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1363,6 +1391,7 @@ User Interface Design
 \end_layout
 
 \begin_layout Standard
+<<<<<<< HEAD
 This paragraph is strictly correlated to the 
 \begin_inset Quotes eld
 \end_inset
@@ -1374,6 +1403,26 @@ Nonfunctional Requirements
  one, presented in the RASD document.
  The images below, in particular, show an example of how the User friendly
  will interact with the Mobile App illustrated in the document.
+=======
+The user interface of the PowerEnJoy mobile app is described by the following
+ UX diagram.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Graphics
+	filename diagrams-svg/UX-diagram.svg
+	display false
+	scale 30
+
+\end_inset
+
+
+>>>>>>> 11909503acdea3622d0f0655d27bf2affb4e2171
 \end_layout
 
 \begin_layout Section
