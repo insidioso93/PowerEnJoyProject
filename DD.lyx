@@ -661,7 +661,8 @@ interaction with the User Request Handler
 
 \begin_deeper
 \begin_layout Itemize
-TODO
+provides services for creating and handling reservations that are visible
+ by the User through the User Request Handler
 \end_layout
 
 \end_deeper
@@ -685,12 +686,27 @@ The User Manager provides all the services about User Athentication.
  Among these services there are:
 \end_layout
 
-\begin_layout Subsubsection
-User Request Handler
+\begin_layout Itemize
+Registration of a new User
 \end_layout
 
+\begin_layout Itemize
+Authentication of an existing User
+\end_layout
+
+\begin_layout Itemize
+Retrieving/Updating of User information
+\end_layout
+
+\begin_deeper
+\begin_layout Subsubsection
+User Request Handler d 
+\end_layout
+
+\end_deeper
 \begin_layout Standard
-TODO
+The User Request Handler simply receives the requests of services coming
+ from the User and forwards them to the correct business component.
 \end_layout
 
 \begin_layout Subsection
@@ -1191,6 +1207,19 @@ on API and the keys physically inserted into the car's system by human operators
 
 \begin_layout Section
 User Interface Design
+\end_layout
+
+\begin_layout Section
+Algorithm Design
+\end_layout
+
+\begin_layout Standard
+Here are explained some of the algorithm that the System intends to use
+ in order to provide some services:
+\end_layout
+
+\begin_layout Standard
+Di
 \end_layout
 
 \begin_layout Section
