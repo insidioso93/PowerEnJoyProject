@@ -1,0 +1,386 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+ITPD
+\begin_inset Newline newline
+\end_inset
+
+Integration Test Plan Document
+\end_layout
+
+\begin_layout Author
+Luca Marzi
+\begin_inset Newline newline
+\end_inset
+
+Valeria Mazzola
+\begin_inset Newline newline
+\end_inset
+
+Federico Nigro
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Revision History
+\end_layout
+
+\begin_layout Standard
+(here goes all the revisions of the document)
+\end_layout
+
+\begin_layout Subsection
+Purpose and Scope
+\end_layout
+
+\begin_layout Standard
+(state the purpose and scope of the document)
+\end_layout
+
+\begin_layout Subsection
+List of Definitions and Abbrevations
+\end_layout
+
+\begin_layout Subsection
+List of Reference Document
+\end_layout
+
+\begin_layout Itemize
+RASD Document
+\end_layout
+
+\begin_layout Itemize
+DD Document
+\end_layout
+
+\begin_layout Section
+Integration Strategy
+\end_layout
+
+\begin_layout Subsection
+Entry Criteria
+\end_layout
+
+\begin_layout Standard
+Before the beginning of the Integration Testing some criteria have to be
+ satisfied:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(in pratica sto dicendo che: ogni componente deve essere già ben definita,
+ il sistema rispetto all'ambiente deve avere 
+\begin_inset Quotes eld
+\end_inset
+
+confini
+\begin_inset Quotes erd
+\end_inset
+
+ che non saranno piu modificati, le interfacce tra le varie componenti e
+ per l'utente devono essere gia ben definite, deve esserci una documentazione
+ parziale per poter capire qual è eventualmente l'errore e che il white
+ box test deve essere fatto (quello per gli errori strutturali, mi è sembrato
+ buono aggiungerlo perche l'ho trovato gia specificato in un documento e
+ poi ricordo che va fatto comunque prima rispetto a questo tipo di test)
+\end_layout
+
+\begin_layout Itemize
+Every logical and functional component of the System is well defined and
+ well connected with each other.
+ In particular, the interactions among entities presented in the Architecture
+ Schema and in the Sequence Diagrams are in their final version, as well
+ as correctly implemented through the specify tools (see the Design Document).
+\end_layout
+
+\begin_layout Itemize
+The edges of the System with respect to the remaining part of the Environment
+ are well defined: there is nothing more to add to the System in terms of
+ functionalities and there is nothing less to subtract to it (see requirements
+ and goals in the RASD).
+\end_layout
+
+\begin_layout Itemize
+Every interface, among entities and regarding the interaction with the User,
+ is defined and in a util version for the next test analysis.
+ In other words, it is not yet necessary a final implementation in this
+ case, but it has to be clear how the transictions works and what precisely
+ the User can receive and send via the particular interface (for instance
+ the case of the Mobile App and the On Board System).
+\end_layout
+
+\begin_layout Itemize
+In addition to the inputs to give to the System by the Integration Test,
+ it is not less important to have a clear view of what every functional
+ part does within the System (with a non final, but still well detailed
+ documentation for each important component of the functional part object
+ of study).
+\end_layout
+
+\begin_layout Itemize
+Referring to the point above, the White Box Test has to be done for all
+ the functional parts already implemented and analized in the Design Document
+ and in the RASD previously.
+ This means that, referring to the software components of the System described
+ in the Design Document especially, all the portions of code regarding the
+ UserController, the PaymentManager, the AdministrationHelper and the CarControl
+ler were correctly and rationally deconstructed and eventually rewritten
+ in some of their parts, for avoiding unreachable lines of code and typical
+ conceptual errors.
+ The BusinessManager is analyzed in the same way, paying a particular attention
+ to the single links with the other components inside the whole schema (in
+ general testing the links among logic units is important for their influences
+ to themselves).
+\end_layout
+
+\begin_layout Subsection
+Elements to be integrated
+\end_layout
+
+\begin_layout Standard
+(identify the components to be integrated, refer to your design document
+ to identify such components in a way that is consistent with your design)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(in pratica in questa sezione vanno brevemente elencati con una breve spiegazion
+e tutti i componenti che vengono utilizzati nella sessione 2.4 e eventualmente
+ nel DD)
+\end_layout
+
+\begin_layout Subsection
+Integration Testing Strategy
+\end_layout
+
+\begin_layout Standard
+(describe the integration testing approach (top-down, bottom-up, functional
+ groupings etc.) and the rationale for choosing that approach)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(io pensavo alla bottom up e alla functional grouping perché col primo si
+ testano le unità singolarmente e col secondo si raggruppano le unità fino
+ ad arrivare in cima, le unità a cui ci si riferisce sono quelle del 2.4
+ pero se avete idee migliori meglio capirle cosi le cose del 2.4 si fanno
+ in base a questo tipo di scelta)
+\end_layout
+
+\begin_layout Subsection
+Sequence of Component/Function Integration
+\end_layout
+
+\begin_layout Standard
+(Note: the structure depends on 2.3, structure example here is not mandatory)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(un po di brainstorming mi viene in mente:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+test di tutta la parte relativa alla autenticazione/registrazione dell'utente
+ (su app)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+test di un interfaccia principale relativa all'autenticazione o alla scelta
+ della registrazione
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+test della parte di registrazione
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+test di quando l'utente 
+\begin_inset Quotes eld
+\end_inset
+
+è dentro
+\begin_inset Quotes erd
+\end_inset
+
+ l'applicazione (su app)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+di quando modifica uno ad uno tutti i parametri a se relativi (per esempio
+ mail telefono ecc)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+di quando decide di prenotare una macchina (e relativi sottocasi, ad esempio
+ di quando la macchina non è piu disponibile, oppure di quando decide per
+ qualche motivo di tornare indietro rispetto all'app ...
+ andrebbero elencati bene bene)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+test di quando deve eseguire il pagamento, dato inizialmente per appreso
+ il fatto che si trovi alla fine della corsa e che le info da parte dell'on
+ board system e del sistema siano effettivamente gia arrivate all'app)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+(gli stessi ragionamenti andrebbero fatti su tutti gli altri elementi del
+ sistema)
+\end_layout
+
+\begin_layout Subsubsection
+Software integration sequence
+\end_layout
+
+\begin_layout Standard
+for each subsystem, identify the sequence in which the software components
+ will be integrated within the subsystem; relate this sequence to any product
+ features that are being built up
+\end_layout
+
+\begin_layout Subsubsection
+Subsystem integration sequence
+\end_layout
+
+\begin_layout Standard
+Indentify the order in which subsystems will be integrated ...
+\end_layout
+
+\begin_layout Section
+Individual Step and Test Description
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(da fare dopo aver fatto 2.4 cioe poi addentrandosi dentro tutti i componenti
+ che andiamo ad analizzare con 2.4)
+\end_layout
+
+\begin_layout Section
+Tools and Test Equipment Required
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+(che tools utilizziamo?)
+\end_layout
+
+\begin_layout Section
+Program Stubs and Test Data Required
+\end_layout
+
+\begin_layout Section
+Effort Spent
+\end_layout
+
+\end_body
+\end_document
