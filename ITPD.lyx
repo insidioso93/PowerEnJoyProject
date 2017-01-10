@@ -116,7 +116,75 @@ Purpose and Scope
 \end_layout
 
 \begin_layout Standard
-(state the purpose and scope of the document)
+This document is the Integration Testing Plan for the PoweEnJoy system.
+\end_layout
+
+\begin_layout Standard
+The term 
+\begin_inset Quotes eld
+\end_inset
+
+PowerEnJoy system
+\begin_inset Quotes erd
+\end_inset
+
+ refers to the set of all the software artifacts (developed or bought) that
+ cooperates in order to provide all the functionalities which are specified
+ in the RASD document describing the PowerEnJoy services.
+\end_layout
+
+\begin_layout Standard
+The purpose of this document is to outline, in a clear and comprehensive
+ way, the main aspects concerning the organization of the integration testing
+ activity for all the components that make up the system.
+\end_layout
+
+\begin_layout Standard
+In the following section we are going to provide:
+\end_layout
+
+\begin_layout Itemize
+An exhaustive description of the integration process that we intend to follow
+ with respect to the architecture that has been proposed in previous documents.
+\end_layout
+
+\begin_layout Itemize
+A description of the integration testing approach and the rationale behind
+ it.
+\end_layout
+
+\begin_layout Itemize
+A description of the test cases and test suites that we intend to perform
+ on the main interfaces and modules interactions.
+\end_layout
+
+\begin_layout Itemize
+A description of the main perfomance evaluation that we want to perform
+ against the system.
+\end_layout
+
+\begin_layout Itemize
+A list of tools that we are going to use to perform the whole Verification
+ & Validation analysis.
+\end_layout
+
+\begin_layout Standard
+It's important to remark the fact that the Integration Testing Plan is intimatel
+y connected with the Build Plan (or Integration Plan): the effective development
+ of components and interfaces will be guided mainly by the criteria defined
+ for the Integration Testing.
+\end_layout
+
+\begin_layout Standard
+At the end, the idea is to follow the 
+\begin_inset Quotes eld
+\end_inset
+
+develop and test
+\begin_inset Quotes erd
+\end_inset
+
+ approach, applied not only to software units but also to entire subsystems.
 \end_layout
 
 \begin_layout Subsection
