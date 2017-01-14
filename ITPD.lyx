@@ -823,7 +823,7 @@ S1.5:
 \begin_layout Itemize
 
 \series bold
-Operation to test:
+Operations to test:
 \end_layout
 
 \begin_deeper
@@ -845,8 +845,543 @@ The lock of the Car process (as directly consequence of the points above).
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\bar under
+S1.6:
+\bar default
+ Cancel a reservation Subsystem:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Operations to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The Active instance of the service for the User who decides to cancel the
+ current reservation
+\end_layout
+
+\begin_layout Enumerate
+The deactivation process (it means all the operations in the two ways interactio
+n which have the reservation cancelled as a final result).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\bar under
+S1.7:
+\bar default
+ Fees Subsystem:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The meaning of this subsystem is to control and properly respond to the
+ various conditions which bring the User in some of the situations to pay
+ some additional fees to the System.
+ In the table below there is a brief recapitulation of the set of fees to
+ pay in the different particular cases (but if you want to know more about
+ it, in the RASD and DD documents the topic is further illustrated):
+\end_layout
+
+\begin_layout Itemize
+(table)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Operations to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If for each of the situations just showed all the points of the column 
+\begin_inset Quotes eld
+\end_inset
+
+entered condition
+\begin_inset Quotes erd
+\end_inset
+
+ are effectively consumed
+\end_layout
+
+\begin_layout Enumerate
+The process of alerting the User of the exception raised and of displaying
+ her/him the total amount to pay for the particular situation
+\end_layout
+
+\begin_layout Enumerate
+The process of correctly calculating the fee for the particular situation
+\end_layout
+
+\begin_layout Enumerate
+The process of opening correctly an instance between the Transactional System
+ and the User (verifying the correct production of the new object containing
+ all the necessary User's datas necessary to correctly conclude the step)
+\end_layout
+
+\begin_layout Enumerate
+The final result produced by the verification of the sentences above: the
+ System has to open another instance and so repeating the phases if the
+ transaction is incorrectly made, or close the whole circumstance in the
+ opposite case.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\bar under
+S1.8:
+\bar default
+ Payment Subsystem:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+It is very similar to the Fees Subsystem, but in this case the instance
+ between User and Transactional System is opened not for the raising of
+ particular exception due to particular 
+\begin_inset Quotes eld
+\end_inset
+
+entered condition
+\begin_inset Quotes erd
+\end_inset
+
+, but just to correctly manage the payment after the end of a ride.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Operations to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The inputs that highlight the end of the current ride of the particular
+ User (see the RASD and DD documents for a detailed description):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+the Car is correctly parked with the engine switched off
+\end_layout
+
+\begin_layout Enumerate
+All the passengers, User included, got off the Car
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The process of calculating the total amount of money to pay by the User.
+\end_layout
+
+\begin_layout Enumerate
+The process of alerting the User of the end of the ride and of displaying
+ her/him the total amount to pay, calculated and verified in the previous
+ step
+\end_layout
+
+\begin_layout Enumerate
+The process of opening correctly an instance between the Transactional System
+ and the User (such as in the Fees Subsystem, but changing some entry parameters
+)
+\end_layout
+
+\begin_layout Enumerate
+The final result produced by the verification of the sentences above: the
+ System has to open another instance and so repeating the phases if the
+ transaction is incorrectly make, or close the whole circumstance in the
+ opposite case.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\bar under
+S1.9:
+\bar default
+ Assistance Subsystem
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+This section aims to rule out some tests to be made on the communication
+ between the User and an Operator if needed.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Operation to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The choice of either talking or chatting with the Operator.
+ The decision is made by the User and communicated to the Server via the
+ Mobile App or the Car's System
+\end_layout
+
+\begin_layout Enumerate
+The opening and handling of the connection powered by the Server
+\end_layout
+
+\begin_layout Enumerate
+The closure of the connection once the communication is finished
+\end_layout
+
+\begin_layout Enumerate
+The management of the relative notification to the User and the Operator
+ if needed.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\bar under
+S1.10:
+\bar default
+ Car communication Subsystem
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+This section expresses a set of extra functionalities designed for the User
+ who starts the ride and outlined by the Car's System.
+ For some of them the presence of the Server is necessary, for other ones
+ the Car's System can completely handle the request and shows the outputs
+ to the User.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Operations to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+(table)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
 \end_deeper
 \end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S2 Interaction with the Payment Subsystem
+\end_layout
+
+\begin_layout Itemize
+This section wants to provide a better and brief description of how the
+ System manages the different interactions with the Payment System (if you
+ need a better description of the nature of it, you can refer to the RASD
+ and the DD documents).
+ The System, in particular, has to build a precise instance of an object
+ with some inputs statements whose correctness in the form has to be clear
+ to the Transactional System.
+ On the other way, it will be the Transactional System to return typed values
+ from the corresponding function calls that the System can understand and
+ correcly handle for next steps of the operations.
+ This concepts have to be clear indipendently from the implementation details
+ and all the exceptions in the middle has to be managed by the System.
+ In details:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Operations to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+A correct analysis of all the inputs parameters to be delivered to the Transacti
+onal System (this means making them correctly in the previous operations
+ and verifying them just before the opening of the communication with the
+ Transactional System):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The Object describing the User and her/his specifics (such as name, surname,
+ number of credit card)
+\end_layout
+
+\begin_layout Enumerate
+The Object describing the amount of payment to be paid by the User and that
+ the System expects after the call
+\end_layout
+
+\begin_layout Enumerate
+The Object describing the nature of the payment (if it regards either an
+ end of the ride instance or a particular fee)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+A correct analysis of all the outputs parameters returned by the Transactional
+ System:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The Object regarding the id of the payment (all the ids are stored momentaneousl
+y for the current active transactions by the Server) and if there is a correspon
+dence with one in the temporary list
+\end_layout
+
+\begin_layout Enumerate
+The Object which contains the informations about the payment and the User
+ (hence the Server can start to open a new communication with the User to
+ alert)
+\end_layout
+
+\begin_layout Enumerate
+The Object regarding the result of the transaction:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+if the transaction is incorrect the System has to repeat the whole operation
+\end_layout
+
+\begin_layout Enumerate
+if the transaction is correct the System has to inform the User and correctly
+ close the communication for the particular case with it and with the Transactio
+nal System.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S3 Interaction with the Database Subsystem
+\end_layout
+
+\begin_layout Itemize
+Such as for the previous section, some interactions with the Database shall
+ be controlled by the Server and some of the exceptions handled for avoiding
+ in general a crash of the application.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Operations to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+If the exceptions affecting tables of the Database are handled in a way
+ that allows the System to complete the analized operations anyway, this
+ is important for all the different kind of operations which regard the
+ interaction with the System and the Database and, deeper:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Exceptions on null values
+\end_layout
+
+\begin_layout Itemize
+Exceptions on inserts
+\end_layout
+
+\begin_layout Itemize
+Exceptions on updates
+\end_layout
+
+\begin_layout Itemize
+Exceptions on deletes
+\end_layout
+
+\begin_layout Itemize
+Exceptions on particular conditions of the Database
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S4 Management Unit Subsystem:
+\end_layout
+
+\begin_layout Itemize
+For better understanding the purpose of this section, you can think about
+ all the Subsystems described in the 
+\series bold
+S1 
+\series default
+but focalized in an 
+\begin_inset Quotes eld
+\end_inset
+
+inverse manner
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In other words, now it is not the User the centre of the topic, but the
+ Administrators and Operators which have the important role to govern the
+ entire Service thanks to some tools offered by the System.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Operations to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+The mapping between the set of actions taken by the User in the application
+ in one of its particular context and the log file produced for the Administrato
+r
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The actions of the Users for the different scenarios are stated inside a
+ log file, the test regards checking if the actions are univoquely mapped
+ inside it and updated with respect to the current date and time.
+ This is important because in exceptional and common case the Administrator
+ can always relies on this kind of documentation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+If the channels of communications between the User and the Operator are
+ in functions
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+This set of channels regards in details:
+\end_layout
+
+\begin_layout Itemize
+A direct communication with a chat or with a call
+\end_layout
+
+\begin_layout Itemize
+An 
+\begin_inset Quotes eld
+\end_inset
+
+injection of code
+\begin_inset Quotes erd
+\end_inset
+
+ which allows the operator to diplay to the User some particular statements
+ of message from the application (the Mobile App or the Car's System) at
+ the occurence.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Subsubsection
 Subsystem integration sequence
 \end_layout
