@@ -324,95 +324,529 @@ Integration Testing Strategy
 Sequence of Component/Function Integration
 \end_layout
 
-\begin_layout Standard
-(Note: the structure depends on 2.3, structure example here is not mandatory)
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-(un po di brainstorming mi viene in mente:
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-test di tutta la parte relativa alla autenticazione/registrazione dell'utente
- (su app)
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-test di un interfaccia principale relativa all'autenticazione o alla scelta
- della registrazione
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-test della parte di registrazione
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-test di quando l'utente 
-\begin_inset Quotes eld
-\end_inset
-
-è dentro
-\begin_inset Quotes erd
-\end_inset
-
- l'applicazione (su app)
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-di quando modifica uno ad uno tutti i parametri a se relativi (per esempio
- mail telefono ecc)
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-di quando decide di prenotare una macchina (e relativi sottocasi, ad esempio
- di quando la macchina non è piu disponibile, oppure di quando decide per
- qualche motivo di tornare indietro rispetto all'app ...
- andrebbero elencati bene bene)
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-test di quando deve eseguire il pagamento, dato inizialmente per appreso
- il fatto che si trovi alla fine della corsa e che le info da parte dell'on
- board system e del sistema siano effettivamente gia arrivate all'app)
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-(gli stessi ragionamenti andrebbero fatti su tutti gli altri elementi del
- sistema)
-\end_layout
-
 \begin_layout Subsubsection
 Software integration sequence
 \end_layout
 
-\begin_layout Standard
-for each subsystem, identify the sequence in which the software components
- will be integrated within the subsystem; relate this sequence to any product
- features that are being built up
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S1 User Interactions Subsystems
 \end_layout
 
+\begin_layout Itemize
+In this section the subsystems related to all the User's aspects towards
+ the System will be analyzed.
+ A particular attention for all the relevant inputs of the User is the guideline
+ to cover appropriately all the Test Cases.
+ Every division of the section is referred to a particular situation between
+ the entities, the references to the various situations are located in the
+ Sequence Diagrams paragraph in the DD document and the various Scenarios,
+ previously showed up in the RASD document.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\bar under
+S1.1:
+\bar default
+ Autentication and Registration Subsystem
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+It corresponds to the description of what happens at the moment of the very
+ first access of the User to the Mobile App.
+ Hence, She/He shall communicate to the Mobile App and, forwardly, to the
+ Server, if the aim is a new registration or just a logging on to the service.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Operations to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+the particular choice of the User (if she/he wants to sign in or sign up)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Fields to be compiled by the User during the 
+\bar under
+sign up
+\bar default
+ operation:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Mandatory fields:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+name
+\end_layout
+
+\begin_layout Enumerate
+surname
+\end_layout
+
+\begin_layout Enumerate
+e-mail
+\end_layout
+
+\begin_layout Enumerate
+address
+\end_layout
+
+\begin_layout Enumerate
+country
+\end_layout
+
+\begin_layout Enumerate
+nationality
+\end_layout
+
+\begin_layout Enumerate
+credit card number
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Not Mandatory fields:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+phone 
+\end_layout
+
+\begin_layout Enumerate
+mobile
+\end_layout
+
+\begin_layout Enumerate
+nickname
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+Fields to be compiled by the User diring the 
+\bar under
+sign in
+\bar default
+ operation:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+a unique field in which a string composed by the 
+\bar under
+name surname
+\bar default
+ sequence, or the 
+\bar under
+e-mail
+\bar default
+ or the 
+\bar under
+nickname
+\bar default
+ (this field identifies the particular User)
+\end_layout
+
+\begin_layout Enumerate
+the password associated to the User specified by the field above
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\bar under
+S1.2:
+\bar default
+ Choice Menu Subsystem
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+It corresponds to the description of the switching options available for
+ the User within the context of the functionalities and the set of windows
+ of the Mobile App.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Operations to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+User experience with the integration of the commands and the interactions
+ of the views of the App.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+(Image)
+\end_layout
+
+\begin_layout Itemize
+The presence of the 
+\begin_inset Quotes eld
+\end_inset
+
+Second Level Check Unit
+\begin_inset Quotes erd
+\end_inset
+
+ is required for the case because of the recovery of some information from
+ the Server.
+ This information, regarding for instance the positions of the User and
+ the Car, as well as the datas of the User for the particular view (see
+ the User Interface Design paragraph in the DD document for a visive reference),
+ are displayed after a correct call to the server.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\bar under
+S1.3:
+\bar default
+ Profile Management Subsystem
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Operation to test:
+\end_layout
+
+\begin_layout Standard
+In the table below some changings of parameters due to the User actions
+ in her/his own profile are figured out with respect to a certain grade
+ of priority.
+ In fact is important to understand for this section, how much modifiations
+ by the User will affect directly or not, other internal of the software:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Operation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Priority
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+changing the number of the credit cart used for the payment
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+changing the password for accessing to the service
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+changing the e-mail
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+changing the country
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medium
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+changing the address
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medium
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+changing the mobile/phone number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medium
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+changing the nickname
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Low
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+changing the profile picture
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Low
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\bar under
+S1.4:
+\bar default
+ Unlocking the Car Subsystem:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Operations to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The User proximity to her/his reserved Car after the reservation (periodically
+ verified in any case)
+\end_layout
+
+\begin_layout Enumerate
+The User's expressed will to unlock the Car (and so, the process of reponse
+ and reply of the Mobile App and the Server, see the Sequence Diagram in
+ the DD document for discovering more)
+\end_layout
+
+\begin_layout Enumerate
+The conditions of proximity during the will expressed by the User (and so
+ all the cases in which there can be a negative or a positive reponse from
+ the Server)
+\end_layout
+
+\begin_layout Enumerate
+The unlock of the Car process (as directly consequence of the points above).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Components:
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\bar under
+S1.5:
+\bar default
+ Locking the Car Subsystem:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Operation to test:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The User proximity to her/his reserved Car after the end of the ride, as
+ well as the User condition of being out of the vehicle (the Server makes
+ this analysis thanks to the interaction with the Car's System and indirectly
+ the sensors of the Car, in addition to the usual interaction with the Mobile
+ App.
+ See the Sequence Diagrams in the DD document for discovering more)
+\end_layout
+
+\begin_layout Enumerate
+The condition of closure of the Car by the User
+\end_layout
+
+\begin_layout Enumerate
+The lock of the Car process (as directly consequence of the points above).
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
 \begin_layout Subsubsection
 Subsystem integration sequence
 \end_layout
