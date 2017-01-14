@@ -992,9 +992,97 @@ Tools and Test Equipment Required
 \end_layout
 
 \begin_layout Standard
+Here is a brief explaination of all the tools that we want to use to perform
+ all the main passages of the Integration Testing described in previous
+ chapters of this document.
+\end_layout
 
-\series bold
-(che tools utilizziamo?)
+\begin_layout Itemize
+JUnit: is the mainstream suite for testing software components and units
+ written in Java.
+ We aim to take advantage of all the main functionalities provided by JUnit
+ to test software units; here are some of the advantages that we can obtain
+ by using this tool:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+JUnit tests allow you to write codes faster, which increases quality.
+\end_layout
+
+\begin_layout Itemize
+JUnit tests can be run automatically and they check their own results and
+ provide immediate feedback.
+ There's no need to manually comb through a report of test results.
+\end_layout
+
+\begin_layout Itemize
+JUnit tests can be organized into test suites containing test cases and
+ even other test suites.
+\end_layout
+
+\begin_layout Itemize
+JUnit promotes the idea of "first testing then coding", which emphasizes
+ on setting up the test data for a piece of code that can be tested first
+ and then implemented.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Java code will be used mainly for those software components that are related
+ to the mobile application for the Android platform.
+\end_layout
+
+\begin_layout Standard
+The Android SDK provides additional tools that can be used to verify Java
+ the correctness code and to test the performance of the overall application
+ on different types of device.
+\end_layout
+
+\begin_layout Standard
+These tools are:
+\end_layout
+
+\begin_layout Itemize
+the Memory Profiler
+\end_layout
+
+\begin_layout Itemize
+the Memory Monitor and Allocation Tracker
+\end_layout
+
+\begin_layout Itemize
+the Battery Profiler
+\end_layout
+
+\begin_layout Standard
+Talking about mobile applications, there are software tools (provided by
+ Apple) for automatically checking correctness and performance of iOS applicatio
+ns on several versions of virtual or physical iOS devices.
+ We want to mention some of them such as:
+\end_layout
+
+\begin_layout Itemize
+the Performance Profiling Tool
+\end_layout
+
+\begin_layout Itemize
+the Activity Monitor
+\end_layout
+
+\begin_layout Itemize
+the MallocDebug
+\end_layout
+
+\begin_layout Standard
+With respect to the Business Logic, being it developed within the Java 2E
+ framework (as described in previous documents), we aim to use:
+\end_layout
+
+\begin_layout Itemize
+Arquillian integration testing framework: this tool enables us to execute
+ tests against a Java container in order to check that the interaction between
+ a component and its surrounding execution environment is happening correctly.
 \end_layout
 
 \begin_layout Section
