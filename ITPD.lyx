@@ -453,7 +453,7 @@ Software integration sequence
 \labelwidthstring 00.00.0000
 
 \series bold
-S1 User Interactions Subsystems
+S1 User Interactions Subsystem
 \end_layout
 
 \begin_layout Itemize
@@ -605,6 +605,16 @@ the password associated to the User specified by the field above
 Components:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.1 User Interactions Subsystem.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 
@@ -636,7 +646,19 @@ User experience with the integration of the commands and the interactions
 
 \end_deeper
 \begin_layout Itemize
-(Image)
+
+\series bold
+Components:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.2 Choice Menu Subsystem.svg
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -884,6 +906,16 @@ Low
 Components:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.3 Profile Management Subsystem.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 
@@ -930,6 +962,16 @@ The unlock of the Car process (as directly consequence of the points above).
 Components:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.4 Unlocking the Car Subsystem.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 
@@ -972,6 +1014,16 @@ The lock of the Car process (as directly consequence of the points above).
 Components:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.5 Locking the Car Subsystem.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 
@@ -1005,6 +1057,16 @@ n which have the reservation cancelled as a final result).
 
 \series bold
 Components:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.6 Cancel the Reservation Subsystem.svg
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1077,6 +1139,16 @@ The final result produced by the verification of the sentences above: the
 
 \series bold
 Components:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.7 Fees Subsystem.svg
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1156,6 +1228,16 @@ The final result produced by the verification of the sentences above: the
 Components:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.8 Payment Subsystem.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 
@@ -1205,6 +1287,16 @@ The management of the relative notification to the User and the Operator
 Components:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.9 Assistance Subsystem.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 
@@ -1240,6 +1332,16 @@ Operations to test:
 
 \series bold
 Components:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.10 Car communication Subsystem.svg
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1345,6 +1447,16 @@ nal System.
 Components:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S2 Interaction with the Payment System.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
@@ -1402,6 +1514,16 @@ Exceptions on particular conditions of the Database
 
 \series bold
 Components:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S3 Interaction with the Database.svg
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1496,6 +1618,16 @@ injection of code
 
 \series bold
 Components:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S4 Management Unit Subsystem.svg
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
