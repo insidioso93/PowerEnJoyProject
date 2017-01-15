@@ -1187,7 +1187,7 @@ Components:
 \bar under
 S1.7:
 \bar default
- Fees Subsystem:
+ Fees and Discounts Subsystem:
 \end_layout
 
 \begin_deeper
@@ -1200,8 +1200,182 @@ The meaning of this subsystem is to control and properly respond to the
  it, in the RASD and DD documents the topic is further illustrated):
 \end_layout
 
-\begin_layout Itemize
-(table)
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Discount or Fee to be applied to the Payment
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Situation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++1 euro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The time reservation of 1 hour expires
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-10% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The System detects two other passengers in the Car
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The Car has more than 50% of the battery full
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-30%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The Car is left in the special parking area and plugged to the power grid
+ after the ride 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++30%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The Car is left at more than 3 KM from the nearest power grid station
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++30%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The Car is left with more than 80% of the battery empty
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(-30%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+If the money saving option is enabled and instructions are correctly followed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1435,7 +1609,129 @@ Operations to test:
 
 \begin_deeper
 \begin_layout Itemize
-(table)
+The Car's System active condition (it shall be effectively active once the
+ System unlocks the Car)
+\end_layout
+
+\begin_layout Itemize
+The User Experience related to the Menu Switch, offered to the User as long
+ as she/he gets on the Car (this option is similar to the Mobile App's one)
+\end_layout
+
+\begin_layout Itemize
+The activation of the money saving option
+\end_layout
+
+\begin_layout Itemize
+The GPS Functionalities:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The decision of the User to give a particular path to follow for the journey
+\end_layout
+
+\begin_layout Enumerate
+The indication of the nearest Stations from the path indicated by the User
+\end_layout
+
+\begin_layout Enumerate
+The commutation of the 
+\begin_inset Quotes eld
+\end_inset
+
+actual stations
+\begin_inset Quotes erd
+\end_inset
+
+, hence the stations which appear on the road to the User during the drive
+\end_layout
+
+\begin_layout Enumerate
+The signalations of obstacles, closed road, limits of speed, and so on,
+ as a common navigator
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The link to a traffic news service if activated
+\end_layout
+
+\begin_layout Itemize
+The communication with an Assistance Operator if needed by the User or by
+ the System
+\end_layout
+
+\begin_layout Itemize
+Access to a manual of instructions and dispositions
+\end_layout
+
+\begin_layout Itemize
+Information about the health and property of the Car
+\end_layout
+
+\begin_layout Itemize
+Information about the current statistics of the Car (the amount of power
+ left enter in this category)
+\end_layout
+
+\begin_layout Itemize
+A notification manager for the handling of the following message:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The starting of the ride 
+\end_layout
+
+\begin_layout Enumerate
+The finishing of the ride
+\end_layout
+
+\begin_layout Enumerate
+The actual amount of money to pay 
+\end_layout
+
+\begin_layout Enumerate
+The statistics and summary of the end of the ride:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Information correlated to the physical aspects of the ride (such as the
+ kilometers of the completed ride, energy spent etc.)
+\end_layout
+
+\begin_layout Enumerate
+Information correlated to the final amount of money to pay, eventually with
+ fees and discounts already calculated
+\end_layout
+
+\begin_layout Enumerate
+The option to be connected directly from the Car to the Transactional System
+ for the transaction or to be received it as a notification on the Mobile
+ App
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+The interactions with the Car sensors for understanding how many other passenger
+s more than the User are entering/leaving the Car
+\end_layout
+
+\begin_layout Itemize
+The interactions with the lock/unlock device of the Car
+\end_layout
+
+\begin_layout Itemize
+The calls and responses made/received to/by the Server in relation of all
+ the situations discussed above
+\end_layout
+
+\begin_layout Itemize
+The Car's System sleeping condition (It shall be effectively in a sleeping
+ mode after the locking required by the Server)
 \end_layout
 
 \end_deeper
@@ -1443,6 +1739,16 @@ Operations to test:
 
 \series bold
 Components:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.10 Car communication Subsystem.svg
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
