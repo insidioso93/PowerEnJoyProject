@@ -2030,8 +2030,8 @@ The following table defines the actions the Car Controller takes upon receiving
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="5cm">
-<column alignment="center" valignment="middle" width="5cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
 <row>
 <cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2776,8 +2776,8 @@ The following methods are exposed by the Car Controller to the Car Manager
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="5.5cm">
-<column alignment="center" valignment="middle" width="5.5cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
 <row>
 <cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -2870,8 +2870,8 @@ The Car Controller sends a message of type unlock to the correct car.
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="5.5cm">
-<column alignment="center" valignment="middle" width="5.5cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
 <row>
 <cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -2964,8 +2964,8 @@ The Car Controller sends a message of type reserve to the correct car.
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="5.5cm">
-<column alignment="center" valignment="middle" width="5.5cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
 <row>
 <cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -3058,8 +3058,8 @@ The Car Controller sends a message of type free to the correct car.
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="5.5cm">
-<column alignment="center" valignment="middle" width="5.5cm">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
 <row>
 <cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
