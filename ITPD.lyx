@@ -196,10 +196,6 @@ develop and test
 \end_layout
 
 \begin_layout Subsection
-List of Definitions and Abbrevations
-\end_layout
-
-\begin_layout Subsection
 List of Reference Document
 \end_layout
 
@@ -259,26 +255,6 @@ Entry Criteria
 \begin_layout Standard
 Before the beginning of the Integration Testing some criteria have to be
  satisfied:
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-(in pratica sto dicendo che: ogni componente deve essere già ben definita,
- il sistema rispetto all'ambiente deve avere 
-\begin_inset Quotes eld
-\end_inset
-
-confini
-\begin_inset Quotes erd
-\end_inset
-
- che non saranno piu modificati, le interfacce tra le varie componenti e
- per l'utente devono essere gia ben definite, deve esserci una documentazione
- parziale per poter capire qual è eventualmente l'errore e che il white
- box test deve essere fatto (quello per gli errori strutturali, mi è sembrato
- buono aggiungerlo perche l'ho trovato gia specificato in un documento e
- poi ricordo che va fatto comunque prima rispetto a questo tipo di test)
 \end_layout
 
 \begin_layout Itemize
@@ -6716,14 +6692,6 @@ iPhone 6 plus
 
 \begin_layout Itemize
 Samsung Galaxy Note II 
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Section
-Program Stubs and Test Data Required
 \end_layout
 
 \end_body
