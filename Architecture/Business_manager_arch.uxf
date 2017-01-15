@@ -243,7 +243,7 @@ UserRequestsHandler</panel_attributes>
     <coordinates>
       <x>294</x>
       <y>282</y>
-      <w>108</w>
+      <w>114</w>
       <h>48</h>
     </coordinates>
     <panel_attributes>lt=()-
@@ -266,7 +266,7 @@ AuthenticationServices</panel_attributes>
     <coordinates>
       <x>618</x>
       <y>54</y>
-      <w>120</w>
+      <w>126</w>
       <h>66</h>
     </coordinates>
     <panel_attributes>lt=)-[]
@@ -434,7 +434,7 @@ CarAccess API</panel_attributes>
     <coordinates>
       <x>492</x>
       <y>54</y>
-      <w>90</w>
+      <w>96</w>
       <h>66</h>
     </coordinates>
     <panel_attributes>lt=)-[]
@@ -463,5 +463,31 @@ PaymentServices</panel_attributes>
     <panel_attributes>lt=.&gt;
 </panel_attributes>
     <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>642</x>
+      <y>210</y>
+      <w>114</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-()
+ReservationServices
+</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>210</y>
+      <w>30</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=)-
+
+</panel_attributes>
+    <additional_attributes>20.0;20.0;30.0;20.0</additional_attributes>
   </element>
 </diagram>
