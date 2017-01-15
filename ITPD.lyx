@@ -326,16 +326,127 @@ Elements to be integrated
 \end_layout
 
 \begin_layout Standard
-(identify the components to be integrated, refer to your design document
- to identify such components in a way that is consistent with your design)
+In this document and specificly in this paragraph, we long to inspect a
+ set of elements which is very useful for the test analysis.
+ The elements covered in the chapter, are considered as some units, designed
+ to guide the different cases of test.
+ The connections of the single element with each other, as well as, its
+ further decomposition, will be showed up later.
+ Here there is a quick list of all the outlined elements:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+User Component
+\end_layout
 
-\series bold
-(in pratica in questa sezione vanno brevemente elencati con una breve spiegazion
-e tutti i componenti che vengono utilizzati nella sessione 2.4 e eventualmente
- nel DD)
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+First Level Check Unit
+\begin_inset Quotes erd
+\end_inset
+
+ (Referred to the Mobile App)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Second Level Check Unit
+\begin_inset Quotes erd
+\end_inset
+
+ (Referred to the Server Java)
+\end_layout
+
+\begin_layout Itemize
+Database Component
+\end_layout
+
+\begin_layout Itemize
+Data Manager
+\end_layout
+
+\begin_layout Itemize
+Database Manager
+\end_layout
+
+\begin_layout Itemize
+Autentication/Registration Decision Manager
+\end_layout
+
+\begin_layout Itemize
+Notification Manager
+\end_layout
+
+\begin_layout Itemize
+Switching Menu Manager
+\end_layout
+
+\begin_layout Itemize
+Profile Management Manager
+\end_layout
+
+\begin_layout Itemize
+GPS Service Manager
+\end_layout
+
+\begin_layout Itemize
+Unlocking Car Manager
+\end_layout
+
+\begin_layout Itemize
+Locking Car Manager
+\end_layout
+
+\begin_layout Itemize
+Car System Component 
+\end_layout
+
+\begin_layout Itemize
+Cancel Reservation Manager
+\end_layout
+
+\begin_layout Itemize
+Fees Manager
+\end_layout
+
+\begin_layout Itemize
+Payment Manager
+\end_layout
+
+\begin_layout Itemize
+Payment System
+\end_layout
+
+\begin_layout Itemize
+Assistance Manager
+\end_layout
+
+\begin_layout Itemize
+Assistance Component
+\end_layout
+
+\begin_layout Itemize
+Payment Instance Manager
+\end_layout
+
+\begin_layout Itemize
+Exception Manager
+\end_layout
+
+\begin_layout Itemize
+Log Manager
+\end_layout
+
+\begin_layout Itemize
+Communication Manager
+\end_layout
+
+\begin_layout Itemize
+Operator/Administrator Component
 \end_layout
 
 \begin_layout Subsection
@@ -1640,9 +1751,261 @@ Subsystem integration sequence
 \end_layout
 
 \begin_layout Standard
-Indentify the order in which subsystems will be integrated ...
+Following the bottom up strategy and the specifics already pointed out in
+ the previous analysis of all the Subsystems forming the test strategy,
+ the approach to integrate all the cases of test will be designed in the
+ section.
+ The used metodologies take place paying attention to the entities and the
+ actors 
+\begin_inset Quotes eld
+\end_inset
+
+at the border
+\begin_inset Quotes erd
+\end_inset
+
+ of the System.
+ At first position of all of them we can find the User: for her/him it is
+ intended the whole Service.
+ But details are important for other parts too: such as the various Operators
+ and Assistent who are 
+\begin_inset Quotes eld
+\end_inset
+
+behind the scene
+\begin_inset Quotes erd
+\end_inset
+
+, the Payment System and the Database.
+ Their absence seriously compromise the final role of the entire Application.
+ Finally, the hypothesis for a good integration is that everything related
+ to the implementation was already been finalized.
+ The modules analyzed below, are considered as 
+\begin_inset Quotes eld
+\end_inset
+
+containers
+\begin_inset Quotes erd
+\end_inset
+
+ for all the cases of interactions between the entity A and the entity B.
+ All these interactions will be covered by some tests for the purpose.
+ In those processes in which also the integration of an entity C is required,
+ particular 
+\begin_inset Quotes eld
+\end_inset
+
+markers
+\begin_inset Quotes erd
+\end_inset
+
+ can be placed and retrieved at the right moment of the testing procedure.
+ In other words we can say that the test is suspended making some conjectures
+ for going on in the analysis, hence formulating a correct reply without
+ passing from entity C, but signing the inputs for the future tests covered
+ in the appropriate module.
 \end_layout
 
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S5 Integration between the functionalities offered to the User and the Mobile
+ App
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename diagrams-svg/S5 Integration User Mobile App.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S6 Integration between the functionalities offered to the User and the Car's
+ System
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename diagrams-svg/S6 Integration User Car System.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S7 Integration between the Mobile App's calls and the Server Java
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename diagrams-svg/S7 Integration Mobile App Server.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S8 Integration between the Car's System's calls and the Server Java
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename diagrams-svg/S8 Integration Car SYstme Server.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S9 Integration between the User and the Server Java
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Once the points S5, S6, S7, S9 are correctly managed, everything which brings
+ the transictions procedure between the Server and the User can be 
+\begin_inset Quotes eld
+\end_inset
+
+hide
+\begin_inset Quotes erd
+\end_inset
+
+ for this kind of tests (in other words the User and the Server are seen
+ as the end points of the communication for this particular situation).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename diagrams-svg/S9 Integration User Server.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S10 Integration between the functionalities required from the Payment System
+ and the Server Java
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename diagrams-svg/S10 Integration Payment Maneger Server.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S11 Integration between the functionalities offered to/required by the Assistanc
+e Operator/Administrator and the Server Java
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename diagrams-svg/S12 S13 Integration Server Admin Operator.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S12 Integration between the functionalities offered to/required by the Database
+ and the Server Java
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename diagrams-svg/S11 Database Server integration.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+S13 Final tests integrations
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+This final work include a set of examples which are more similar of real
+ situations.
+ Topics for the section are very near to the scenarios illustrated in the
+ RASD document in their definitions.
+ It is important to make a final integration of all the units in this way,
+ because also the minimal error can be discovered and fixed and also if
+ it is impossible to reach an ideal margin of error equal to 0, it can be
+ reduced enough to have a final, running version of the software, ready
+ to be competitive on the market.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Individual Step and Test Description
 \end_layout
