@@ -1725,6 +1725,16 @@ The Car's System sleeping condition (It shall be effectively in a sleeping
 Components:
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagrams-svg/Test Component S1.10 Car communication Subsystem.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \end_deeper
 \begin_layout Labeling
