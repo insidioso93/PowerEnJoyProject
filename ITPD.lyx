@@ -104,11 +104,19 @@ Introduction
 \end_layout
 
 \begin_layout Subsection
-Revision History
+Hours of work
 \end_layout
 
-\begin_layout Standard
-(here goes all the revisions of the document)
+\begin_layout Itemize
+Luca Marzi: 10h
+\end_layout
+
+\begin_layout Itemize
+Valeria Mazzola: 10h
+\end_layout
+
+\begin_layout Itemize
+Federico Nigro: 10h
 \end_layout
 
 \begin_layout Subsection
@@ -6716,10 +6724,6 @@ Samsung Galaxy Note II
 
 \begin_layout Section
 Program Stubs and Test Data Required
-\end_layout
-
-\begin_layout Section
-Effort Spent
 \end_layout
 
 \end_body
