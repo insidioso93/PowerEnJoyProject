@@ -719,7 +719,7 @@ Components:
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/Test Component S1.1 User Interactions Subsystem.svg
-	scale 40
+	scale 30
 
 \end_inset
 
@@ -1020,7 +1020,7 @@ Components:
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/Test Component S1.3 Profile Management Subsystem.svg
-	scale 40
+	scale 30
 
 \end_inset
 
@@ -1255,7 +1255,7 @@ Components:
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/Test Component S1.7 Fees Subsystem.svg
-	scale 40
+	scale 30
 
 \end_inset
 
@@ -1342,7 +1342,7 @@ Components:
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/Test Component S1.8 Payment Subsystem.svg
-	scale 40
+	scale 30
 
 \end_inset
 
@@ -1401,7 +1401,7 @@ Components:
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagrams-svg/Test Component S1.9 Assistance Subsystem.svg
-	scale 40
+	scale 30
 
 \end_inset
 
