@@ -426,10 +426,14 @@ Medium
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-
+External Logic Files (ELFs)
 \end_layout
 
 \begin_layout Standard
@@ -441,32 +445,9 @@ First of all, PowerEnJoy has to store a lot of information about the current
 \end_layout
 
 \begin_layout Standard
-Some of the information that are about the 
-\end_layout
-
-\begin_layout Standard
-myTaxiService relies on a number of ILFs to store the information it needs
- to offer the required functionalities.
- In the next few paragraphs, we’ll analyze in detail the various ILFs we
- have identified.
- First of all, the system has to store information about taxis and taxi
- drivers.
- These data are condensed in a single table that holds the first name, last
- name and birthdate of a taxi driver as strings, together with his home
- address, SSN, email address and mobile phone number as contact information.
- It also stores the taxi driver’s driving license, his taxi license, the
- taxi plate number and the taxi status (available, unavailable, on a ride,
- outside city, pending confirmation) for convenience.
- As for the zones, they are stores using a two-level structure.
- The first level of the structure holds the identifiers of all the zones,
- while a secondary table contains all the location coordinates (as <latitude,
- longitude> pairs) necessary to identify the vertices of the zone polygon.
- The system also needs a queue for each zone in which it can store the identifie
-rs of the taxi drivers waiting in that zone and their relative position
-\end_layout
-
-\begin_layout Subsection
-Cost and effort estimation with COCOMO II
+This information is provided in real time by onboard system which as to
+ communicate with different third-part applications that are installed onto
+ the informatic system of the car.
 \end_layout
 
 \begin_layout Section
