@@ -102,19 +102,367 @@ Introduction
 \end_layout
 
 \begin_layout Subsection
-Hours of work
+Purpose and scope
+\end_layout
+
+\begin_layout Standard
+This documents aims to provide a first estimation of the size of project
+ and the effor required to implement all its functionalities (described
+ in previous documents).
+\end_layout
+
+\begin_layout Standard
+The purpose of this document is to serve as a guide in the analysis of physical
+ resources and time that are necessary to obtain a deliverable product.
+\end_layout
+
+\begin_layout Standard
+Neverthless, this documents aims to provide a possible schedule to follow
+ for the completion of the different phases of the project, from the requirement
+ analysis from the integration plan and testing.
 \end_layout
 
 \begin_layout Subsection
-Purpose and scope
+Definitions & Acronyms
+\end_layout
+
+\begin_layout Itemize
+RASD Document
+\end_layout
+
+\begin_layout Itemize
+DD Document
+\end_layout
+
+\begin_layout Itemize
+RASD: Requirements Analysis and Specification Document
+\end_layout
+
+\begin_layout Itemize
+GPS: Global Positioning System
+\end_layout
+
+\begin_layout Itemize
+SDK: Software Development Kit
+\end_layout
+
+\begin_layout Itemize
+DBMS: Database Management System
 \end_layout
 
 \begin_layout Section
 Project
 \end_layout
 
+\begin_layout Standard
+This section of the document provides an esitmation of the expected size
+ of the project PowerEnJoy system.
+\end_layout
+
+\begin_layout Standard
+The estimation relies on the attribution of the so called Functional Points
+ to different characteristics of the project like:
+\end_layout
+
+\begin_layout Itemize
+Data structures 
+\end_layout
+
+\begin_layout Itemize
+Input/Outputs
+\end_layout
+
+\begin_layout Itemize
+Interfaces
+\end_layout
+
+\begin_layout Standard
+For the cost and effort estimation we will instead rely on the COCOMO approach,
+ using as initial guidance the amount of lines of code computed with the
+ FP approach.
+\end_layout
+
 \begin_layout Subsection
 Size estimation: function points
+\end_layout
+
+\begin_layout Standard
+Internal Logic Files (ILFs)
+\end_layout
+
+\begin_layout Standard
+PowerEnJoy relies on several types of ILFs to store information that is
+ needed to support the main functionalities of the system.
+\end_layout
+
+\begin_layout Standard
+In this section of the document we will analyze the main ILFs we have indentifie
+d.
+\end_layout
+
+\begin_layout Standard
+The system as to store information about users and cars.
+ All the information about users in condensed in a single table that holds
+ all the information regarding the user's personal information like name,
+ surname, driving license ect.
+ The same table is used to handle all the information related to the authenticat
+ion of the user and his/her association to a specific device.
+\end_layout
+
+\begin_layout Standard
+A different table is used to record all the payment methods that are associated
+ to a user (and that can be shared by different users); the system has been
+ designed to accept only one type of payment method that is PayPal.
+ Although we will consider all the interaction with PayPal services in terms
+ of ELs, some information is condensed in a single table which store, for
+ each payment method, the id of the user associated to the payment method,
+ a token that has to be associated to each request towards the PayPal API.
+\end_layout
+
+\begin_layout Standard
+A third table is used as support for the part of the business model that
+ handles the cars; this table contains information such as: the name and
+ the model of the car, its plate and a set of information that are related
+ to the status of the car.
+\end_layout
+
+\begin_layout Standard
+A fourth table is used to handle all the information concerning the part
+ of the business model that handles the reservation and the association
+ of active rides to reservations.
+\end_layout
+
+\begin_layout Standard
+A fifth table is used to handle all safe zones and the power stations that
+ are offered to the user as places where the car can be parked.
+ This table contains some information about the status of each safe area
+ (according to the business model) and its positioning inside a specific
+ geographical context.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ILF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Complexity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FPs
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Login data 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Low
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Payment data
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Low
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Car data
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reservation data
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Safe Areas/PowerStations
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medium
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+First of all, PowerEnJoy has to store a lot of information about the current
+ state of each physical car of the system.
+ This information includes telemetry information, status of the battery,
+ status of other physical devices that are directly connected to the operation
+ of the physical car and that are provided by the operating system on board.
+\end_layout
+
+\begin_layout Standard
+Some of the information that are about the 
+\end_layout
+
+\begin_layout Standard
+myTaxiService relies on a number of ILFs to store the information it needs
+ to offer the required functionalities.
+ In the next few paragraphs, we’ll analyze in detail the various ILFs we
+ have identified.
+ First of all, the system has to store information about taxis and taxi
+ drivers.
+ These data are condensed in a single table that holds the first name, last
+ name and birthdate of a taxi driver as strings, together with his home
+ address, SSN, email address and mobile phone number as contact information.
+ It also stores the taxi driver’s driving license, his taxi license, the
+ taxi plate number and the taxi status (available, unavailable, on a ride,
+ outside city, pending confirmation) for convenience.
+ As for the zones, they are stores using a two-level structure.
+ The first level of the structure holds the identifiers of all the zones,
+ while a secondary table contains all the location coordinates (as <latitude,
+ longitude> pairs) necessary to identify the vertices of the zone polygon.
+ The system also needs a queue for each zone in which it can store the identifie
+rs of the taxi drivers waiting in that zone and their relative position
 \end_layout
 
 \begin_layout Subsection
