@@ -3747,7 +3747,8 @@ Deployment Gantt Diagram
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename Gantt/Deployment List.png
+	filename Gantt/Deployment Gantt 2.png
+	scale 60
 
 \end_inset
 
@@ -3756,7 +3757,8 @@ Deployment Gantt Diagram
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename Gantt/Deployment Gantt 2.png
+	filename Gantt/Deployment List.png
+	scale 60
 
 \end_inset
 
@@ -3772,6 +3774,7 @@ Start up and Maintanance Gantt Diagram
 \begin_layout Standard
 \begin_inset Graphics
 	filename Gantt/Start up and maintanance list.png
+	scale 60
 
 \end_inset
 
@@ -3781,6 +3784,7 @@ Start up and Maintanance Gantt Diagram
 \begin_layout Standard
 \begin_inset Graphics
 	filename Gantt/Start up and maintanance Gantt.png
+	scale 60
 
 \end_inset
 
