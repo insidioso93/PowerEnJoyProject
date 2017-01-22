@@ -649,7 +649,7 @@ Car data
 \begin_inset Text
 
 \begin_layout Plain Layout
-Low
+Medium
 \end_layout
 
 \end_inset
@@ -658,7 +658,7 @@ Low
 \begin_inset Text
 
 \begin_layout Plain Layout
-8
+4
 \end_layout
 
 \end_inset
@@ -687,7 +687,7 @@ Medium
 \begin_inset Text
 
 \begin_layout Plain Layout
-8
+4
 \end_layout
 
 \end_inset
@@ -2173,7 +2173,7 @@ Overall product of all cost drivers
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.01477
 \end_layout
 
 \end_inset
@@ -2779,7 +2779,7 @@ Project plan
 \end_layout
 
 \begin_layout Subsection
-Identifying milestons and tasks
+Identifying milestones and tasks
 \end_layout
 
 \begin_layout Standard
