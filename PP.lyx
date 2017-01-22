@@ -151,7 +151,7 @@ DBMS: Database Management System
 \end_layout
 
 \begin_layout Section
-Project size estimation
+Project size estimation 
 \end_layout
 
 \begin_layout Standard
@@ -184,6 +184,13 @@ For the cost and effort estimation we will instead rely on the COCOMO approach,
 
 \begin_layout Subsection
 Function size estimation: function points
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Function-size-estimation:"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -528,6 +535,10 @@ A fifth table is used to handle all safe zones and the power stations that
  This table contains some information about the status of each safe area
  (according to the business model) and its positioning inside a specific
  geographical context.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -741,7 +752,681 @@ This information is provided in real time by onboard system which as to
 \end_layout
 
 \begin_layout Subsection
-Cost estimation with COCOMO
+Cost estimation with COCOMO II
+\end_layout
+
+\begin_layout Subsubsection
+Introduction to the COCOMO II method
+\end_layout
+
+\begin_layout Standard
+As mentioned, we are using the COCOMO II method to estimate the effort the
+ PowerEnJoy project will require.
+ Such effort is calculated with the following formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Effort=A*KSLOC^{E}*\prod_{i=1}^{n}EM_{i}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A=2,94$
+\end_inset
+
+ is the productivity constant for COCOMO II
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $KSLOC$
+\end_inset
+
+ is the size of the project computed with the Function Points method in
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Function-size-estimation:"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $EM_{i}$
+\end_inset
+
+ terms are the effort multipliers, to be computed from cost drivers in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Cost-drivers"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E$
+\end_inset
+
+ is the scale factors parameter, to be computed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Scale-factors"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cost drivers
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Cost-drivers"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Scale factors
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Scale-factors"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here is out estimation of the five scale factors:
+\end_layout
+
+\begin_layout Subsubsection*
+Precedentedness
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scale factor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Precedentedness
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reflects the previous experience of the organization with this type of project.
+ Varies from the throughly unprecedented case to the very familiar.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Factor weight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Low: we don't have previous experience with a project this big nor with
+ the areas of experties required for it, such as the Java2E framework.
+ We do however have experience with Java and with medium-sized projects.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value assigned
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.96
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Development flexibility
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scale factor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Development flexibility
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reflect the flexibility of the constraints on the project requirements.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Factor weight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nominal: the specification given to us has left us with a great deal of
+ choices in the interpretation of the specification itself.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value assigned
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.04
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Risk resolution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scale factor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Risk resolution
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reflect the level of accuracy and depth of the risk analysis performed,
+ and the level of reactiveness to risks that can be achieved during the
+ project.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Factor weight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nominal: we have performed some risks analysis in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Identifying-risks"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Contingency-plan-development"
+
+\end_inset
+
+.
+ However, our experience in the field is not solid enough to be sure that
+ the analysis performed will cover the actual risks we may face during the
+ future phases of the project.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value assigned
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Team cohesion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scale factor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Team cohesion
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reflects the level of cohesion of the stakeholders, their ability to share
+ a vision and to commit to the choices taken so far in the project.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Factor weight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High: we believe the requirements and design choices made so far have been
+ successful in putting together the needs and interests of all stakeholders.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value assigned
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Process maturity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scale factor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Process maturity
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reflects the process maturity of the organization and its ability to abide
+ to CMMI guidelines.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Factor weight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nominal: we believe our team is able to structure its work according to
+ a level 2 Capability Model.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Value assigned
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.68
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Computation of the E parameter
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $E$
+\end_inset
+
+ parameter, as described by the COCOMO II standard, is computed as such:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E=B+0,01*\sum_{i=1}^{5}SF_{i}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B=0,91$
+\end_inset
+
+ is an empirical constant valid for COCOMO II
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $SF_{i}$
+\end_inset
+
+ is the i-th scale factor
+\end_layout
+
+\begin_layout Standard
+When taking into account the previously identified values of the scale factors,
+ we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E=0,91+0,01*19,11=1,1011
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+thus obtaining a value of 1,1011.
 \end_layout
 
 \begin_layout Section
@@ -766,10 +1451,24 @@ Risk management
 
 \begin_layout Subsection
 Identifying risks
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Identifying-risks"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Contingency plan development
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Contingency-plan-development"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
