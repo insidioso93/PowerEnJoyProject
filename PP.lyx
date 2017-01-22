@@ -3675,9 +3675,14 @@ RASD document Gantt Diagram
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Graphics
 	filename Gantt/RASD Gantt.png
 	scale 60
@@ -3701,9 +3706,14 @@ DD document Gantt Diagram
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Graphics
 	filename Gantt/DD Gantt.png
 	scale 60
@@ -3727,9 +3737,14 @@ Development Gantt Diagram
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Graphics
 	filename Gantt/Deployment Gantt.png
 	scale 60
@@ -3753,9 +3768,14 @@ Deployment Gantt Diagram
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Graphics
 	filename Gantt/Deployment List.png
 	scale 60
@@ -3779,9 +3799,14 @@ Start up and Maintanance Gantt Diagram
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Graphics
 	filename Gantt/Start up and maintanance Gantt.png
 	scale 60
