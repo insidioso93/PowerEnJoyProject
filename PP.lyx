@@ -2001,10 +2001,10 @@ External Outputs
 \end_layout
 
 \begin_layout Standard
-We consider Java 2E as main platform for the developement of the core of
- the business logic; we have decided to consider also the developement of
- the mobile applications as part of the developement of the business logic
- for the estimatin of the expected lines of code.
+We consider Java 2E as main platform for the development of the core of
+ the business logic; we have decided to consider also the development of
+ the mobile applications as part of the development of the business logic
+ for the estimation of the expected lines of code.
 \end_layout
 
 \begin_layout Standard
@@ -3478,18 +3478,35 @@ reference "subsec:Introduction-to-the"
 
 \end_inset
 
-.
+ twice to get both a lower bound and an upper bound estimate of the project
+ effort.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Effort=2.94*KSLOC^{E}*1.01477=...
+Effort_{lower\,bound}=2.94*5.2^{1.1011}*1.01477=18.3276
 \end{equation}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Effort_{upper\,bound}=2.94*7.28^{1.1011}*1.01477=26.5465
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We get a lower bound of 18.32 person-months and an upper bound of 26.55 person-mon
+ths.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3541,6 +3558,36 @@ reference "subsec:Computation-of-the"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Once again, we compute the estimate twice for a lower and upper bound.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Duration_{lower\,bound}=3.67*18.32^{0.28+0.2*(1.1011-0.91)}=9.3
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Duration_{upper\,bound}=3.67*26.55^{0.28+0.2*(1.1011-0.91)}=10.4
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We therefore get an estimate of between 9.3 and 10.4 months.
 \end_layout
 
 \begin_layout Section
