@@ -2782,8 +2782,193 @@ Project plan
 Identifying milestons and tasks
 \end_layout
 
+\begin_layout Standard
+This section aims to point out some of the main concepts and guide lines
+ from which tasks and activities that will be showed afterwards were born.
+ References to the DD and RASD documents are made respecting the dead lines
+ of each document, in the various Gantt there are several tasks to complete
+ which directly or indirectly are associated with the creation of the two
+ documents and the deals made with the set of Stakeholders.
+ Furthermore, Stakeholders comprehend at least one person to represent all
+ the actors exposed in the RASD and, in particular, a possible User, some
+ Finantial Partners and Sponsors, a possible Government mediator, a possible
+ member of the company of the Transactional System, a possible Car society's
+ member, a possible ISP's member.
+ Accordingly with all these people, will be possible to design 
+\begin_inset Quotes eld
+\end_inset
+
+legally
+\begin_inset Quotes erd
+\end_inset
+
+ and with a full integration with the external environment.
+ Another topic to discuss about is surely the importance of costs: they
+ are highlighted in the middle of some phases of the Gantt, but a cost monitorin
+g is always necessary and other strategies have to be formulated in particular
+ cases (also in relation of the budget coming from the Partners and the
+ Sponsors).
+ At the end of the Development phase (in which there is the 
+\begin_inset Quotes eld
+\end_inset
+
+concrete
+\begin_inset Quotes erd
+\end_inset
+
+ implementation and testing of the three parts of the Software of our System),
+ there is the Deployment phase: it is the range of time necessary for prepearing
+ the entire System to be launched on the market.
+ Finally the term Maintenance hints the necessity to continue to work on
+ the implementation in periodic steps after the Start up phase too.
+ Precise steps of revisioning of the Project and of the code behind it will
+ be fixed following a precise scheme, as well as, the first feedbacks released
+ by the Users.
+ Maybe there will be some bugs to fix and that were not identified in the
+ testing range of time, or maybe it will be indispensable an updated version
+ of the Software with some new interactive functionalities for the Users.
+ In any case the approach to develop the System will be also considering
+ the future and the new tendences.
+\end_layout
+
 \begin_layout Subsection
 Schedule
+\end_layout
+
+\begin_layout Standard
+In this section the Gantt files related to the principal phases of the Project
+ will be emphasised.
+ An assumption on these schemes are that they are designed in an abstract
+ way, as long as their purpose is purely to give a first sketch of what
+ will be the project itself to the reader.
+ Internal blocks, associated to the specific activities, will be analized
+ afterwards and eventually modified during the particular task of reference.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RASD document Gantt Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Gantt/RASD List of Activitie.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Gantt/RASD Gantt.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+DD document Gantt Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Gantt/DD List of activities.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Gantt/DD Gantt.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Development Gantt Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Gantt/Deployment List of activities.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Gantt/Deployment Gantt.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Deployment Gantt Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Gantt/Deployment List.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Gantt/Deployment Gantt 2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Start up and Maintanance Gantt Diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Gantt/Start up and maintanance list.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Gantt/Start up and maintanance Gantt.png
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
