@@ -5517,6 +5517,80 @@ name "subsec:Identifying-risks"
 
 \end_layout
 
+\begin_layout Subsubsection
+Business risks
+\end_layout
+
+\begin_layout Standard
+One market-related risk that may arise after the project implementation
+ is that the PowerEnJoy system may not be competitive enough, expecially
+ considering the ever increasing number of similar car sharing services
+ now present on the market, particularly in big cities.
+ Although this scenario can potentially lead to a great loss of investment,
+ we believe the probability of it actually becoming reality are not so high,
+ especially considering this is, up until now, the only service offering
+ electric cars.
+\end_layout
+
+\begin_layout Subsubsection
+Implementation phase behind schedule 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Technical-risks"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One possible risk of technical nature is the potential overestimation of
+ our own programming skills, as well as the quality of our design.
+ This would result in a significant delay on the schedule we have defined,
+ which would translate to a great loss of stakeholders' investment.
+\end_layout
+
+\begin_layout Standard
+This risk cannot be understated, and could possibly have a great impact
+ on the project schedule.
+ We should therefore create a contingency plan in case our skills prove
+ to not be enough for the challenge the project offers.
+\end_layout
+
+\begin_layout Subsubsection
+Loss of application data
+\end_layout
+
+\begin_layout Standard
+A risk that must not be underestimated is the possibility of losing core
+ application data due to hardware failures or human errors.
+ This risk can be avoided by setting up a proper backup and recovery system,
+ possibly with the help of external professionals, and it will be a priority
+ after deployment.
+\end_layout
+
+\begin_layout Subsubsection
+User data leaks
+\end_layout
+
+\begin_layout Standard
+In case a security exploitation happens in the system's servers after deployment
+, there is a risk that user data may be leaked as the result.
+ We believe the chance of this happening are not to be underestimated, however
+ we have designed the system in such a way that the data leaked will not
+ be disastrous for the users.
+\end_layout
+
+\begin_layout Standard
+First, no passwords will be leaked, as they will be stored in the database
+ using proper hashing and salting techiques.
+ Second, no credit card information can be leaked, as the system is designed
+ to only use PayPal as payment method.
+ Therefore, the most private information that can leak from our databases
+ will be the relation between user's names, email addresses and driving
+ license ID, which is not in itself secret information.
+\end_layout
+
 \begin_layout Subsection
 Contingency plan development
 \begin_inset CommandInset label
@@ -5526,6 +5600,23 @@ name "subsec:Contingency-plan-development"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Contingency plan for scenario described in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Technical-risks"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If our programming skills turn out to have been overestimated, we should
+ fall back to hiring professional programmers with knowledge and experience
+ of the J2E framework.
 \end_layout
 
 \end_body
