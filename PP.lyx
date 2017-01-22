@@ -1357,6 +1357,13 @@ Cost estimation with COCOMO II
 
 \begin_layout Subsubsection
 Introduction to the COCOMO II method
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Introduction-to-the"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2728,7 +2735,7 @@ The
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E=B+0,01*\sum_{i=1}^{5}SF_{i}
+E=B+0.01*\sum_{i=1}^{5}SF_{i}
 \end{equation}
 
 \end_inset
@@ -2741,7 +2748,7 @@ where:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $B=0,91$
+\begin_inset Formula $B=0.91$
 \end_inset
 
  is an empirical constant valid for COCOMO II
@@ -2762,7 +2769,7 @@ When taking into account the previously identified values of the scale factors,
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E=0,91+0,01*19,11=1,1011
+E=0.91+0.01*19.11=1.1011
 \end{equation}
 
 \end_inset
@@ -2771,7 +2778,91 @@ E=0,91+0,01*19,11=1,1011
 \end_layout
 
 \begin_layout Standard
-thus obtaining a value of 1,1011.
+thus obtaining a value of 1.1011.
+\end_layout
+
+\begin_layout Subsubsection
+Computation of the estimated project effort
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Computation-of-the"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We now apply the equation shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Introduction-to-the"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Effort=2.94*KSLOC^{E}*1.01477=...
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Computation of the estimated project duration
+\end_layout
+
+\begin_layout Standard
+We estimate the duration of the project with the following equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Duration=3.67*Effort^{0.28+0.2*(E-0.91)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E=1.1011$
+\end_inset
+
+ is the scale factors aggregation identified earlier in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Scale-factors"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Effort$
+\end_inset
+
+ is the effort in person-months, computed in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Computation-of-the"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
