@@ -1021,19 +1021,80 @@ Indention
 \end_layout
 
 \begin_layout Standard
-No issues to be reported.
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="1.5cm">
+<column alignment="center" valignment="middle" width="1.5cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Issue number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Line of Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+117
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The return statement shall be brought at the same indention level of the
+ if statement of line 111.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
 Braces
-\end_layout
-
-\begin_layout Standard
-No issues to be reported.
-\end_layout
-
-\begin_layout Subsubsection
-File Organization
 \end_layout
 
 \begin_layout Standard
@@ -1077,7 +1138,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+21
 \end_layout
 
 \end_inset
@@ -1086,7 +1147,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+58
 \end_layout
 
 \end_inset
@@ -1095,18 +1156,107 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
+The implementation of the method is on the same level of its declaration:
+ neither 
+\begin_inset Quotes eld
+\end_inset
 
+Allman
+\begin_inset Quotes erd
+\end_inset
+
+ nor 
+\begin_inset Quotes eld
+\end_inset
+
+Kernighan
+\begin_inset Quotes erd
+\end_inset
+
+ styles are applied.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+118
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The 
+\begin_inset Quotes eld
+\end_inset
+
+else
+\begin_inset Quotes erd
+\end_inset
+
+ statement should be brought to the next line, and so all the consecutive
+ lines of code (according to the 
+\begin_inset Quotes eld
+\end_inset
+
+Allman
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Kernighan
+\begin_inset Quotes erd
+\end_inset
+
+ styles too).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+File Organization
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="1.5cm">
+<column alignment="center" valignment="middle" width="1.5cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
 <cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Issue number
 \end_layout
 
 \end_inset
@@ -1115,7 +1265,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Line of Code
 \end_layout
 
 \end_inset
@@ -1124,7 +1274,184 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
+Description
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No comments are applied for the description of the used packages section.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No blank lines of space are applied between the first description regarding
+ the Licence and the declaration of the packages used in the Class.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No comments are applied for the description of the class section.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No comments are applied for the description of the attribute section.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No comments are applied for the description of the methods section.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(from 56)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No comments are applied for the description of the single method section
+ (in particular the what to do for the override property, why overriding/depreca
+ting the method, principal methods specifications and purposes).
 \end_layout
 
 \end_inset
@@ -1143,7 +1470,7 @@ Wrapping lines
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
+<lyxtabular version="3" rows="2" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="1.5cm">
 <column alignment="center" valignment="middle" width="1.5cm">
@@ -1178,40 +1505,11 @@ Description
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+30
 \end_layout
 
 \end_inset
@@ -1220,7 +1518,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+117
 \end_layout
 
 \end_inset
@@ -1229,7 +1527,8 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+The return statement shall be brought at the same indention level of the
+ if statement of line 111.
 \end_layout
 
 \end_inset
@@ -1248,7 +1547,7 @@ Comments
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
+<lyxtabular version="3" rows="5" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="1.5cm">
 <column alignment="center" valignment="middle" width="1.5cm">
@@ -1287,7 +1586,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+31
 \end_layout
 
 \end_inset
@@ -1296,7 +1595,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+(from 56)
 \end_layout
 
 \end_inset
@@ -1305,36 +1604,125 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+No comments are applied for the description of the single method section
+ (in particular the what to do for the override property, why overriding
+ the method, principal methods specifications and purposes).
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+32
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+104
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+A brief explanation for the method 
+\begin_inset Quotes eld
+\end_inset
 
+getPathInfo()
+\begin_inset Quotes erd
+\end_inset
+
+ of line 106 can be useful for better understanding the meaning of the method
+ which seems long.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+182
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A brief explanation of why the method 
+\begin_inset Quotes eld
+\end_inset
+
+isRequestedSessionIdFromUrl()
+\begin_inset Quotes erd
+\end_inset
+
+ is now deprecated and how to find the same solution now; can be useful
+ for better maintaining the code in the future and the decision to take
+ towards this method.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+288
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A brief explanation of why the method 
+\begin_inset Quotes eld
+\end_inset
+
+getRealPath(String arg0)
+\begin_inset Quotes erd
+\end_inset
+
+ is now deprecated and how to find the same solution now; can be useful
+ for better maintaining the code in the future and the decision to take
+ towards this method.
 \end_layout
 
 \end_inset
@@ -1352,104 +1740,7 @@ Java source files
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="8cm">
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Issue number
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Line of Code
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+No issues to be reported.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1457,104 +1748,7 @@ Package and Import statements
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="8cm">
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Issue number
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Line of Code
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+No issues to be reported.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1563,7 +1757,7 @@ Class and Interface declarations
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
+<lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="1.5cm">
 <column alignment="center" valignment="middle" width="1.5cm">
@@ -1602,7 +1796,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+35
 \end_layout
 
 \end_inset
@@ -1611,7 +1805,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+48
 \end_layout
 
 \end_inset
@@ -1620,6 +1814,14 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
+No documentation comment is left for the class 
+\begin_inset Quotes eld
+\end_inset
+
+MultiSiteRequestWrapper
+\begin_inset Quotes erd
+\end_inset
+
 
 \end_layout
 
@@ -1627,29 +1829,124 @@ Description
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+36
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+—
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+There is not a specific, functional, order for the implementation of the
+ methods.
+ It is important to maintain in the class a priority order for the methods
+ inside it.
+ 
+\end_layout
 
+\begin_layout Plain Layout
+A guide line for the order to give to the methods could be:
+\end_layout
+
+\begin_layout Enumerate
+declaring the login / logout methods 
+\end_layout
+
+\begin_layout Enumerate
+declaring the 
+\begin_inset Quotes eld
+\end_inset
+
+getters
+\begin_inset Quotes erd
+\end_inset
+
+ methods
+\end_layout
+
+\begin_layout Enumerate
+declaring the 
+\begin_inset Quotes eld
+\end_inset
+
+stating methods
+\begin_inset Quotes erd
+\end_inset
+
+ (like 
+\begin_inset Quotes eld
+\end_inset
+
+isAsyncSupported()
+\begin_inset Quotes erd
+\end_inset
+
+ and so on)
+\end_layout
+
+\begin_layout Enumerate
+declaring the 
+\begin_inset Quotes eld
+\end_inset
+
+setters
+\begin_inset Quotes erd
+\end_inset
+
+ methods.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+106
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+the 
+\begin_inset Quotes eld
+\end_inset
+
+getPathInfo()
+\begin_inset Quotes erd
+\end_inset
+
+ method seems too long.
+ Verify if there could be another way for refactoring it (declaring for
+ instance a private method in which implementing diffently the same code).
 \end_layout
 
 \end_inset
@@ -1667,104 +1964,7 @@ Initialization and Declarations
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="8cm">
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Issue number
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Line of Code
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+No issues to be reported.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1772,104 +1972,7 @@ Method calls
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="8cm">
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Issue number
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Line of Code
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+No issues to be reported.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1877,104 +1980,7 @@ Arrays
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="8cm">
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Issue number
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Line of Code
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+No issues to be reported.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1983,7 +1989,7 @@ Object comparison
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
+<lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="1.5cm">
 <column alignment="center" valignment="middle" width="1.5cm">
@@ -2022,7 +2028,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+38
 \end_layout
 
 \end_inset
@@ -2031,7 +2037,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+109
 \end_layout
 
 \end_inset
@@ -2040,36 +2046,119 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
+The second term of the comparison (
+\begin_inset Quotes eld
+\end_inset
 
+pathInfo != null
+\begin_inset Quotes erd
+\end_inset
+
+) should be changed in 
+\begin_inset Quotes eld
+\end_inset
+
+StringUtils.isEmpty(pathInfo)
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+pathInfo.equals(null)
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+39
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+111
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
 
+nextPathSegmentStart == -1
+\begin_inset Quotes erd
+\end_inset
+
+ should be changed in 
+\begin_inset Quotes eld
+\end_inset
+
+nextPathSegmentStart.equals(-1)
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+113
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+nextPathSegmentStart == -1
+\begin_inset Quotes erd
+\end_inset
+
+ should be changed in 
+\begin_inset Quotes eld
+\end_inset
+
+nextPathSegmentStart.equals(-1)
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -2087,104 +2176,7 @@ Output format
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="8cm">
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Issue number
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Line of Code
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+No issues to be reported.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2232,7 +2224,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+41
 \end_layout
 
 \end_inset
@@ -2241,7 +2233,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+118
 \end_layout
 
 \end_inset
@@ -2250,7 +2242,16 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
+The else statement is unnecessary for the this case.
+ Return the 
+\begin_inset Quotes eld
+\end_inset
 
+pathInfo
+\begin_inset Quotes erd
+\end_inset
+
+ variable directly cutting the else block.
 \end_layout
 
 \end_inset
@@ -2261,7 +2262,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+42
 \end_layout
 
 \end_inset
@@ -2270,7 +2271,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+111-115
 \end_layout
 
 \end_inset
@@ -2279,7 +2280,9 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+There could be a better way to refactor the code.
+ For instance creating a lighter solution coupling the last two if staments
+ and reorganizing the code.
 \end_layout
 
 \end_inset
@@ -2298,7 +2301,7 @@ Exceptions
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="3">
+<lyxtabular version="3" rows="12" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="1.5cm">
 <column alignment="center" valignment="middle" width="1.5cm">
@@ -2337,7 +2340,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+43
 \end_layout
 
 \end_inset
@@ -2346,12 +2349,45 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-229
+107
 \end_layout
 
 \end_inset
 </cell>
 <cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Manage the exception that can be generated by the casting of variable.
+ It is convenient to do it by a try catch block or throwing the exception
+ from the method.
+ In this last case is also important to understanding where the exception
+ will be managed inside the program.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+229
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2375,7 +2411,7 @@ verifying if all invokators handle the exception and if the level in which
 \begin_inset Text
 
 \begin_layout Plain Layout
-2
+45
 \end_layout
 
 \end_inset
@@ -2413,7 +2449,7 @@ verifying if all invokators handle the exception and if the level in which
 \begin_inset Text
 
 \begin_layout Plain Layout
-3
+46
 \end_layout
 
 \end_inset
@@ -2451,7 +2487,7 @@ verifying if all invokators handle the exception and if the level in which
 \begin_inset Text
 
 \begin_layout Plain Layout
-4
+47
 \end_layout
 
 \end_inset
@@ -2493,7 +2529,7 @@ This has to be valid for both the found exceptions.
 \begin_inset Text
 
 \begin_layout Plain Layout
-5
+48
 \end_layout
 
 \end_inset
@@ -2536,7 +2572,7 @@ This has to be valid for all the found exceptions.
 \begin_inset Text
 
 \begin_layout Plain Layout
-6
+49
 \end_layout
 
 \end_inset
@@ -2579,7 +2615,7 @@ This has to be valid for all the found exceptions.
 \begin_inset Text
 
 \begin_layout Plain Layout
-7
+50
 \end_layout
 
 \end_inset
@@ -2617,7 +2653,7 @@ verifying if all invokators handle the exception and if the level in which
 \begin_inset Text
 
 \begin_layout Plain Layout
-8
+51
 \end_layout
 
 \end_inset
@@ -2651,16 +2687,16 @@ verifying if all invokators handle the exception and if the level in which
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-9
+52
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2669,7 +2705,7 @@ verifying if all invokators handle the exception and if the level in which
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2692,6 +2728,37 @@ This has to be valid for both the found exceptions.
 \end_inset
 </cell>
 </row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+53
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+—
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Verify for each important method of the interface if there is the necessity
+ of throwing/managing the NullPointerException for the returned parameters
+ and, for single case, where they will be in the program.
+\end_layout
+
+\end_inset
+</cell>
+</row>
 </lyxtabular>
 
 \end_inset
@@ -2704,104 +2771,7 @@ Flow of Control
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="8cm">
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Issue number
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Line of Code
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+No issues to be reported.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2809,104 +2779,7 @@ Files
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="1.5cm">
-<column alignment="center" valignment="middle" width="8cm">
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Issue number
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Line of Code
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Description
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
+No issues to be reported.
 \end_layout
 
 \begin_layout Subsection
