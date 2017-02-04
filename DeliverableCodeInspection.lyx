@@ -2298,7 +2298,7 @@ Exceptions
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
+<lyxtabular version="3" rows="10" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="1.5cm">
 <column alignment="center" valignment="middle" width="1.5cm">
@@ -2337,7 +2337,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -2346,7 +2346,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+229
 \end_layout
 
 \end_inset
@@ -2355,36 +2355,338 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
+IOException should be caught, it can be done in two ways:
+\end_layout
 
+\begin_layout Enumerate
+returning something specific to be used by the invokator
+\end_layout
+
+\begin_layout Enumerate
+verifying if all invokators handle the exception and if the level in which
+ the exception is handled is correct.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+284
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+IOException should be caught, it can be done in two ways:
+\end_layout
 
+\begin_layout Enumerate
+returning something specific to be used by the invokator
+\end_layout
+
+\begin_layout Enumerate
+verifying if all invokators handle the exception and if the level in which
+ the exception is handled is correct.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+344
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UnsupportedEncodingException should be caught, it can be done in two ways:
+\end_layout
+
+\begin_layout Enumerate
+returning something specific to be used by the invokator
+\end_layout
+
+\begin_layout Enumerate
+verifying if all invokators handle the exception and if the level in which
+ the exception is handled is correct.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+349
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ServletException, IOException, should be caught, it can be done in two ways:
+\end_layout
+
+\begin_layout Enumerate
+returning something specific to be used by the invokator
+\end_layout
+
+\begin_layout Enumerate
+verifying if all invokators handle the exception and if the level in which
+ the exception is handled is correct.
+\end_layout
+
+\begin_layout Plain Layout
+This has to be valid for both the found exceptions.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+354
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ServletException, IOException, IllegalStateException, should be caught,
+ it can be done in two ways:
+\end_layout
+
+\begin_layout Enumerate
+returning something specific to be used by the invokator
+\end_layout
+
+\begin_layout Enumerate
+verifying if all invokators handle the exception and if the level in which
+ the exception is handled is correct.
+\end_layout
+
+\begin_layout Plain Layout
+This has to be valid for all the found exceptions.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+359
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ServletException, IOException, IllegalStateException, should be caught,
+ it can be done in two ways:
+\end_layout
+
+\begin_layout Enumerate
+returning something specific to be used by the invokator
+\end_layout
+
+\begin_layout Enumerate
+verifying if all invokators handle the exception and if the level in which
+ the exception is handled is correct.
+\end_layout
+
+\begin_layout Plain Layout
+This has to be valid for all the found exceptions.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+364
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ServletException, should be caught, it can be done in two ways:
+\end_layout
+
+\begin_layout Enumerate
+returning something specific to be used by the invokator
+\end_layout
+
+\begin_layout Enumerate
+verifying if all invokators handle the exception and if the level in which
+ the exception is handled is correct.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+369
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ServletException, should be caught, it can be done in two ways:
+\end_layout
+
+\begin_layout Enumerate
+returning something specific to be used by the invokator
+\end_layout
+
+\begin_layout Enumerate
+verifying if all invokators handle the exception and if the level in which
+ the exception is handled is correct.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+409
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ServletException, IOException, should be caught, it can be done in two ways:
+\end_layout
+
+\begin_layout Enumerate
+returning something specific to be used by the invokator
+\end_layout
+
+\begin_layout Enumerate
+verifying if all invokators handle the exception and if the level in which
+ the exception is handled is correct.
+\end_layout
+
+\begin_layout Plain Layout
+This has to be valid for both the found exceptions.
 \end_layout
 
 \end_inset
