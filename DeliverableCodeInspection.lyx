@@ -3006,7 +3006,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -3090,7 +3090,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2
 \end_layout
 
 \end_inset
@@ -3120,7 +3120,7 @@ An additional line may be used to visually separate semantically related
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3
 \end_layout
 
 \end_inset
@@ -3149,7 +3149,7 @@ Line exceeds 120 characters length
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4
 \end_layout
 
 \end_inset
@@ -3241,7 +3241,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5
 \end_layout
 
 \end_inset
@@ -3333,7 +3333,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6
 \end_layout
 
 \end_inset
@@ -3411,7 +3411,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7
 \end_layout
 
 \end_inset
@@ -3440,7 +3440,7 @@ Variable declarations should be at the beginning of a block
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8
 \end_layout
 
 \end_inset
@@ -3469,7 +3469,7 @@ Variable declarations should be at the beginning of a block
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+9
 \end_layout
 
 \end_inset
@@ -3498,7 +3498,7 @@ Variable declarations should be at the beginning of a block
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+10
 \end_layout
 
 \end_inset
@@ -3527,7 +3527,7 @@ Variable declarations should be at the beginning of a block
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+11
 \end_layout
 
 \end_inset
@@ -3556,7 +3556,7 @@ Variable declarations should be at the beginning of a block
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+12
 \end_layout
 
 \end_inset
@@ -3585,7 +3585,7 @@ Variable declarations should be at the beginning of a block
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+13
 \end_layout
 
 \end_inset
@@ -3614,7 +3614,7 @@ Variable declarations should be at the beginning of a block
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+14
 \end_layout
 
 \end_inset
@@ -3727,7 +3727,7 @@ Description
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+15
 \end_layout
 
 \end_inset
@@ -3756,7 +3756,7 @@ Error message should be phrased in a more understable fashion
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+16
 \end_layout
 
 \end_inset
