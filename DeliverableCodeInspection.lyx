@@ -117,6 +117,10 @@ Apache OFBiz® is an open source product for the automation of enterprise
  E-Business / E-Commerce, SCM (Supply Chain Management), MRP (Manufacturing
  Resource Planning), MMS/EAM (Maintenance Management System/Enterprise Asset
  Management).
+ Commercial software of such kind can be quite expensive, and the Apache
+ OFBiz framework is currently being used by a great number of businesses
+ directly, as well as extended and integrated by a number of software projects,
+ commercial and non commercial, under a wide variety of software licenses.
 \end_layout
 
 \begin_layout Section
@@ -265,10 +269,27 @@ This object of type HttpServletRequest is then used to provide most of the
 
 \begin_layout Standard
 Inside the entire project we have found out only one reference to the MultiSiteR
-equestWrapper class (./specialpurpose/cmssite/src/main/java/org/apache/ofbiz/cmss
-ite/multisite/WebSiteFilter.java) hence we believe that this wrapper is meant
- as a tool for third-part applications that are built on the top of the
- Apache OFBiz® architecture.
+equestWrapper class (WebSiteFilter.java) hence we believe that this wrapper
+ is meant as a tool for third-part applications that are built on the top
+ of the Apache OFBiz® architecture.
+\end_layout
+
+\begin_layout Subsection
+BirtViewHandler.java
+\end_layout
+
+\begin_layout Standard
+The BirtViewHandler class provides the functionalities specified by the
+ ViewHandler interface.
+ As seen in the javadoc, the main functionality of such interface is to
+ render web pages.
+\end_layout
+
+\begin_layout Standard
+As a view handler, the class can be used in utilizing software to implement
+ web-based Views (in a MVC like architecture).
+ In particular, the Apache OFBiz project aims at aiding the development
+ of enterprise software such as ERP, CRM, SCM, MPR and MMS/EAM.
  
 \end_layout
 
@@ -3796,10 +3817,6 @@ Files
 
 \begin_layout Standard
 No issues to be reported.
-\end_layout
-
-\begin_layout Section
-Additional problems
 \end_layout
 
 \end_body
