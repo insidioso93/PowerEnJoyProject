@@ -2469,7 +2469,7 @@ Exceptions
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="3">
-<features tabularvalignment="middle">
+<features islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="middle" width="1.5cm">
 <column alignment="center" valignment="middle" width="1.5cm">
 <column alignment="center" valignment="middle" width="8cm">
