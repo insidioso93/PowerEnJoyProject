@@ -226,6 +226,42 @@ BirtViewHandler.java
 Functional role of assigned set of classes
 \end_layout
 
+\begin_layout Standard
+In this section of the document we are going to provide an overall description
+ of the functional role that we have identified for the class cluster of
+ interests (described in the previous section).
+\end_layout
+
+\begin_layout Standard
+The functional analysis will consider the different classes separately and
+ will take into account all the available documentation about the overall
+ project.
+\end_layout
+
+\begin_layout Subsection
+MultiSiteRequestWrapper.java
+\end_layout
+
+\begin_layout Standard
+As the name of the class properly suggests, this class represent a wrapper
+ that allows to access to a specific functionality by means of a different
+ implementation of interface with respect to the one provided by the functionali
+ty itself.
+\end_layout
+
+\begin_layout Standard
+In particular, the MultiSiteRequestWrapper provides access to the functionalitie
+s offered by the class HttpServletRequest.
+ We can infer this by looking at the constructor method of the MultiSiteRequestW
+rapper, which requires an object of type HttpServletRequest to instantiate
+ a private and final attribute of the class.
+\end_layout
+
+\begin_layout Standard
+This object of type HttpServletRequest is then used to provide most of the
+ functionalities of the wrapper
+\end_layout
+
 \begin_layout Section
 List of issues 
 \end_layout
@@ -1964,7 +2000,107 @@ Initialization and Declarations
 \end_layout
 
 \begin_layout Standard
-No issues to be reported.
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="1.5cm">
+<column alignment="center" valignment="middle" width="1.5cm">
+<column alignment="center" valignment="middle" width="8cm">
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Issue number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Line of Code
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+53
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The private final attribute 
+\begin_inset Quotes eld
+\end_inset
+
+request
+\begin_inset Quotes erd
+\end_inset
+
+ of the class is initialized, by the constructor method, with the reference
+ to an object of type HttpServletRequest without checking if the reference
+ is a Null pointer.
+\end_layout
+
+\begin_layout Plain Layout
+The constructor should check this condition (and raise an InvalidParameterExcept
+ion) in order to avoid all the possible 
+\begin_inset Quotes eld
+\end_inset
+
+NullPointerException
+\begin_inset Quotes erd
+\end_inset
+
+ that may raise from the subsequent method calls/attribute accesses on the
+ attribute 
+\begin_inset Quotes eld
+\end_inset
+
+request
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
