@@ -251,7 +251,7 @@ ty itself.
 
 \begin_layout Standard
 In particular, the MultiSiteRequestWrapper provides access to the functionalitie
-s offered by the class HttpServletRequest.
+s specified by the interface HttpServletRequest.
  We can infer this by looking at the constructor method of the MultiSiteRequestW
 rapper, which requires an object of type HttpServletRequest to instantiate
  a private and final attribute of the class.
@@ -259,7 +259,17 @@ rapper, which requires an object of type HttpServletRequest to instantiate
 
 \begin_layout Standard
 This object of type HttpServletRequest is then used to provide most of the
- functionalities of the wrapper
+ functionalities of the wrapper; in fact, most of the functionalities are
+ directly provided by the wrapped object.
+\end_layout
+
+\begin_layout Standard
+Inside the entire project we have found out only one reference to the MultiSiteR
+equestWrapper class (./specialpurpose/cmssite/src/main/java/org/apache/ofbiz/cmss
+ite/multisite/WebSiteFilter.java) hence we believe that this wrapper is meant
+ as a tool for third-part applications that are built on the top of the
+ Apache OFBiz® architecture.
+ 
 \end_layout
 
 \begin_layout Section
