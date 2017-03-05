@@ -7,3 +7,6 @@
 *.lyx~
 
 rasd-draft-lyxformat-474.lyx
+
+#ignore pptx lockfile
+\.~*\#
